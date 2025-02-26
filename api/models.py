@@ -20,7 +20,13 @@ class Station(BaseModel):
 
 STATION_NAMES = ["Universidades", "Aguas", "Portal 80", "Portal 170"]
 ROUTES = ["D24", "6", "8", "1", "B75", "B13"]
-DESTINATIONS = ["Portal 80", "Portal 80", "Portal Norte", "Portal El Dorado", "Portal del Norte"]
+DESTINATIONS = [
+    "Portal 80",
+    "Portal 80",
+    "Portal Norte",
+    "Portal El Dorado",
+    "Portal del Norte",
+]
 
 stations = {name.replace(" ", "").lower(): Station(name=name) for name in STATION_NAMES}
 
