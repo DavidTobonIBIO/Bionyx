@@ -19,8 +19,8 @@ app = FastAPI(lifespan=lifespan)
 async def read_root():
     return {"message": "Bus API"}
 
-@app.get("/stations/")
-async def read_stations(response_model=list[Station]):
+@app.get("/stations/", response_model=list[Station])
+async def read_stations():
     return list(stations.values())
 
 @app.get("/stations/{name}", response_model=Station)
