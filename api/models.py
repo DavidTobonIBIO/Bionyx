@@ -28,7 +28,7 @@ DESTINATIONS = [
     "Portal del Norte",
 ]
 
-stations = {name.replace(" ", "").lower(): Station(name=name) for name in STATION_NAMES}
+stations = {name.replace(" ", "_").lower(): Station(name=name) for name in STATION_NAMES}
 
 buses = [
     Bus(id=i, route=route, destination=destination)
