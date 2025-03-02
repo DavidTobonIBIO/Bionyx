@@ -3,7 +3,7 @@ from models import Station, update_bus_locations, stations_dict, Coords
 import asyncio
 from contextlib import asynccontextmanager
 import uvicorn
-from sklearn.metrics.pairwise import haversine_distances
+import math
 
 
 @asynccontextmanager
@@ -36,21 +36,34 @@ async def read_station(name: str):
 
 @app.post("/nearest_station/", response_model=Station)
 async def read_nearest_station(coords: Coords):
-    
-    x1 = [coords.lat, coords.lon]
     nearest_station = None
-    nearest_distance = 4.5 # 4.5 km is the maximum distance between two stations
+    R = 6371000  # Radius of Earth in m
+    nearest_distance = 300 # Nearest distance in m
+    
+    lat1, lon1 = coords.latitude, coords.longitude
+    print(lat1, lon1)
     for station in stations_dict.values():
-        x2 = [station.lat, station.lon]
-        distance = haversine_distances([x1, x2])[0][1]
-        distance_in_km = distance * 6371 # 6371 is the radius of the Earth
-        if distance_in_km < nearest_distance:
+        
+        lat2, lon2 = station.latitude, station.longitude
+        print(lat2, lon2)
+        phi1, phi2 = math.radians(lat1), math.radians(lat2)
+        dphi = math.radians(lat2 - lat1)
+        dlambda = math.radians(lon2 - lon1)
+        
+        a = math.sin(dphi / 2) * math.sin(dphi / 2) + math.cos(phi1) * math.cos(phi2) * math.sin(dlambda / 2) * math.sin(dlambda / 2)
+        c = 2 * math.atan2(math.sqrt(a), math.sqrt(1 - a))
+        
+        distance = R * c # Distance in m
+        print(distance)
+        
+        if distance < nearest_distance:
             nearest_station = station
             nearest_distance = distance
-            return nearest_station
-        else:
-            raise HTTPException(status_code=404, detail=f"No nearest station found")
+    
+    if nearest_station is None:
+        raise HTTPException(status_code=404, detail=f"No stations found")
 
+    return nearest_station          
 
 if __name__ == "__main__":
     # uvicorn main:app --host 0.0.0.0 --port 8000 --reload

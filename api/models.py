@@ -23,8 +23,8 @@ class Station(BaseModel):
     arrivingRoutes: list[Bus] = []
 
 class Coords(BaseModel):
-    lat: float
-    lon: float
+    latitude: float
+    longitude: float
 
 
 with open(stations_path, encoding='utf-8') as f:
