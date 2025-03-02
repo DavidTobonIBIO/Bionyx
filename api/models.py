@@ -10,6 +10,7 @@ parent_dir = os.path.dirname(this_dir)
 data_dir = os.path.join(parent_dir, "data")
 stations_path = os.path.join(data_dir, "tm_stations.geojson")
 
+
 class Bus(BaseModel):
     id: int
     route: str
@@ -22,29 +23,34 @@ class Station(BaseModel):
     longitude: float = 0.0
     arrivingRoutes: list[Bus] = []
 
+
 class Coords(BaseModel):
     latitude: float
     longitude: float
 
 
-with open(stations_path, encoding='utf-8') as f:
+with open(stations_path, encoding="utf-8") as f:
     stations = json.load(f)
-    
-stations_dict = {}
-for feature in stations['features']:
-    station_properties = feature['properties']
-    station_name = station_properties['nombre_estacion']
-    latitud = station_properties['latitud_estacion']
-    longitud = station_properties['longitud_estacion']
-    
-    
-    station_name = unicodedata.normalize('NFKD', station_name).encode('ascii', 'ignore').decode('ascii')
-    station_name = station_name.replace(' ', '_').lower()
-    
-    stations_dict[station_name] = Station(name=station_name, latitude=latitud, longitude=longitud)
-    
 
-#print(stations_dict.keys())
+stations_dict = {}
+for feature in stations["features"]:
+    station_properties = feature["properties"]
+    station_name = station_properties["nombre_estacion"]
+    latitud = station_properties["latitud_estacion"]
+    longitud = station_properties["longitud_estacion"]
+
+    station_name = (
+        unicodedata.normalize("NFKD", station_name)
+        .encode("ascii", "ignore")
+        .decode("ascii")
+    )
+
+    stations_dict[station_name.replace(" ", "_").lower()] = Station(
+        name=station_name, latitude=latitud, longitude=longitud
+    )
+
+
+print(stations_dict.keys())
 
 
 ROUTES = ["D24", "6", "8", "1", "B75", "B13"]

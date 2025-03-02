@@ -36,6 +36,7 @@ async def read_station(name: str):
 
 @app.post("/stations/nearest_station", response_model=Station)
 async def read_nearest_station(coords: Coords):
+    print(coords)
     nearest_station = None
     R = 6371000  # Radius of Earth in m
     nearest_distance = 4000 # Nearest distance in m
