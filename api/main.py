@@ -34,7 +34,7 @@ async def read_station(name: str):
         raise HTTPException(status_code=404, detail=f"Station {name} not found")
     return stations_dict[name]
 
-@app.post("/nearest_station/", response_model=Station)
+@app.post("stations/nearest_station/", response_model=Station)
 async def read_nearest_station(coords: Coords):
     nearest_station = None
     R = 6371000  # Radius of Earth in m
