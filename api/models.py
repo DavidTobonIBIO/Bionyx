@@ -22,6 +22,11 @@ class Station(BaseModel):
     longitude: float = 0.0
     arrivingRoutes: list[Bus] = []
 
+class Coords(BaseModel):
+    lat: float
+    lon: float
+
+
 with open(stations_path, encoding='utf-8') as f:
     stations = json.load(f)
     
@@ -39,7 +44,7 @@ for feature in stations['features']:
     stations_dict[station_name] = Station(name=station_name, latitude=latitud, longitude=longitud)
     
 
-print(stations_dict.keys())
+#print(stations_dict.keys())
 
 
 ROUTES = ["D24", "6", "8", "1", "B75", "B13"]

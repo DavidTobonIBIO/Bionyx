@@ -1,5 +1,5 @@
 from fastapi import FastAPI, HTTPException
-from models import Station, update_bus_locations, stations_dict
+from models import Station, update_bus_locations, stations_dict, Coords
 import asyncio
 from contextlib import asynccontextmanager
 import uvicorn
@@ -34,10 +34,10 @@ async def read_station(name: str):
         raise HTTPException(status_code=404, detail=f"Station {name} not found")
     return stations_dict[name]
 
-@app.get("/nearest_station/", response_model=Station)
-async def read_nearest_station(lat: float, lon: float):
+@app.post("/nearest_station/", response_model=Station)
+async def read_nearest_station(coords: Coords):
     
-    x1 = [lat, lon]
+    x1 = [coords.lat, coords.lon]
     nearest_station = None
     nearest_distance = 4.5 # 4.5 km is the maximum distance between two stations
     for station in stations_dict.values():
