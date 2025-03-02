@@ -34,18 +34,18 @@ async def read_station(name: str):
         raise HTTPException(status_code=404, detail=f"Station {name} not found")
     return stations_dict[name]
 
-@app.post("stations/nearest_station/", response_model=Station)
+@app.post("/stations/nearest_station", response_model=Station)
 async def read_nearest_station(coords: Coords):
     nearest_station = None
     R = 6371000  # Radius of Earth in m
-    nearest_distance = 300 # Nearest distance in m
+    nearest_distance = 4000 # Nearest distance in m
     
     lat1, lon1 = coords.latitude, coords.longitude
-    print(lat1, lon1)
+    #print(lat1, lon1)
     for station in stations_dict.values():
         
         lat2, lon2 = station.latitude, station.longitude
-        print(lat2, lon2)
+        #print(lat2, lon2)
         phi1, phi2 = math.radians(lat1), math.radians(lat2)
         dphi = math.radians(lat2 - lat1)
         dlambda = math.radians(lon2 - lon1)
@@ -54,7 +54,7 @@ async def read_nearest_station(coords: Coords):
         c = 2 * math.atan2(math.sqrt(a), math.sqrt(1 - a))
         
         distance = R * c # Distance in m
-        print(distance)
+        #print(distance)
         
         if distance < nearest_distance:
             nearest_station = station
