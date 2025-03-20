@@ -1,7 +1,0 @@
-easyocr==1.7.2
-fastapi==0.115.11
-matplotlib==3.8.2
-opencv_python==4.9.0.80
-opencv_python_headless==4.10.0.84
-pydantic==2.10.6
-uvicorn==0.34.0

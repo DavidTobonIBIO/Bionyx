@@ -4,6 +4,9 @@ import asyncio
 from contextlib import asynccontextmanager
 import uvicorn
 import math
+import os
+import shutil
+import atexit
 
 
 @asynccontextmanager
@@ -34,35 +37,53 @@ async def read_station(name: str):
         raise HTTPException(status_code=404, detail=f"Station {name} not found")
     return stations_dict[name]
 
+
 @app.post("/stations/nearest_station", response_model=Station)
 async def read_nearest_station(coords: Coords):
     print(coords)
     nearest_station = None
     R = 6371000  # Radius of Earth in m
-    nearest_distance = math.inf # Nearest distance in m
-    
+    nearest_distance = math.inf  # Nearest distance in m
+
     lat1, lon1 = coords.latitude, coords.longitude
-    
+
     for station in stations_dict.values():
-        
+
         lat2, lon2 = station.latitude, station.longitude
         phi1, phi2 = math.radians(lat1), math.radians(lat2)
         dphi = math.radians(lat2 - lat1)
         dlambda = math.radians(lon2 - lon1)
-        
-        a = math.sin(dphi / 2) * math.sin(dphi / 2) + math.cos(phi1) * math.cos(phi2) * math.sin(dlambda / 2) * math.sin(dlambda / 2)
+
+        a = math.sin(dphi / 2) * math.sin(dphi / 2) + math.cos(phi1) * math.cos(
+            phi2
+        ) * math.sin(dlambda / 2) * math.sin(dlambda / 2)
         c = 2 * math.atan2(math.sqrt(a), math.sqrt(1 - a))
-        
-        distance = R * c # Distance in m
-        
+
+        distance = R * c  # Distance in m
+
         if distance < nearest_distance:
             nearest_station = station
             nearest_distance = distance
-    
+
     if nearest_station is None:
         raise HTTPException(status_code=404, detail=f"No stations found")
 
-    return nearest_station          
+    return nearest_station
+
+
+def remove_pycache():
+    pycache_path = os.path.join(this_script_dir, "__pycache__")
+    if os.path.exists(pycache_path) and os.path.isdir(pycache_path):
+        try:
+            shutil.rmtree(pycache_path)
+            print("Deleted __pycache__ folder.")
+        except Exception as e:
+            print(f"Error deleting __pycache__: {e}")
+
+
+this_script_dir = os.path.dirname(os.path.abspath(__file__))
+# Register the cleanup function to run at script exit
+atexit.register(remove_pycache)
 
 if __name__ == "__main__":
     # uvicorn main:app --host 0.0.0.0 --port 8000 --reload

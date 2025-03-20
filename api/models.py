@@ -1,19 +1,15 @@
 import os
 import json
 import unicodedata
-from pydantic import BaseModel
+from pydantic import BaseModel, ConfigDict
 import asyncio
 import random
 
-this_dir = os.path.dirname(__file__)
-data_dir = os.path.join(this_dir, "data")
-stations_path = os.path.join(data_dir, "Estaciones_Troncales_de_TRANSMILENIO.geojson")
-routes_path = os.path.join(data_dir, "Rutas_Troncales_de_TRANSMILENIO.geojson")
-
 
 class Route(BaseModel):
-    name: str = ""
-    destination: str = ""
+    model_config = ConfigDict(extra="ignore")  # ignore extra fields
+    name: str
+    destination: str
 
 
 class Station(BaseModel):
@@ -28,6 +24,11 @@ class Coords(BaseModel):
     longitude: float
 
 
+this_dir = os.path.dirname(__file__)
+data_dir = os.path.join(this_dir, "data")
+stations_path = os.path.join(data_dir, "Estaciones_Troncales_de_TRANSMILENIO.geojson")
+routes_path = os.path.join(data_dir, "Rutas_Troncales_de_TRANSMILENIO.geojson")
+
 with open(stations_path, encoding="utf-8") as f:
     stations = json.load(f)
 
@@ -37,24 +38,21 @@ for feature in stations["features"]:
     station_name = station_properties["nombre_estacion"]
     latitud = station_properties["latitud_estacion"]
     longitud = station_properties["longitud_estacion"]
-
     station_name = (
         unicodedata.normalize("NFKD", station_name)
         .encode("ascii", "ignore")
         .decode("ascii")
     )
-
     stations_dict[station_name.replace(" ", "_").lower()] = Station(
         name=station_name, latitude=latitud, longitude=longitud
     )
 
 del stations
-print(stations_dict.keys())
 
 with open(routes_path, encoding="utf-8") as f:
     routes = json.load(f)
 
-routes_dict = {}
+routes_list = []
 for feature in routes["features"]:
     route_properties = feature["properties"]
     # add route to routes_dict if it is operational
@@ -69,18 +67,17 @@ for feature in routes["features"]:
             .encode("ascii", "ignore")
             .decode("ascii")
         )
-        routes_dict[f"{route_name} {route_destination}"] = Route(
-            name=route_name, destination=route_destination
-        )
+        routes_list.append(Route(name=route_name, destination=route_destination))
 
 del routes
-print(routes_dict.values())
 
+print(stations_dict.keys())
 
 async def update_routes_locations():
     while True:
         for station in stations_dict.values():
-            station.arrivingRoutes = random.sample(
-                routes_dict.values(), k=random.randint(0, 2)
-            )
+            station.arrivingRoutes = station.arrivingRoutes = [
+                Route(name=r.name, destination=r.destination)
+                for r in random.sample(routes_list, k=random.randint(0, 2))
+            ]
         await asyncio.sleep(5)  # update every 5 secs
