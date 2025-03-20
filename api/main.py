@@ -37,7 +37,7 @@ async def read_route(id: int):
     if route:
         return route
     else:
-        raise HTTPException(status_code=404, detail=f"Route {id} not found")
+        raise HTTPException(status_code=404, detail=f"Route with id={id} not found")
 
 
 @app.get("/stations/", response_model=list[Station])

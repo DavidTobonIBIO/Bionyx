@@ -13,6 +13,7 @@ class Route(BaseModel):
 
 
 class Station(BaseModel):
+    id: int
     name: str
     latitude: float = 0.0
     longitude: float = 0.0
@@ -35,6 +36,7 @@ with open(stations_path, encoding="utf-8") as f:
 stations_dict = {}
 for feature in stations["features"]:
     station_properties = feature["properties"]
+    id = station_properties["objectid"]
     station_name = station_properties["nombre_estacion"]
     latitud = station_properties["latitud_estacion"]
     longitud = station_properties["longitud_estacion"]
@@ -44,7 +46,7 @@ for feature in stations["features"]:
         .decode("ascii")
     )
     stations_dict[station_name.replace(" ", "_").lower()] = Station(
-        name=station_name, latitude=latitud, longitude=longitud
+        id=id, name=station_name, latitude=latitud, longitude=longitud
     )
 
 del stations
@@ -53,11 +55,11 @@ with open(routes_path, encoding="utf-8") as f:
     routes = json.load(f)
 
 routes_dict = {}
-id = 1
 for feature in routes["features"]:
     route_properties = feature["properties"]
     # add route to routes_dict if it is operational
     if route_properties["estado_ruta_troncal"] == "OPERATIVA":
+        id = route_properties["objectid"]
         route_name = route_properties["nombre_ruta_troncal"]
 
         # obtener nombre de la ruta como lo conoce el usuario
@@ -69,7 +71,6 @@ for feature in routes["features"]:
             .decode("ascii")
         )
         routes_dict[id] = Route(id=id, name=route_name, destination=route_destination)
-        id += 1
 
 del routes
 
