@@ -1,5 +1,5 @@
 from fastapi import FastAPI, HTTPException
-from models import Coords, Route, Station, update_routes_locations, stations_dict, routes_list
+from models import Coords, Route, Station, update_routes_locations, stations_dict, routes_dict, routes_list
 import asyncio
 from contextlib import asynccontextmanager
 import uvicorn
@@ -29,6 +29,15 @@ async def read_root():
 @app.get("/routes/", response_model=list[Route])
 async def read_routes_names():
     return routes_list
+
+
+@app.get("/routes/{id}", response_model=Route)
+async def read_route(id: int):
+    route = routes_dict.get(id)
+    if route:
+        return route
+    else:
+        raise HTTPException(status_code=404, detail=f"Route {id} not found")
 
 
 @app.get("/stations/", response_model=list[Station])
