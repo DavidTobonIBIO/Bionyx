@@ -1,5 +1,5 @@
 from fastapi import FastAPI, HTTPException
-from models import Station, update_routes_locations, stations_dict, Coords
+from models import Coords, Route, Station, update_routes_locations, stations_dict, routes_list
 import asyncio
 from contextlib import asynccontextmanager
 import uvicorn
@@ -24,6 +24,11 @@ app = FastAPI(root_path="/api", lifespan=lifespan)
 @app.get("/")
 async def read_root():
     return {"message": "OrientApp Backend"}
+
+
+@app.get("/routes/", response_model=list[Route])
+async def read_routes_names():
+    return routes_list
 
 
 @app.get("/stations/", response_model=list[Station])

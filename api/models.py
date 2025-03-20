@@ -71,7 +71,10 @@ for feature in routes["features"]:
 
 del routes
 
-print(stations_dict.keys())
+routes_list.sort(key=lambda route: route.name)
+
+print(routes_list)
+
 
 async def update_routes_locations():
     while True:
