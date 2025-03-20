@@ -73,14 +73,12 @@ del routes
 
 routes_list.sort(key=lambda route: route.name)
 
-print(routes_list)
-
 
 async def update_routes_locations():
     while True:
         for station in stations_dict.values():
             station.arrivingRoutes = station.arrivingRoutes = [
                 Route(name=r.name, destination=r.destination)
-                for r in random.sample(routes_list, k=random.randint(0, 2))
+                for r in random.sample(routes_list, k=random.randint(0, 4))
             ]
         await asyncio.sleep(5)  # update every 5 secs
