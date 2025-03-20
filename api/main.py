@@ -1,5 +1,5 @@
 from fastapi import FastAPI, HTTPException
-from models import Station, update_bus_locations, stations_dict, Coords
+from models import Station, update_routes_locations, stations_dict, Coords
 import asyncio
 from contextlib import asynccontextmanager
 import uvicorn
@@ -9,7 +9,7 @@ import math
 @asynccontextmanager
 async def lifespan(app: FastAPI):
     print("Starting up and launching background tasks...")
-    task = asyncio.create_task(update_bus_locations())
+    task = asyncio.create_task(update_routes_locations())
     yield
     task.cancel()
     print("Shutting down.")
@@ -20,7 +20,7 @@ app = FastAPI(root_path="/api", lifespan=lifespan)
 
 @app.get("/")
 async def read_root():
-    return {"message": "Bus API"}
+    return {"message": "OrientApp Backend"}
 
 
 @app.get("/stations/", response_model=list[Station])
@@ -39,14 +39,13 @@ async def read_nearest_station(coords: Coords):
     print(coords)
     nearest_station = None
     R = 6371000  # Radius of Earth in m
-    nearest_distance = 4000 # Nearest distance in m
+    nearest_distance = math.inf # Nearest distance in m
     
     lat1, lon1 = coords.latitude, coords.longitude
-    #print(lat1, lon1)
+    
     for station in stations_dict.values():
         
         lat2, lon2 = station.latitude, station.longitude
-        #print(lat2, lon2)
         phi1, phi2 = math.radians(lat1), math.radians(lat2)
         dphi = math.radians(lat2 - lat1)
         dlambda = math.radians(lon2 - lon1)
@@ -55,7 +54,6 @@ async def read_nearest_station(coords: Coords):
         c = 2 * math.atan2(math.sqrt(a), math.sqrt(1 - a))
         
         distance = R * c # Distance in m
-        #print(distance)
         
         if distance < nearest_distance:
             nearest_station = station

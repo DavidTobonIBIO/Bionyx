@@ -6,22 +6,21 @@ import asyncio
 import random
 
 this_dir = os.path.dirname(__file__)
-parent_dir = os.path.dirname(this_dir)
-data_dir = os.path.join(parent_dir, "data")
-stations_path = os.path.join(data_dir, "tm_stations.geojson")
+data_dir = os.path.join(this_dir, "data")
+stations_path = os.path.join(data_dir, "Estaciones_Troncales_de_TRANSMILENIO.geojson")
+routes_path = os.path.join(data_dir, "Rutas_Troncales_de_TRANSMILENIO.geojson")
 
 
-class Bus(BaseModel):
-    id: int
-    route: str
-    destination: str
+class Route(BaseModel):
+    name: str = ""
+    destination: str = ""
 
 
 class Station(BaseModel):
     name: str
     latitude: float = 0.0
     longitude: float = 0.0
-    arrivingRoutes: list[Bus] = []
+    arrivingRoutes: list[Route] = []
 
 
 class Coords(BaseModel):
@@ -49,27 +48,39 @@ for feature in stations["features"]:
         name=station_name, latitude=latitud, longitude=longitud
     )
 
-
+del stations
 print(stations_dict.keys())
 
+with open(routes_path, encoding="utf-8") as f:
+    routes = json.load(f)
 
-ROUTES = ["D24", "6", "8", "1", "B75", "B13"]
-DESTINATIONS = [
-    "Portal 80",
-    "Portal 80",
-    "Portal Norte",
-    "Portal El Dorado",
-    "Portal Norte",
-]
+routes_dict = {}
+for feature in routes["features"]:
+    route_properties = feature["properties"]
+    # add route to routes_dict if it is operational
+    if route_properties["estado_ruta_troncal"] == "OPERATIVA":
+        route_name = route_properties["nombre_ruta_troncal"]
 
-buses = [
-    Bus(id=i, route=route, destination=destination)
-    for i, (route, destination) in enumerate(zip(ROUTES, DESTINATIONS))
-]
+        # obtener nombre de la ruta como lo conoce el usuario
+        route_name = route_name.split(" ")[0]
+        route_destination = route_properties["destino_ruta_troncal"]
+        route_destination = (
+            unicodedata.normalize("NFKD", route_destination)
+            .encode("ascii", "ignore")
+            .decode("ascii")
+        )
+        routes_dict[f"{route_name} {route_destination}"] = Route(
+            name=route_name, destination=route_destination
+        )
+
+del routes
+print(routes_dict.values())
 
 
-async def update_bus_locations():
+async def update_routes_locations():
     while True:
         for station in stations_dict.values():
-            station.arrivingRoutes = random.sample(buses, k=random.randint(0, 2))
+            station.arrivingRoutes = random.sample(
+                routes_dict.values(), k=random.randint(0, 2)
+            )
         await asyncio.sleep(5)  # update every 5 secs
