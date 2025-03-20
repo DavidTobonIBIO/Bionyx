@@ -7,7 +7,7 @@ import random
 
 
 class Route(BaseModel):
-    model_config = ConfigDict(extra="ignore")  # ignore extra fields
+    id: int
     name: str
     destination: str
 
@@ -52,7 +52,8 @@ del stations
 with open(routes_path, encoding="utf-8") as f:
     routes = json.load(f)
 
-routes_list = []
+routes_dict = {}
+id = 1
 for feature in routes["features"]:
     route_properties = feature["properties"]
     # add route to routes_dict if it is operational
@@ -67,18 +68,19 @@ for feature in routes["features"]:
             .encode("ascii", "ignore")
             .decode("ascii")
         )
-        routes_list.append(Route(name=route_name, destination=route_destination))
+        routes_dict[id] = Route(id=id, name=route_name, destination=route_destination)
+        id += 1
 
 del routes
 
-routes_list.sort(key=lambda route: route.name)
+routes_list = sorted(list(routes_dict.values()), key=lambda route: route.name)
 
 
 async def update_routes_locations():
     while True:
         for station in stations_dict.values():
             station.arrivingRoutes = station.arrivingRoutes = [
-                Route(name=r.name, destination=r.destination)
+                Route(id=r.id, name=r.name, destination=r.destination)
                 for r in random.sample(routes_list, k=random.randint(0, 4))
             ]
         await asyncio.sleep(5)  # update every 5 secs
