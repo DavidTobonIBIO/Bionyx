@@ -1,0 +1,3801 @@
+{
+    "routes": [
+        {
+            "legs": [
+                {
+                    "distanceMeters": 16700,
+                    "duration": "3930s",
+                    "staticDuration": "3930s",
+                    "polyline": {
+                        "encodedPolyline": "s|a[h}acMfC{EcE{AwDgAiAWuAc@tAyCcH}CP[t@\\@E@?y@_@oCnEeFdJk@|@cF|JeA~B{@~AuEzJg@|@eKaEeJ_EyPwG_CaAcIiDoDaBsDeAeDq@uDe@sCYwKsAsRmBsGu@gMoAmGq@e[}Cee@wEmI}@aBKkMwAaCQmQuB}AWcE{AoCmAqEmBuCa@uKiAsDW{YuC_Da@sCWe@AYDcBt@gC`ByCxBsGbFcKvHyFjEgCfC}E`Ew@v@s@~@gBxCuBzDaOzWcDdFeAnAkCrBaGjEaErCwJhHgOtKyBdBePpL{DvCgLlI_BrAyA|As@h@{@bA[j@e@`Ai@|@iCrFo@`BmAdDeC~FcAxBq@fBeAvBcCvFoA~BaAzAwDtFkBbCiB~BcEnFu@`Au@jAgBnE{C~IiA~Cm@bBmAzDqDnJqBvDq@`AuAfBkDjDi@g@uBcAaAc@OE{@c@c@IQBKR?VXxCLAGCFd@x@fAPJJAj@g@`@k@@Se@uAJELMPAPH|@l@b@^}FfGGCa@IOR@DBBUh@WGKG"
+                    },
+                    "startLocation": {
+                        "latLng": {
+                            "latitude": 4.6025008,
+                            "longitude": -74.0707706
+                        }
+                    },
+                    "endLocation": {
+                        "latLng": {
+                            "latitude": 4.7103693,
+                            "longitude": -74.112022
+                        }
+                    },
+                    "steps": [
+                        {
+                            "distanceMeters": 148,
+                            "staticDuration": "122s",
+                            "polyline": {
+                                "encodedPolyline": "s|a[h}acMfC{E"
+                            },
+                            "startLocation": {
+                                "latLng": {
+                                    "latitude": 4.6025008,
+                                    "longitude": -74.0707706
+                                }
+                            },
+                            "endLocation": {
+                                "latLng": {
+                                    "latitude": 4.601818,
+                                    "longitude": -74.06966729999999
+                                }
+                            },
+                            "navigationInstruction": {
+                                "maneuver": "DEPART",
+                                "instructions": "Dir\u00edgete al sureste por Cl. 17 hacia Cra. 4"
+                            },
+                            "localizedValues": {
+                                "distance": {
+                                    "text": "0,1 km"
+                                },
+                                "staticDuration": {
+                                    "text": "2 min"
+                                }
+                            },
+                            "travelMode": "WALK"
+                        },
+                        {
+                            "distanceMeters": 325,
+                            "staticDuration": "292s",
+                            "polyline": {
+                                "encodedPolyline": "kxa[lvacMcE{AwDgAiAWuAc@"
+                            },
+                            "startLocation": {
+                                "latLng": {
+                                    "latitude": 4.601818,
+                                    "longitude": -74.06966729999999
+                                }
+                            },
+                            "endLocation": {
+                                "latLng": {
+                                    "latitude": 4.6045155,
+                                    "longitude": -74.06855100000001
+                                }
+                            },
+                            "navigationInstruction": {
+                                "maneuver": "TURN_LEFT",
+                                "instructions": "Gira a la izquierda hacia Cra. 4"
+                            },
+                            "localizedValues": {
+                                "distance": {
+                                    "text": "0,3 km"
+                                },
+                                "staticDuration": {
+                                    "text": "5 min"
+                                }
+                            },
+                            "travelMode": "WALK"
+                        },
+                        {
+                            "distanceMeters": 97,
+                            "staticDuration": "89s",
+                            "polyline": {
+                                "encodedPolyline": "gib[loacMtAyC"
+                            },
+                            "startLocation": {
+                                "latLng": {
+                                    "latitude": 4.6045155,
+                                    "longitude": -74.06855100000001
+                                }
+                            },
+                            "endLocation": {
+                                "latLng": {
+                                    "latitude": 4.6040902,
+                                    "longitude": -74.0677815
+                                }
+                            },
+                            "navigationInstruction": {
+                                "maneuver": "TURN_RIGHT",
+                                "instructions": "Gira a la derecha hacia Cl. 20"
+                            },
+                            "localizedValues": {
+                                "distance": {
+                                    "text": "0,1 km"
+                                },
+                                "staticDuration": {
+                                    "text": "1 min"
+                                }
+                            },
+                            "travelMode": "WALK"
+                        },
+                        {
+                            "distanceMeters": 192,
+                            "staticDuration": "151s",
+                            "polyline": {
+                                "encodedPolyline": "qfb[rjacMcH}C"
+                            },
+                            "startLocation": {
+                                "latLng": {
+                                    "latitude": 4.6040902,
+                                    "longitude": -74.0677815
+                                }
+                            },
+                            "endLocation": {
+                                "latLng": {
+                                    "latitude": 4.6055512,
+                                    "longitude": -74.06698740000002
+                                }
+                            },
+                            "navigationInstruction": {
+                                "maneuver": "TURN_LEFT",
+                                "instructions": "Gira a la izquierda hacia Cra. 3"
+                            },
+                            "localizedValues": {
+                                "distance": {
+                                    "text": "0,2 km"
+                                },
+                                "staticDuration": {
+                                    "text": "3 min"
+                                }
+                            },
+                            "travelMode": "WALK"
+                        },
+                        {
+                            "distanceMeters": 18,
+                            "staticDuration": "27s",
+                            "polyline": {
+                                "encodedPolyline": "uob[teacMP["
+                            },
+                            "startLocation": {
+                                "latLng": {
+                                    "latitude": 4.6055512,
+                                    "longitude": -74.06698740000002
+                                }
+                            },
+                            "endLocation": {
+                                "latLng": {
+                                    "latitude": 4.605455,
+                                    "longitude": -74.0668547
+                                }
+                            },
+                            "navigationInstruction": {
+                                "maneuver": "TURN_RIGHT",
+                                "instructions": "Gira a la derecha hacia Cl 22"
+                            },
+                            "localizedValues": {
+                                "distance": {
+                                    "text": "18 m"
+                                },
+                                "staticDuration": {
+                                    "text": "1 min"
+                                }
+                            },
+                            "travelMode": "WALK"
+                        },
+                        {
+                            "distanceMeters": 37,
+                            "staticDuration": "30s",
+                            "polyline": {
+                                "encodedPolyline": "cob[xdacMt@\\"
+                            },
+                            "startLocation": {
+                                "latLng": {
+                                    "latitude": 4.605455,
+                                    "longitude": -74.0668547
+                                }
+                            },
+                            "endLocation": {
+                                "latLng": {
+                                    "latitude": 4.605191,
+                                    "longitude": -74.0669958
+                                }
+                            },
+                            "navigationInstruction": {
+                                "maneuver": "TURN_RIGHT",
+                                "instructions": "Gira a la derecha hacia Troncal Cl 26"
+                            },
+                            "localizedValues": {
+                                "distance": {
+                                    "text": "37 m"
+                                },
+                                "staticDuration": {
+                                    "text": "1 min"
+                                }
+                            },
+                            "travelMode": "WALK"
+                        },
+                        {
+                            "distanceMeters": 15255,
+                            "staticDuration": "2694s",
+                            "polyline": {
+                                "encodedPolyline": "kmb[peacM@?y@_@oCnEeFdJk@|@cF|JeA~B{@~AuEzJg@|@eKaEeJ_EyPwG_CaAcIiDoDaBsDeAeDq@uDe@sCYwKsAsRmBsGu@gMoAmGq@e[}Cee@wEmI}@aBKkMwAaCQmQuB}AWcE{AoCmAqEmBuCa@uKiAsDW{YuC_Da@sCWe@AYDcBt@gC`ByCxBsGbFcKvHyFjEgCfC}E`Ew@v@s@~@gBxCuBzDaOzWcDdFeAnAkCrBaGjEaErCwJhHgOtKyBdBePpL{DvCgLlI_BrAyA|As@h@{@bA[j@e@`Ai@|@iCrFo@`BmAdDeC~FcAxBq@fBeAvBcCvFoA~BaAzAwDtFkBbCiB~BcEnFu@`Au@jAgBnE{C~IiA~Cm@bBmAzDqDnJqBvDq@`AuAfBkDjDi@g@uBcAaAc@OE{@c@c@IQBKR?VXxCLA"
+                            },
+                            "startLocation": {
+                                "latLng": {
+                                    "latitude": 4.6051763,
+                                    "longitude": -74.0669743
+                                }
+                            },
+                            "endLocation": {
+                                "latLng": {
+                                    "latitude": 4.710000000000001,
+                                    "longitude": -74.11053
+                                }
+                            },
+                            "navigationInstruction": {
+                                "instructions": "Autob\u00fas en direcci\u00f3n a Portal 80"
+                            },
+                            "localizedValues": {
+                                "distance": {
+                                    "text": "15,3 km"
+                                },
+                                "staticDuration": {
+                                    "text": "45 min"
+                                }
+                            },
+                            "transitDetails": {
+                                "stopDetails": {
+                                    "arrivalStop": {
+                                        "name": "Portal 80",
+                                        "location": {
+                                            "latLng": {
+                                                "latitude": 4.710000000000001,
+                                                "longitude": -74.11053
+                                            }
+                                        }
+                                    },
+                                    "arrivalTime": "2025-03-21T15:12:54Z",
+                                    "departureStop": {
+                                        "name": "Universidades",
+                                        "location": {
+                                            "latLng": {
+                                                "latitude": 4.6051763,
+                                                "longitude": -74.0669743
+                                            }
+                                        }
+                                    },
+                                    "departureTime": "2025-03-21T14:28:00Z"
+                                },
+                                "localizedValues": {
+                                    "arrivalTime": {
+                                        "time": {
+                                            "text": "10:12"
+                                        },
+                                        "timeZone": "America/Bogota"
+                                    },
+                                    "departureTime": {
+                                        "time": {
+                                            "text": "9:28"
+                                        },
+                                        "timeZone": "America/Bogota"
+                                    }
+                                },
+                                "headsign": "Portal 80",
+                                "transitLine": {
+                                    "agencies": [
+                                        {
+                                            "name": "Transmilenio-Troncal",
+                                            "phoneNumber": "+57 601 4824304",
+                                            "uri": "https://www.transmilenio.gov.co/"
+                                        }
+                                    ],
+                                    "name": "Portal 80",
+                                    "color": "#7a68ae",
+                                    "nameShort": "D24",
+                                    "textColor": "#ffffff",
+                                    "vehicle": {
+                                        "name": {
+                                            "text": "Autob\u00fas"
+                                        },
+                                        "type": "BUS",
+                                        "iconUri": "//maps.gstatic.com/mapfiles/transit/iw2/6/bus2.png"
+                                    }
+                                },
+                                "stopCount": 12
+                            },
+                            "travelMode": "TRANSIT"
+                        },
+                        {
+                            "distanceMeters": 218,
+                            "staticDuration": "181s",
+                            "polyline": {
+                                "encodedPolyline": "w|v[tuicMFd@x@fAPJJAj@g@`@k@@Se@uA"
+                            },
+                            "startLocation": {
+                                "latLng": {
+                                    "latitude": 4.710038000000001,
+                                    "longitude": -74.1105082
+                                }
+                            },
+                            "endLocation": {
+                                "latLng": {
+                                    "latitude": 4.7093541,
+                                    "longitude": -74.11015619999999
+                                }
+                            },
+                            "navigationInstruction": {
+                                "maneuver": "DEPART",
+                                "instructions": "Dir\u00edgete al oeste por V\u00edas Portal 80"
+                            },
+                            "localizedValues": {
+                                "distance": {
+                                    "text": "0,2 km"
+                                },
+                                "staticDuration": {
+                                    "text": "3 min"
+                                }
+                            },
+                            "travelMode": "WALK"
+                        },
+                        {
+                            "distanceMeters": 111,
+                            "staticDuration": "92s",
+                            "polyline": {
+                                "encodedPolyline": "mxv[nsicMJELMPAPH|@l@b@^"
+                            },
+                            "startLocation": {
+                                "latLng": {
+                                    "latitude": 4.7093541,
+                                    "longitude": -74.11015619999999
+                                }
+                            },
+                            "endLocation": {
+                                "latLng": {
+                                    "latitude": 4.7085473,
+                                    "longitude": -74.1104907
+                                }
+                            },
+                            "navigationInstruction": {
+                                "maneuver": "TURN_RIGHT",
+                                "instructions": "Gira a la derecha para continuar en V\u00edas Portal 80"
+                            },
+                            "localizedValues": {
+                                "distance": {
+                                    "text": "0,1 km"
+                                },
+                                "staticDuration": {
+                                    "text": "2 min"
+                                }
+                            },
+                            "travelMode": "WALK"
+                        },
+                        {
+                            "distanceMeters": 199,
+                            "staticDuration": "160s",
+                            "polyline": {
+                                "encodedPolyline": "msv[puicM}FfG"
+                            },
+                            "startLocation": {
+                                "latLng": {
+                                    "latitude": 4.7085473,
+                                    "longitude": -74.1104907
+                                }
+                            },
+                            "endLocation": {
+                                "latLng": {
+                                    "latitude": 4.709823999999999,
+                                    "longitude": -74.1118114
+                                }
+                            },
+                            "navigationInstruction": {
+                                "maneuver": "TURN_RIGHT",
+                                "instructions": "Gira a la derecha hacia Av Cl 80"
+                            },
+                            "localizedValues": {
+                                "distance": {
+                                    "text": "0,2 km"
+                                },
+                                "staticDuration": {
+                                    "text": "3 min"
+                                }
+                            },
+                            "travelMode": "WALK"
+                        },
+                        {
+                            "distanceMeters": 9,
+                            "staticDuration": "8s",
+                            "polyline": {
+                                "encodedPolyline": "k{v[x}icMGC"
+                            },
+                            "startLocation": {
+                                "latLng": {
+                                    "latitude": 4.709823999999999,
+                                    "longitude": -74.1118114
+                                }
+                            },
+                            "endLocation": {
+                                "latLng": {
+                                    "latitude": 4.7098638,
+                                    "longitude": -74.1117922
+                                }
+                            },
+                            "navigationInstruction": {
+                                "maneuver": "TURN_RIGHT",
+                                "instructions": "Gira a la derecha"
+                            },
+                            "localizedValues": {
+                                "distance": {
+                                    "text": "9 m"
+                                },
+                                "staticDuration": {
+                                    "text": "1 min"
+                                }
+                            },
+                            "travelMode": "WALK"
+                        },
+                        {
+                            "distanceMeters": 42,
+                            "staticDuration": "50s",
+                            "polyline": {
+                                "encodedPolyline": "s{v[t}icMa@IOR@DBB"
+                            },
+                            "startLocation": {
+                                "latLng": {
+                                    "latitude": 4.7098638,
+                                    "longitude": -74.1117922
+                                }
+                            },
+                            "endLocation": {
+                                "latLng": {
+                                    "latitude": 4.7100751999999995,
+                                    "longitude": -74.11188709999999
+                                }
+                            },
+                            "navigationInstruction": {
+                                "maneuver": "TURN_SLIGHT_LEFT",
+                                "instructions": "Gira ligeramente a la izquierda\nToma las escaleras"
+                            },
+                            "localizedValues": {
+                                "distance": {
+                                    "text": "42 m"
+                                },
+                                "staticDuration": {
+                                    "text": "1 min"
+                                }
+                            },
+                            "travelMode": "WALK"
+                        },
+                        {
+                            "distanceMeters": 49,
+                            "staticDuration": "34s",
+                            "polyline": {
+                                "encodedPolyline": "_}v[h~icMUh@WGKG"
+                            },
+                            "startLocation": {
+                                "latLng": {
+                                    "latitude": 4.7100751999999995,
+                                    "longitude": -74.11188709999999
+                                }
+                            },
+                            "endLocation": {
+                                "latLng": {
+                                    "latitude": 4.7103693,
+                                    "longitude": -74.112022
+                                }
+                            },
+                            "navigationInstruction": {
+                                "maneuver": "TURN_SLIGHT_RIGHT",
+                                "instructions": "Gira ligeramente a la derecha"
+                            },
+                            "localizedValues": {
+                                "distance": {
+                                    "text": "49 m"
+                                },
+                                "staticDuration": {
+                                    "text": "1 min"
+                                }
+                            },
+                            "travelMode": "WALK"
+                        }
+                    ],
+                    "localizedValues": {
+                        "distance": {
+                            "text": "16,7 km"
+                        },
+                        "duration": {
+                            "text": "1h 6 min"
+                        },
+                        "staticDuration": {
+                            "text": "1h 6 min"
+                        }
+                    },
+                    "stepsOverview": {
+                        "multiModalSegments": [
+                            {
+                                "stepStartIndex": 0,
+                                "stepEndIndex": 5,
+                                "navigationInstruction": {
+                                    "instructions": "Camina hasta Universidades"
+                                },
+                                "travelMode": "WALK"
+                            },
+                            {
+                                "stepStartIndex": 6,
+                                "stepEndIndex": 6,
+                                "navigationInstruction": {
+                                    "instructions": "Autob\u00fas en direcci\u00f3n a Portal 80"
+                                },
+                                "travelMode": "TRANSIT"
+                            },
+                            {
+                                "stepStartIndex": 7,
+                                "stepEndIndex": 12,
+                                "travelMode": "WALK"
+                            }
+                        ]
+                    }
+                }
+            ],
+            "distanceMeters": 16700,
+            "duration": "3930s"
+        },
+        {
+            "legs": [
+                {
+                    "distanceMeters": 16048,
+                    "duration": "4264s",
+                    "staticDuration": "4264s",
+                    "polyline": {
+                        "encodedPolyline": "s|a[h}acMfC{EcE{AwDgAiAWuAc@tAyCcH}CP[t@\\@E@?y@_@oCnEeFdJk@|@cF|JeA~B{@~AuEzJg@|@eKaEeJ_EyPwG_CaAcIiDoDaBsDeAeDq@uDe@sCYwKsAsRmBsGu@gMoAmGq@e[}Cee@wEmI}@aBKkMwAaCQmQuB}AWcE{AoCmAqEmBuCa@uKiAsDW{YuC_Da@sCWe@AYDcBt@gC`ByCxBsGbFcKvHyFjEgCfC}E`Ew@v@s@~@gBxCuBzDaOzWcDdFeAnAkCrBaGjEaErCwJhHgOtKyBdBePpLeE~C}KdI_BrAyA|As@h@{@bA[j@e@`Ai@|@iCrFo@`BmAdDeC~FcAxBq@fBeAvBcCvFoA~BaAzAwDtFkBbCiB~BcEnFu@`Au@jAgBnE{C~IiA~Cm@bBmAzDqDnJqBvDOXDB{AnBY[o@n@gLvLGCa@IOR@DBBUh@WGKG"
+                    },
+                    "startLocation": {
+                        "latLng": {
+                            "latitude": 4.6025008,
+                            "longitude": -74.0707706
+                        }
+                    },
+                    "endLocation": {
+                        "latLng": {
+                            "latitude": 4.7103693,
+                            "longitude": -74.112022
+                        }
+                    },
+                    "steps": [
+                        {
+                            "distanceMeters": 148,
+                            "staticDuration": "122s",
+                            "polyline": {
+                                "encodedPolyline": "s|a[h}acMfC{E"
+                            },
+                            "startLocation": {
+                                "latLng": {
+                                    "latitude": 4.6025008,
+                                    "longitude": -74.0707706
+                                }
+                            },
+                            "endLocation": {
+                                "latLng": {
+                                    "latitude": 4.601818,
+                                    "longitude": -74.06966729999999
+                                }
+                            },
+                            "navigationInstruction": {
+                                "maneuver": "DEPART",
+                                "instructions": "Dir\u00edgete al sureste por Cl. 17 hacia Cra. 4"
+                            },
+                            "localizedValues": {
+                                "distance": {
+                                    "text": "0,1 km"
+                                },
+                                "staticDuration": {
+                                    "text": "2 min"
+                                }
+                            },
+                            "travelMode": "WALK"
+                        },
+                        {
+                            "distanceMeters": 325,
+                            "staticDuration": "292s",
+                            "polyline": {
+                                "encodedPolyline": "kxa[lvacMcE{AwDgAiAWuAc@"
+                            },
+                            "startLocation": {
+                                "latLng": {
+                                    "latitude": 4.601818,
+                                    "longitude": -74.06966729999999
+                                }
+                            },
+                            "endLocation": {
+                                "latLng": {
+                                    "latitude": 4.6045155,
+                                    "longitude": -74.06855100000001
+                                }
+                            },
+                            "navigationInstruction": {
+                                "maneuver": "TURN_LEFT",
+                                "instructions": "Gira a la izquierda hacia Cra. 4"
+                            },
+                            "localizedValues": {
+                                "distance": {
+                                    "text": "0,3 km"
+                                },
+                                "staticDuration": {
+                                    "text": "5 min"
+                                }
+                            },
+                            "travelMode": "WALK"
+                        },
+                        {
+                            "distanceMeters": 97,
+                            "staticDuration": "89s",
+                            "polyline": {
+                                "encodedPolyline": "gib[loacMtAyC"
+                            },
+                            "startLocation": {
+                                "latLng": {
+                                    "latitude": 4.6045155,
+                                    "longitude": -74.06855100000001
+                                }
+                            },
+                            "endLocation": {
+                                "latLng": {
+                                    "latitude": 4.6040902,
+                                    "longitude": -74.0677815
+                                }
+                            },
+                            "navigationInstruction": {
+                                "maneuver": "TURN_RIGHT",
+                                "instructions": "Gira a la derecha hacia Cl. 20"
+                            },
+                            "localizedValues": {
+                                "distance": {
+                                    "text": "0,1 km"
+                                },
+                                "staticDuration": {
+                                    "text": "1 min"
+                                }
+                            },
+                            "travelMode": "WALK"
+                        },
+                        {
+                            "distanceMeters": 192,
+                            "staticDuration": "151s",
+                            "polyline": {
+                                "encodedPolyline": "qfb[rjacMcH}C"
+                            },
+                            "startLocation": {
+                                "latLng": {
+                                    "latitude": 4.6040902,
+                                    "longitude": -74.0677815
+                                }
+                            },
+                            "endLocation": {
+                                "latLng": {
+                                    "latitude": 4.6055512,
+                                    "longitude": -74.06698740000002
+                                }
+                            },
+                            "navigationInstruction": {
+                                "maneuver": "TURN_LEFT",
+                                "instructions": "Gira a la izquierda hacia Cra. 3"
+                            },
+                            "localizedValues": {
+                                "distance": {
+                                    "text": "0,2 km"
+                                },
+                                "staticDuration": {
+                                    "text": "3 min"
+                                }
+                            },
+                            "travelMode": "WALK"
+                        },
+                        {
+                            "distanceMeters": 18,
+                            "staticDuration": "27s",
+                            "polyline": {
+                                "encodedPolyline": "uob[teacMP["
+                            },
+                            "startLocation": {
+                                "latLng": {
+                                    "latitude": 4.6055512,
+                                    "longitude": -74.06698740000002
+                                }
+                            },
+                            "endLocation": {
+                                "latLng": {
+                                    "latitude": 4.605455,
+                                    "longitude": -74.0668547
+                                }
+                            },
+                            "navigationInstruction": {
+                                "maneuver": "TURN_RIGHT",
+                                "instructions": "Gira a la derecha hacia Cl 22"
+                            },
+                            "localizedValues": {
+                                "distance": {
+                                    "text": "18 m"
+                                },
+                                "staticDuration": {
+                                    "text": "1 min"
+                                }
+                            },
+                            "travelMode": "WALK"
+                        },
+                        {
+                            "distanceMeters": 37,
+                            "staticDuration": "30s",
+                            "polyline": {
+                                "encodedPolyline": "cob[xdacMt@\\"
+                            },
+                            "startLocation": {
+                                "latLng": {
+                                    "latitude": 4.605455,
+                                    "longitude": -74.0668547
+                                }
+                            },
+                            "endLocation": {
+                                "latLng": {
+                                    "latitude": 4.605191,
+                                    "longitude": -74.0669958
+                                }
+                            },
+                            "navigationInstruction": {
+                                "maneuver": "TURN_RIGHT",
+                                "instructions": "Gira a la derecha hacia Troncal Cl 26"
+                            },
+                            "localizedValues": {
+                                "distance": {
+                                    "text": "37 m"
+                                },
+                                "staticDuration": {
+                                    "text": "1 min"
+                                }
+                            },
+                            "travelMode": "WALK"
+                        },
+                        {
+                            "distanceMeters": 14666,
+                            "staticDuration": "3044s",
+                            "polyline": {
+                                "encodedPolyline": "kmb[peacM@?y@_@oCnEeFdJk@|@cF|JeA~B{@~AuEzJg@|@eKaEeJ_EyPwG_CaAcIiDoDaBsDeAeDq@uDe@sCYwKsAsRmBsGu@gMoAmGq@e[}Cee@wEmI}@aBKkMwAaCQmQuB}AWcE{AoCmAqEmBuCa@uKiAsDW{YuC_Da@sCWe@AYDcBt@gC`ByCxBsGbFcKvHyFjEgCfC}E`Ew@v@s@~@gBxCuBzDaOzWcDdFeAnAkCrBaGjEaErCwJhHgOtKyBdBePpLeE~C}KdI_BrAyA|As@h@{@bA[j@e@`Ai@|@iCrFo@`BmAdDeC~FcAxBq@fBeAvBcCvFoA~BaAzAwDtFkBbCiB~BcEnFu@`Au@jAgBnE{C~IiA~Cm@bBmAzDqDnJqBvDOX"
+                            },
+                            "startLocation": {
+                                "latLng": {
+                                    "latitude": 4.6051763,
+                                    "longitude": -74.0669743
+                                }
+                            },
+                            "endLocation": {
+                                "latLng": {
+                                    "latitude": 4.7069029,
+                                    "longitude": -74.10892609999999
+                                }
+                            },
+                            "navigationInstruction": {
+                                "instructions": "Autob\u00fas en direcci\u00f3n a Portal 80"
+                            },
+                            "localizedValues": {
+                                "distance": {
+                                    "text": "14,7 km"
+                                },
+                                "staticDuration": {
+                                    "text": "51 min"
+                                }
+                            },
+                            "transitDetails": {
+                                "stopDetails": {
+                                    "arrivalStop": {
+                                        "name": "Quirigua",
+                                        "location": {
+                                            "latLng": {
+                                                "latitude": 4.7069029,
+                                                "longitude": -74.10892609999999
+                                            }
+                                        }
+                                    },
+                                    "arrivalTime": "2025-03-21T15:14:44Z",
+                                    "departureStop": {
+                                        "name": "Universidades",
+                                        "location": {
+                                            "latLng": {
+                                                "latitude": 4.6051763,
+                                                "longitude": -74.0669743
+                                            }
+                                        }
+                                    },
+                                    "departureTime": "2025-03-21T14:24:00Z"
+                                },
+                                "localizedValues": {
+                                    "arrivalTime": {
+                                        "time": {
+                                            "text": "10:14"
+                                        },
+                                        "timeZone": "America/Bogota"
+                                    },
+                                    "departureTime": {
+                                        "time": {
+                                            "text": "9:24"
+                                        },
+                                        "timeZone": "America/Bogota"
+                                    }
+                                },
+                                "headsign": "Portal 80",
+                                "transitLine": {
+                                    "agencies": [
+                                        {
+                                            "name": "Transmilenio-Troncal",
+                                            "phoneNumber": "+57 601 4824304",
+                                            "uri": "https://www.transmilenio.gov.co/"
+                                        }
+                                    ],
+                                    "name": "Portal 80",
+                                    "color": "#000000",
+                                    "nameShort": "6",
+                                    "textColor": "#ffffff",
+                                    "vehicle": {
+                                        "name": {
+                                            "text": "Autob\u00fas"
+                                        },
+                                        "type": "BUS",
+                                        "iconUri": "//maps.gstatic.com/mapfiles/transit/iw2/6/bus2.png"
+                                    }
+                                },
+                                "stopCount": 19
+                            },
+                            "travelMode": "TRANSIT"
+                        },
+                        {
+                            "distanceMeters": 75,
+                            "staticDuration": "59s",
+                            "polyline": {
+                                "encodedPolyline": "}hv[|kicM{AnB"
+                            },
+                            "startLocation": {
+                                "latLng": {
+                                    "latitude": 4.7068728,
+                                    "longitude": -74.10894870000001
+                                }
+                            },
+                            "endLocation": {
+                                "latLng": {
+                                    "latitude": 4.707326,
+                                    "longitude": -74.1095058
+                                }
+                            },
+                            "navigationInstruction": {
+                                "maneuver": "DEPART",
+                                "instructions": "Dir\u00edgete al noroeste por Cl 80 hacia Ak. 96/Tv. 94 L"
+                            },
+                            "localizedValues": {
+                                "distance": {
+                                    "text": "75 m"
+                                },
+                                "staticDuration": {
+                                    "text": "1 min"
+                                }
+                            },
+                            "travelMode": "WALK"
+                        },
+                        {
+                            "distanceMeters": 11,
+                            "staticDuration": "21s",
+                            "polyline": {
+                                "encodedPolyline": "ykv[loicMY["
+                            },
+                            "startLocation": {
+                                "latLng": {
+                                    "latitude": 4.707326,
+                                    "longitude": -74.1095058
+                                }
+                            },
+                            "endLocation": {
+                                "latLng": {
+                                    "latitude": 4.7074601,
+                                    "longitude": -74.10937489999999
+                                }
+                            },
+                            "navigationInstruction": {
+                                "maneuver": "TURN_RIGHT",
+                                "instructions": "Gira a la derecha hacia Ak. 96/Tv. 94 L"
+                            },
+                            "localizedValues": {
+                                "distance": {
+                                    "text": "11 m"
+                                },
+                                "staticDuration": {
+                                    "text": "1 min"
+                                }
+                            },
+                            "travelMode": "WALK"
+                        },
+                        {
+                            "distanceMeters": 379,
+                            "staticDuration": "337s",
+                            "polyline": {
+                                "encodedPolyline": "slv[pnicMo@n@gLvL"
+                            },
+                            "startLocation": {
+                                "latLng": {
+                                    "latitude": 4.7074601,
+                                    "longitude": -74.10937489999999
+                                }
+                            },
+                            "endLocation": {
+                                "latLng": {
+                                    "latitude": 4.709823999999999,
+                                    "longitude": -74.1118114
+                                }
+                            },
+                            "navigationInstruction": {
+                                "maneuver": "TURN_LEFT",
+                                "instructions": "Gira a la izquierda hacia Av Cl 80"
+                            },
+                            "localizedValues": {
+                                "distance": {
+                                    "text": "0,4 km"
+                                },
+                                "staticDuration": {
+                                    "text": "6 min"
+                                }
+                            },
+                            "travelMode": "WALK"
+                        },
+                        {
+                            "distanceMeters": 9,
+                            "staticDuration": "8s",
+                            "polyline": {
+                                "encodedPolyline": "k{v[x}icMGC"
+                            },
+                            "startLocation": {
+                                "latLng": {
+                                    "latitude": 4.709823999999999,
+                                    "longitude": -74.1118114
+                                }
+                            },
+                            "endLocation": {
+                                "latLng": {
+                                    "latitude": 4.7098638,
+                                    "longitude": -74.1117922
+                                }
+                            },
+                            "navigationInstruction": {
+                                "maneuver": "TURN_RIGHT",
+                                "instructions": "Gira a la derecha"
+                            },
+                            "localizedValues": {
+                                "distance": {
+                                    "text": "9 m"
+                                },
+                                "staticDuration": {
+                                    "text": "1 min"
+                                }
+                            },
+                            "travelMode": "WALK"
+                        },
+                        {
+                            "distanceMeters": 42,
+                            "staticDuration": "50s",
+                            "polyline": {
+                                "encodedPolyline": "s{v[t}icMa@IOR@DBB"
+                            },
+                            "startLocation": {
+                                "latLng": {
+                                    "latitude": 4.7098638,
+                                    "longitude": -74.1117922
+                                }
+                            },
+                            "endLocation": {
+                                "latLng": {
+                                    "latitude": 4.7100751999999995,
+                                    "longitude": -74.11188709999999
+                                }
+                            },
+                            "navigationInstruction": {
+                                "maneuver": "TURN_SLIGHT_LEFT",
+                                "instructions": "Gira ligeramente a la izquierda\nToma las escaleras"
+                            },
+                            "localizedValues": {
+                                "distance": {
+                                    "text": "42 m"
+                                },
+                                "staticDuration": {
+                                    "text": "1 min"
+                                }
+                            },
+                            "travelMode": "WALK"
+                        },
+                        {
+                            "distanceMeters": 49,
+                            "staticDuration": "34s",
+                            "polyline": {
+                                "encodedPolyline": "_}v[h~icMUh@WGKG"
+                            },
+                            "startLocation": {
+                                "latLng": {
+                                    "latitude": 4.7100751999999995,
+                                    "longitude": -74.11188709999999
+                                }
+                            },
+                            "endLocation": {
+                                "latLng": {
+                                    "latitude": 4.7103693,
+                                    "longitude": -74.112022
+                                }
+                            },
+                            "navigationInstruction": {
+                                "maneuver": "TURN_SLIGHT_RIGHT",
+                                "instructions": "Gira ligeramente a la derecha"
+                            },
+                            "localizedValues": {
+                                "distance": {
+                                    "text": "49 m"
+                                },
+                                "staticDuration": {
+                                    "text": "1 min"
+                                }
+                            },
+                            "travelMode": "WALK"
+                        }
+                    ],
+                    "localizedValues": {
+                        "distance": {
+                            "text": "16,0 km"
+                        },
+                        "duration": {
+                            "text": "1h 11 min"
+                        },
+                        "staticDuration": {
+                            "text": "1h 11 min"
+                        }
+                    },
+                    "stepsOverview": {
+                        "multiModalSegments": [
+                            {
+                                "stepStartIndex": 0,
+                                "stepEndIndex": 5,
+                                "navigationInstruction": {
+                                    "instructions": "Camina hasta Universidades"
+                                },
+                                "travelMode": "WALK"
+                            },
+                            {
+                                "stepStartIndex": 6,
+                                "stepEndIndex": 6,
+                                "navigationInstruction": {
+                                    "instructions": "Autob\u00fas en direcci\u00f3n a Portal 80"
+                                },
+                                "travelMode": "TRANSIT"
+                            },
+                            {
+                                "stepStartIndex": 7,
+                                "stepEndIndex": 12,
+                                "travelMode": "WALK"
+                            }
+                        ]
+                    }
+                }
+            ],
+            "distanceMeters": 16048,
+            "duration": "4264s"
+        },
+        {
+            "legs": [
+                {
+                    "distanceMeters": 15784,
+                    "duration": "4092s",
+                    "staticDuration": "4092s",
+                    "polyline": {
+                        "encodedPolyline": "s|a[h}acM[l@]MwIoCoAzBKGRDmBbDcCrE{@vAiCtDaCdDIIDBuAlBeBjCb@TfFfDMPkFiDaEoBqEkBeKaEeJ_EyPwG_CaAcIiDoDaBsDeAeDq@uDe@sCYwKsAsRmBsGu@gMoAmGq@e[}Cee@wEmI}@aBKkMwAaCQmQuB}AWcE{AoCmAqEmBuCa@uKiAsDW{YuC_Da@sCWe@AYDcBt@gC`ByCxBsGbFcKvHyFjEgCfC}E`Ew@v@s@~@gBxCuBzDaOzWcDdFeAnAkCrBaGjEaErCwJhHgOtKyBdBePpLeE~C}KdI_BrAyA|As@h@{@bA[j@e@`Ai@|@iCrFo@`BmAdDeC~FcAxBq@fBeAvBcCvFoA~BaAzAwDtFkBbCiB~BcEnFu@`Au@jAgBnE{C~IiA~Cm@bBmAzDqDnJqBvDOXDB{AnBY[o@n@gLvLGCa@IOR@DBBUh@WGKG"
+                    },
+                    "startLocation": {
+                        "latLng": {
+                            "latitude": 4.6025008,
+                            "longitude": -74.0707706
+                        }
+                    },
+                    "endLocation": {
+                        "latLng": {
+                            "latitude": 4.7103693,
+                            "longitude": -74.112022
+                        }
+                    },
+                    "steps": [
+                        {
+                            "distanceMeters": 26,
+                            "staticDuration": "20s",
+                            "polyline": {
+                                "encodedPolyline": "s|a[h}acM[l@"
+                            },
+                            "startLocation": {
+                                "latLng": {
+                                    "latitude": 4.6025008,
+                                    "longitude": -74.0707706
+                                }
+                            },
+                            "endLocation": {
+                                "latLng": {
+                                    "latitude": 4.602642599999999,
+                                    "longitude": -74.0710023
+                                }
+                            },
+                            "navigationInstruction": {
+                                "maneuver": "DEPART",
+                                "instructions": "Dir\u00edgete al noroeste por Cl. 17 hacia Cra. 5"
+                            },
+                            "localizedValues": {
+                                "distance": {
+                                    "text": "26 m"
+                                },
+                                "staticDuration": {
+                                    "text": "1 min"
+                                }
+                            },
+                            "travelMode": "WALK"
+                        },
+                        {
+                            "distanceMeters": 225,
+                            "staticDuration": "196s",
+                            "polyline": {
+                                "encodedPolyline": "o}a[v~acM]MwIoC"
+                            },
+                            "startLocation": {
+                                "latLng": {
+                                    "latitude": 4.602642599999999,
+                                    "longitude": -74.0710023
+                                }
+                            },
+                            "endLocation": {
+                                "latLng": {
+                                    "latitude": 4.6045067,
+                                    "longitude": -74.07021430000002
+                                }
+                            },
+                            "navigationInstruction": {
+                                "maneuver": "TURN_RIGHT",
+                                "instructions": "Gira a la derecha hacia Cra. 5"
+                            },
+                            "localizedValues": {
+                                "distance": {
+                                    "text": "0,2 km"
+                                },
+                                "staticDuration": {
+                                    "text": "3 min"
+                                }
+                            },
+                            "travelMode": "WALK"
+                        },
+                        {
+                            "distanceMeters": 87,
+                            "staticDuration": "74s",
+                            "polyline": {
+                                "encodedPolyline": "eib[xyacMoAzB"
+                            },
+                            "startLocation": {
+                                "latLng": {
+                                    "latitude": 4.6045067,
+                                    "longitude": -74.07021430000002
+                                }
+                            },
+                            "endLocation": {
+                                "latLng": {
+                                    "latitude": 4.6049142,
+                                    "longitude": -74.0708282
+                                }
+                            },
+                            "navigationInstruction": {
+                                "maneuver": "TURN_LEFT",
+                                "instructions": "Gira a la izquierda hacia Av. Ciudad de Lima\nEl destino est\u00e1 a la derecha."
+                            },
+                            "localizedValues": {
+                                "distance": {
+                                    "text": "87 m"
+                                },
+                                "staticDuration": {
+                                    "text": "1 min"
+                                }
+                            },
+                            "travelMode": "WALK"
+                        },
+                        {
+                            "distanceMeters": 570,
+                            "staticDuration": "137s",
+                            "polyline": {
+                                "encodedPolyline": "alb[l}acMRDmBbDcCrE{@vAiCtDaCdDII"
+                            },
+                            "startLocation": {
+                                "latLng": {
+                                    "latitude": 4.60497,
+                                    "longitude": -74.07079
+                                }
+                            },
+                            "endLocation": {
+                                "latLng": {
+                                    "latitude": 4.6077736,
+                                    "longitude": -74.0748316
+                                }
+                            },
+                            "navigationInstruction": {
+                                "instructions": "Autob\u00fas en direcci\u00f3n a CL 68B Sur - KR 62 Br. Rincon de Venecia II"
+                            },
+                            "localizedValues": {
+                                "distance": {
+                                    "text": "0,6 km"
+                                },
+                                "staticDuration": {
+                                    "text": "2 min"
+                                }
+                            },
+                            "transitDetails": {
+                                "stopDetails": {
+                                    "arrivalStop": {
+                                        "name": "AC 19 - AK 13",
+                                        "location": {
+                                            "latLng": {
+                                                "latitude": 4.6077736,
+                                                "longitude": -74.0748316
+                                            }
+                                        }
+                                    },
+                                    "arrivalTime": "2025-03-21T14:20:17Z",
+                                    "departureStop": {
+                                        "name": "AC 19 - Kr 7",
+                                        "location": {
+                                            "latLng": {
+                                                "latitude": 4.60497,
+                                                "longitude": -74.07079
+                                            }
+                                        }
+                                    },
+                                    "departureTime": "2025-03-21T14:18:00Z"
+                                },
+                                "localizedValues": {
+                                    "arrivalTime": {
+                                        "time": {
+                                            "text": "9:20"
+                                        },
+                                        "timeZone": "America/Bogota"
+                                    },
+                                    "departureTime": {
+                                        "time": {
+                                            "text": "9:18"
+                                        },
+                                        "timeZone": "America/Bogota"
+                                    }
+                                },
+                                "headsign": "CL 68B Sur - KR 62 Br. Rincon de Venecia II",
+                                "transitLine": {
+                                    "agencies": [
+                                        {
+                                            "name": "TRANSMILENIO-URBANA",
+                                            "phoneNumber": "+57 601 4824304",
+                                            "uri": "https://www.transmilenio.gov.co/"
+                                        }
+                                    ],
+                                    "name": "Rincon De Venecia",
+                                    "color": "#00618e",
+                                    "nameShort": "97",
+                                    "textColor": "#ffffff",
+                                    "vehicle": {
+                                        "name": {
+                                            "text": "Autob\u00fas"
+                                        },
+                                        "type": "BUS",
+                                        "iconUri": "//maps.gstatic.com/mapfiles/transit/iw2/6/bus2.png"
+                                    }
+                                },
+                                "stopCount": 3
+                            },
+                            "travelMode": "TRANSIT"
+                        },
+                        {
+                            "distanceMeters": 178,
+                            "staticDuration": "134s",
+                            "polyline": {
+                                "encodedPolyline": "k}b[xvbcMuAlBeBjC"
+                            },
+                            "startLocation": {
+                                "latLng": {
+                                    "latitude": 4.607743699999999,
+                                    "longitude": -74.07485330000002
+                                }
+                            },
+                            "endLocation": {
+                                "latLng": {
+                                    "latitude": 4.6086843,
+                                    "longitude": -74.0761016
+                                }
+                            },
+                            "navigationInstruction": {
+                                "maneuver": "DEPART",
+                                "instructions": "Dir\u00edgete al noroeste por Av. Ciudad de Lima hacia Kr 13"
+                            },
+                            "localizedValues": {
+                                "distance": {
+                                    "text": "0,2 km"
+                                },
+                                "staticDuration": {
+                                    "text": "2 min"
+                                }
+                            },
+                            "travelMode": "WALK"
+                        },
+                        {
+                            "distanceMeters": 179,
+                            "staticDuration": "165s",
+                            "polyline": {
+                                "encodedPolyline": "gcc[r~bcMb@TfFfD"
+                            },
+                            "startLocation": {
+                                "latLng": {
+                                    "latitude": 4.6086843,
+                                    "longitude": -74.0761016
+                                }
+                            },
+                            "endLocation": {
+                                "latLng": {
+                                    "latitude": 4.6073384,
+                                    "longitude": -74.0770457
+                                }
+                            },
+                            "navigationInstruction": {
+                                "maneuver": "TURN_LEFT",
+                                "instructions": "Gira a la izquierda hacia Av. Caracas\nEl destino est\u00e1 a la derecha."
+                            },
+                            "localizedValues": {
+                                "distance": {
+                                    "text": "0,2 km"
+                                },
+                                "staticDuration": {
+                                    "text": "3 min"
+                                }
+                            },
+                            "travelMode": "WALK"
+                        },
+                        {
+                            "distanceMeters": 13954,
+                            "staticDuration": "2629s",
+                            "polyline": {
+                                "encodedPolyline": "i{b[beccMkFiDaEoBqEkBeKaEeJ_EyPwG_CaAcIiDoDaBsDeAeDq@uDe@sCYwKsAsRmBsGu@gMoAmGq@e[}Cee@wEmI}@aBKkMwAaCQmQuB}AWcE{AoCmAqEmBuCa@uKiAsDW{YuC_Da@sCWe@AYDcBt@gC`ByCxBsGbFcKvHyFjEgCfC}E`Ew@v@s@~@gBxCuBzDaOzWcDdFeAnAkCrBaGjEaErCwJhHgOtKyBdBePpLeE~C}KdI_BrAyA|As@h@{@bA[j@e@`Ai@|@iCrFo@`BmAdDeC~FcAxBq@fBeAvBcCvFoA~BaAzAwDtFkBbCiB~BcEnFu@`Au@jAgBnE{C~IiA~Cm@bBmAzDqDnJqBvDOX"
+                            },
+                            "startLocation": {
+                                "latLng": {
+                                    "latitude": 4.6074057,
+                                    "longitude": -74.0771398
+                                }
+                            },
+                            "endLocation": {
+                                "latLng": {
+                                    "latitude": 4.7069029,
+                                    "longitude": -74.10892609999999
+                                }
+                            },
+                            "navigationInstruction": {
+                                "instructions": "Autob\u00fas en direcci\u00f3n a Portal 80"
+                            },
+                            "localizedValues": {
+                                "distance": {
+                                    "text": "14,0 km"
+                                },
+                                "staticDuration": {
+                                    "text": "44 min"
+                                }
+                            },
+                            "transitDetails": {
+                                "stopDetails": {
+                                    "arrivalStop": {
+                                        "name": "Quirigua",
+                                        "location": {
+                                            "latLng": {
+                                                "latitude": 4.7069029,
+                                                "longitude": -74.10892609999999
+                                            }
+                                        }
+                                    },
+                                    "arrivalTime": "2025-03-21T15:12:53Z",
+                                    "departureStop": {
+                                        "name": "Calle 19",
+                                        "location": {
+                                            "latLng": {
+                                                "latitude": 4.6074057,
+                                                "longitude": -74.0771398
+                                            }
+                                        }
+                                    },
+                                    "departureTime": "2025-03-21T14:29:04Z"
+                                },
+                                "localizedValues": {
+                                    "arrivalTime": {
+                                        "time": {
+                                            "text": "10:12"
+                                        },
+                                        "timeZone": "America/Bogota"
+                                    },
+                                    "departureTime": {
+                                        "time": {
+                                            "text": "9:29"
+                                        },
+                                        "timeZone": "America/Bogota"
+                                    }
+                                },
+                                "headsign": "Portal 80",
+                                "transitLine": {
+                                    "agencies": [
+                                        {
+                                            "name": "Transmilenio-Troncal",
+                                            "phoneNumber": "+57 601 4824304",
+                                            "uri": "https://www.transmilenio.gov.co/"
+                                        }
+                                    ],
+                                    "name": "Portal 80",
+                                    "color": "#7a68ae",
+                                    "nameShort": "D20",
+                                    "textColor": "#ffffff",
+                                    "vehicle": {
+                                        "name": {
+                                            "text": "Autob\u00fas"
+                                        },
+                                        "type": "BUS",
+                                        "iconUri": "//maps.gstatic.com/mapfiles/transit/iw2/6/bus2.png"
+                                    }
+                                },
+                                "stopCount": 10
+                            },
+                            "travelMode": "TRANSIT"
+                        },
+                        {
+                            "distanceMeters": 75,
+                            "staticDuration": "59s",
+                            "polyline": {
+                                "encodedPolyline": "}hv[|kicM{AnB"
+                            },
+                            "startLocation": {
+                                "latLng": {
+                                    "latitude": 4.7068728,
+                                    "longitude": -74.10894870000001
+                                }
+                            },
+                            "endLocation": {
+                                "latLng": {
+                                    "latitude": 4.707326,
+                                    "longitude": -74.1095058
+                                }
+                            },
+                            "navigationInstruction": {
+                                "maneuver": "DEPART",
+                                "instructions": "Dir\u00edgete al noroeste por Cl 80 hacia Ak. 96/Tv. 94 L"
+                            },
+                            "localizedValues": {
+                                "distance": {
+                                    "text": "75 m"
+                                },
+                                "staticDuration": {
+                                    "text": "1 min"
+                                }
+                            },
+                            "travelMode": "WALK"
+                        },
+                        {
+                            "distanceMeters": 11,
+                            "staticDuration": "21s",
+                            "polyline": {
+                                "encodedPolyline": "ykv[loicMY["
+                            },
+                            "startLocation": {
+                                "latLng": {
+                                    "latitude": 4.707326,
+                                    "longitude": -74.1095058
+                                }
+                            },
+                            "endLocation": {
+                                "latLng": {
+                                    "latitude": 4.7074601,
+                                    "longitude": -74.10937489999999
+                                }
+                            },
+                            "navigationInstruction": {
+                                "maneuver": "TURN_RIGHT",
+                                "instructions": "Gira a la derecha hacia Ak. 96/Tv. 94 L"
+                            },
+                            "localizedValues": {
+                                "distance": {
+                                    "text": "11 m"
+                                },
+                                "staticDuration": {
+                                    "text": "1 min"
+                                }
+                            },
+                            "travelMode": "WALK"
+                        },
+                        {
+                            "distanceMeters": 379,
+                            "staticDuration": "337s",
+                            "polyline": {
+                                "encodedPolyline": "slv[pnicMo@n@gLvL"
+                            },
+                            "startLocation": {
+                                "latLng": {
+                                    "latitude": 4.7074601,
+                                    "longitude": -74.10937489999999
+                                }
+                            },
+                            "endLocation": {
+                                "latLng": {
+                                    "latitude": 4.709823999999999,
+                                    "longitude": -74.1118114
+                                }
+                            },
+                            "navigationInstruction": {
+                                "maneuver": "TURN_LEFT",
+                                "instructions": "Gira a la izquierda hacia Av Cl 80"
+                            },
+                            "localizedValues": {
+                                "distance": {
+                                    "text": "0,4 km"
+                                },
+                                "staticDuration": {
+                                    "text": "6 min"
+                                }
+                            },
+                            "travelMode": "WALK"
+                        },
+                        {
+                            "distanceMeters": 9,
+                            "staticDuration": "8s",
+                            "polyline": {
+                                "encodedPolyline": "k{v[x}icMGC"
+                            },
+                            "startLocation": {
+                                "latLng": {
+                                    "latitude": 4.709823999999999,
+                                    "longitude": -74.1118114
+                                }
+                            },
+                            "endLocation": {
+                                "latLng": {
+                                    "latitude": 4.7098638,
+                                    "longitude": -74.1117922
+                                }
+                            },
+                            "navigationInstruction": {
+                                "maneuver": "TURN_RIGHT",
+                                "instructions": "Gira a la derecha"
+                            },
+                            "localizedValues": {
+                                "distance": {
+                                    "text": "9 m"
+                                },
+                                "staticDuration": {
+                                    "text": "1 min"
+                                }
+                            },
+                            "travelMode": "WALK"
+                        },
+                        {
+                            "distanceMeters": 42,
+                            "staticDuration": "50s",
+                            "polyline": {
+                                "encodedPolyline": "s{v[t}icMa@IOR@DBB"
+                            },
+                            "startLocation": {
+                                "latLng": {
+                                    "latitude": 4.7098638,
+                                    "longitude": -74.1117922
+                                }
+                            },
+                            "endLocation": {
+                                "latLng": {
+                                    "latitude": 4.7100751999999995,
+                                    "longitude": -74.11188709999999
+                                }
+                            },
+                            "navigationInstruction": {
+                                "maneuver": "TURN_SLIGHT_LEFT",
+                                "instructions": "Gira ligeramente a la izquierda\nToma las escaleras"
+                            },
+                            "localizedValues": {
+                                "distance": {
+                                    "text": "42 m"
+                                },
+                                "staticDuration": {
+                                    "text": "1 min"
+                                }
+                            },
+                            "travelMode": "WALK"
+                        },
+                        {
+                            "distanceMeters": 49,
+                            "staticDuration": "34s",
+                            "polyline": {
+                                "encodedPolyline": "_}v[h~icMUh@WGKG"
+                            },
+                            "startLocation": {
+                                "latLng": {
+                                    "latitude": 4.7100751999999995,
+                                    "longitude": -74.11188709999999
+                                }
+                            },
+                            "endLocation": {
+                                "latLng": {
+                                    "latitude": 4.7103693,
+                                    "longitude": -74.112022
+                                }
+                            },
+                            "navigationInstruction": {
+                                "maneuver": "TURN_SLIGHT_RIGHT",
+                                "instructions": "Gira ligeramente a la derecha"
+                            },
+                            "localizedValues": {
+                                "distance": {
+                                    "text": "49 m"
+                                },
+                                "staticDuration": {
+                                    "text": "1 min"
+                                }
+                            },
+                            "travelMode": "WALK"
+                        }
+                    ],
+                    "localizedValues": {
+                        "distance": {
+                            "text": "15,8 km"
+                        },
+                        "duration": {
+                            "text": "1h 8 min"
+                        },
+                        "staticDuration": {
+                            "text": "1h 8 min"
+                        }
+                    },
+                    "stepsOverview": {
+                        "multiModalSegments": [
+                            {
+                                "stepStartIndex": 0,
+                                "stepEndIndex": 2,
+                                "navigationInstruction": {
+                                    "instructions": "Camina hasta AC 19 - Kr 7"
+                                },
+                                "travelMode": "WALK"
+                            },
+                            {
+                                "stepStartIndex": 3,
+                                "stepEndIndex": 3,
+                                "navigationInstruction": {
+                                    "instructions": "Autob\u00fas en direcci\u00f3n a CL 68B Sur - KR 62 Br. Rincon de Venecia II"
+                                },
+                                "travelMode": "TRANSIT"
+                            },
+                            {
+                                "stepStartIndex": 4,
+                                "stepEndIndex": 5,
+                                "navigationInstruction": {
+                                    "instructions": "Camina hasta Calle 19"
+                                },
+                                "travelMode": "WALK"
+                            },
+                            {
+                                "stepStartIndex": 6,
+                                "stepEndIndex": 6,
+                                "navigationInstruction": {
+                                    "instructions": "Autob\u00fas en direcci\u00f3n a Portal 80"
+                                },
+                                "travelMode": "TRANSIT"
+                            },
+                            {
+                                "stepStartIndex": 7,
+                                "stepEndIndex": 12,
+                                "travelMode": "WALK"
+                            }
+                        ]
+                    }
+                }
+            ],
+            "distanceMeters": 15784,
+            "duration": "4094s"
+        },
+        {
+            "legs": [
+                {
+                    "distanceMeters": 16048,
+                    "duration": "4264s",
+                    "staticDuration": "4264s",
+                    "polyline": {
+                        "encodedPolyline": "s|a[h}acMfC{EcE{AwDgAiAWuAc@tAyCcH}CP[t@\\@E@?y@_@oCnEeFdJk@|@cF|JeA~B{@~AuEzJg@|@eKaEeJ_EyPwG_CaAcIiDoDaBsDeAeDq@uDe@sCYwKsAsRmBsGu@gMoAmGq@e[}Cee@wEmI}@aBKkMwAaCQmQuB}AWcE{AoCmAqEmBuCa@uKiAsDW{YuC_Da@sCWe@AYDcBt@gC`ByCxBsGbFcKvHyFjEgCfC}E`Ew@v@s@~@gBxCuBzDaOzWcDdFeAnAkCrBaGjEaErCwJhHgOtKyBdBePpLeE~C}KdI_BrAyA|As@h@{@bA[j@e@`Ai@|@iCrFo@`BmAdDeC~FcAxBq@fBeAvBcCvFoA~BaAzAwDtFkBbCiB~BcEnFu@`Au@jAgBnE{C~IiA~Cm@bBmAzDqDnJqBvDOXDB{AnBY[o@n@gLvLGCa@IOR@DBBUh@WGKG"
+                    },
+                    "startLocation": {
+                        "latLng": {
+                            "latitude": 4.6025008,
+                            "longitude": -74.0707706
+                        }
+                    },
+                    "endLocation": {
+                        "latLng": {
+                            "latitude": 4.7103693,
+                            "longitude": -74.112022
+                        }
+                    },
+                    "steps": [
+                        {
+                            "distanceMeters": 148,
+                            "staticDuration": "122s",
+                            "polyline": {
+                                "encodedPolyline": "s|a[h}acMfC{E"
+                            },
+                            "startLocation": {
+                                "latLng": {
+                                    "latitude": 4.6025008,
+                                    "longitude": -74.0707706
+                                }
+                            },
+                            "endLocation": {
+                                "latLng": {
+                                    "latitude": 4.601818,
+                                    "longitude": -74.06966729999999
+                                }
+                            },
+                            "navigationInstruction": {
+                                "maneuver": "DEPART",
+                                "instructions": "Dir\u00edgete al sureste por Cl. 17 hacia Cra. 4"
+                            },
+                            "localizedValues": {
+                                "distance": {
+                                    "text": "0,1 km"
+                                },
+                                "staticDuration": {
+                                    "text": "2 min"
+                                }
+                            },
+                            "travelMode": "WALK"
+                        },
+                        {
+                            "distanceMeters": 325,
+                            "staticDuration": "292s",
+                            "polyline": {
+                                "encodedPolyline": "kxa[lvacMcE{AwDgAiAWuAc@"
+                            },
+                            "startLocation": {
+                                "latLng": {
+                                    "latitude": 4.601818,
+                                    "longitude": -74.06966729999999
+                                }
+                            },
+                            "endLocation": {
+                                "latLng": {
+                                    "latitude": 4.6045155,
+                                    "longitude": -74.06855100000001
+                                }
+                            },
+                            "navigationInstruction": {
+                                "maneuver": "TURN_LEFT",
+                                "instructions": "Gira a la izquierda hacia Cra. 4"
+                            },
+                            "localizedValues": {
+                                "distance": {
+                                    "text": "0,3 km"
+                                },
+                                "staticDuration": {
+                                    "text": "5 min"
+                                }
+                            },
+                            "travelMode": "WALK"
+                        },
+                        {
+                            "distanceMeters": 97,
+                            "staticDuration": "89s",
+                            "polyline": {
+                                "encodedPolyline": "gib[loacMtAyC"
+                            },
+                            "startLocation": {
+                                "latLng": {
+                                    "latitude": 4.6045155,
+                                    "longitude": -74.06855100000001
+                                }
+                            },
+                            "endLocation": {
+                                "latLng": {
+                                    "latitude": 4.6040902,
+                                    "longitude": -74.0677815
+                                }
+                            },
+                            "navigationInstruction": {
+                                "maneuver": "TURN_RIGHT",
+                                "instructions": "Gira a la derecha hacia Cl. 20"
+                            },
+                            "localizedValues": {
+                                "distance": {
+                                    "text": "0,1 km"
+                                },
+                                "staticDuration": {
+                                    "text": "1 min"
+                                }
+                            },
+                            "travelMode": "WALK"
+                        },
+                        {
+                            "distanceMeters": 192,
+                            "staticDuration": "151s",
+                            "polyline": {
+                                "encodedPolyline": "qfb[rjacMcH}C"
+                            },
+                            "startLocation": {
+                                "latLng": {
+                                    "latitude": 4.6040902,
+                                    "longitude": -74.0677815
+                                }
+                            },
+                            "endLocation": {
+                                "latLng": {
+                                    "latitude": 4.6055512,
+                                    "longitude": -74.06698740000002
+                                }
+                            },
+                            "navigationInstruction": {
+                                "maneuver": "TURN_LEFT",
+                                "instructions": "Gira a la izquierda hacia Cra. 3"
+                            },
+                            "localizedValues": {
+                                "distance": {
+                                    "text": "0,2 km"
+                                },
+                                "staticDuration": {
+                                    "text": "3 min"
+                                }
+                            },
+                            "travelMode": "WALK"
+                        },
+                        {
+                            "distanceMeters": 18,
+                            "staticDuration": "27s",
+                            "polyline": {
+                                "encodedPolyline": "uob[teacMP["
+                            },
+                            "startLocation": {
+                                "latLng": {
+                                    "latitude": 4.6055512,
+                                    "longitude": -74.06698740000002
+                                }
+                            },
+                            "endLocation": {
+                                "latLng": {
+                                    "latitude": 4.605455,
+                                    "longitude": -74.0668547
+                                }
+                            },
+                            "navigationInstruction": {
+                                "maneuver": "TURN_RIGHT",
+                                "instructions": "Gira a la derecha hacia Cl 22"
+                            },
+                            "localizedValues": {
+                                "distance": {
+                                    "text": "18 m"
+                                },
+                                "staticDuration": {
+                                    "text": "1 min"
+                                }
+                            },
+                            "travelMode": "WALK"
+                        },
+                        {
+                            "distanceMeters": 37,
+                            "staticDuration": "30s",
+                            "polyline": {
+                                "encodedPolyline": "cob[xdacMt@\\"
+                            },
+                            "startLocation": {
+                                "latLng": {
+                                    "latitude": 4.605455,
+                                    "longitude": -74.0668547
+                                }
+                            },
+                            "endLocation": {
+                                "latLng": {
+                                    "latitude": 4.605191,
+                                    "longitude": -74.0669958
+                                }
+                            },
+                            "navigationInstruction": {
+                                "maneuver": "TURN_RIGHT",
+                                "instructions": "Gira a la derecha hacia Troncal Cl 26"
+                            },
+                            "localizedValues": {
+                                "distance": {
+                                    "text": "37 m"
+                                },
+                                "staticDuration": {
+                                    "text": "1 min"
+                                }
+                            },
+                            "travelMode": "WALK"
+                        },
+                        {
+                            "distanceMeters": 14666,
+                            "staticDuration": "3044s",
+                            "polyline": {
+                                "encodedPolyline": "kmb[peacM@?y@_@oCnEeFdJk@|@cF|JeA~B{@~AuEzJg@|@eKaEeJ_EyPwG_CaAcIiDoDaBsDeAeDq@uDe@sCYwKsAsRmBsGu@gMoAmGq@e[}Cee@wEmI}@aBKkMwAaCQmQuB}AWcE{AoCmAqEmBuCa@uKiAsDW{YuC_Da@sCWe@AYDcBt@gC`ByCxBsGbFcKvHyFjEgCfC}E`Ew@v@s@~@gBxCuBzDaOzWcDdFeAnAkCrBaGjEaErCwJhHgOtKyBdBePpLeE~C}KdI_BrAyA|As@h@{@bA[j@e@`Ai@|@iCrFo@`BmAdDeC~FcAxBq@fBeAvBcCvFoA~BaAzAwDtFkBbCiB~BcEnFu@`Au@jAgBnE{C~IiA~Cm@bBmAzDqDnJqBvDOX"
+                            },
+                            "startLocation": {
+                                "latLng": {
+                                    "latitude": 4.6051763,
+                                    "longitude": -74.0669743
+                                }
+                            },
+                            "endLocation": {
+                                "latLng": {
+                                    "latitude": 4.7069029,
+                                    "longitude": -74.10892609999999
+                                }
+                            },
+                            "navigationInstruction": {
+                                "instructions": "Autob\u00fas en direcci\u00f3n a Portal 80"
+                            },
+                            "localizedValues": {
+                                "distance": {
+                                    "text": "14,7 km"
+                                },
+                                "staticDuration": {
+                                    "text": "51 min"
+                                }
+                            },
+                            "transitDetails": {
+                                "stopDetails": {
+                                    "arrivalStop": {
+                                        "name": "Quirigua",
+                                        "location": {
+                                            "latLng": {
+                                                "latitude": 4.7069029,
+                                                "longitude": -74.10892609999999
+                                            }
+                                        }
+                                    },
+                                    "arrivalTime": "2025-03-21T15:20:44Z",
+                                    "departureStop": {
+                                        "name": "Universidades",
+                                        "location": {
+                                            "latLng": {
+                                                "latitude": 4.6051763,
+                                                "longitude": -74.0669743
+                                            }
+                                        }
+                                    },
+                                    "departureTime": "2025-03-21T14:30:00Z"
+                                },
+                                "localizedValues": {
+                                    "arrivalTime": {
+                                        "time": {
+                                            "text": "10:20"
+                                        },
+                                        "timeZone": "America/Bogota"
+                                    },
+                                    "departureTime": {
+                                        "time": {
+                                            "text": "9:30"
+                                        },
+                                        "timeZone": "America/Bogota"
+                                    }
+                                },
+                                "headsign": "Portal 80",
+                                "transitLine": {
+                                    "agencies": [
+                                        {
+                                            "name": "Transmilenio-Troncal",
+                                            "phoneNumber": "+57 601 4824304",
+                                            "uri": "https://www.transmilenio.gov.co/"
+                                        }
+                                    ],
+                                    "name": "Portal 80",
+                                    "color": "#000000",
+                                    "nameShort": "6",
+                                    "textColor": "#ffffff",
+                                    "vehicle": {
+                                        "name": {
+                                            "text": "Autob\u00fas"
+                                        },
+                                        "type": "BUS",
+                                        "iconUri": "//maps.gstatic.com/mapfiles/transit/iw2/6/bus2.png"
+                                    }
+                                },
+                                "stopCount": 19
+                            },
+                            "travelMode": "TRANSIT"
+                        },
+                        {
+                            "distanceMeters": 75,
+                            "staticDuration": "59s",
+                            "polyline": {
+                                "encodedPolyline": "}hv[|kicM{AnB"
+                            },
+                            "startLocation": {
+                                "latLng": {
+                                    "latitude": 4.7068728,
+                                    "longitude": -74.10894870000001
+                                }
+                            },
+                            "endLocation": {
+                                "latLng": {
+                                    "latitude": 4.707326,
+                                    "longitude": -74.1095058
+                                }
+                            },
+                            "navigationInstruction": {
+                                "maneuver": "DEPART",
+                                "instructions": "Dir\u00edgete al noroeste por Cl 80 hacia Ak. 96/Tv. 94 L"
+                            },
+                            "localizedValues": {
+                                "distance": {
+                                    "text": "75 m"
+                                },
+                                "staticDuration": {
+                                    "text": "1 min"
+                                }
+                            },
+                            "travelMode": "WALK"
+                        },
+                        {
+                            "distanceMeters": 11,
+                            "staticDuration": "21s",
+                            "polyline": {
+                                "encodedPolyline": "ykv[loicMY["
+                            },
+                            "startLocation": {
+                                "latLng": {
+                                    "latitude": 4.707326,
+                                    "longitude": -74.1095058
+                                }
+                            },
+                            "endLocation": {
+                                "latLng": {
+                                    "latitude": 4.7074601,
+                                    "longitude": -74.10937489999999
+                                }
+                            },
+                            "navigationInstruction": {
+                                "maneuver": "TURN_RIGHT",
+                                "instructions": "Gira a la derecha hacia Ak. 96/Tv. 94 L"
+                            },
+                            "localizedValues": {
+                                "distance": {
+                                    "text": "11 m"
+                                },
+                                "staticDuration": {
+                                    "text": "1 min"
+                                }
+                            },
+                            "travelMode": "WALK"
+                        },
+                        {
+                            "distanceMeters": 379,
+                            "staticDuration": "337s",
+                            "polyline": {
+                                "encodedPolyline": "slv[pnicMo@n@gLvL"
+                            },
+                            "startLocation": {
+                                "latLng": {
+                                    "latitude": 4.7074601,
+                                    "longitude": -74.10937489999999
+                                }
+                            },
+                            "endLocation": {
+                                "latLng": {
+                                    "latitude": 4.709823999999999,
+                                    "longitude": -74.1118114
+                                }
+                            },
+                            "navigationInstruction": {
+                                "maneuver": "TURN_LEFT",
+                                "instructions": "Gira a la izquierda hacia Av Cl 80"
+                            },
+                            "localizedValues": {
+                                "distance": {
+                                    "text": "0,4 km"
+                                },
+                                "staticDuration": {
+                                    "text": "6 min"
+                                }
+                            },
+                            "travelMode": "WALK"
+                        },
+                        {
+                            "distanceMeters": 9,
+                            "staticDuration": "8s",
+                            "polyline": {
+                                "encodedPolyline": "k{v[x}icMGC"
+                            },
+                            "startLocation": {
+                                "latLng": {
+                                    "latitude": 4.709823999999999,
+                                    "longitude": -74.1118114
+                                }
+                            },
+                            "endLocation": {
+                                "latLng": {
+                                    "latitude": 4.7098638,
+                                    "longitude": -74.1117922
+                                }
+                            },
+                            "navigationInstruction": {
+                                "maneuver": "TURN_RIGHT",
+                                "instructions": "Gira a la derecha"
+                            },
+                            "localizedValues": {
+                                "distance": {
+                                    "text": "9 m"
+                                },
+                                "staticDuration": {
+                                    "text": "1 min"
+                                }
+                            },
+                            "travelMode": "WALK"
+                        },
+                        {
+                            "distanceMeters": 42,
+                            "staticDuration": "50s",
+                            "polyline": {
+                                "encodedPolyline": "s{v[t}icMa@IOR@DBB"
+                            },
+                            "startLocation": {
+                                "latLng": {
+                                    "latitude": 4.7098638,
+                                    "longitude": -74.1117922
+                                }
+                            },
+                            "endLocation": {
+                                "latLng": {
+                                    "latitude": 4.7100751999999995,
+                                    "longitude": -74.11188709999999
+                                }
+                            },
+                            "navigationInstruction": {
+                                "maneuver": "TURN_SLIGHT_LEFT",
+                                "instructions": "Gira ligeramente a la izquierda\nToma las escaleras"
+                            },
+                            "localizedValues": {
+                                "distance": {
+                                    "text": "42 m"
+                                },
+                                "staticDuration": {
+                                    "text": "1 min"
+                                }
+                            },
+                            "travelMode": "WALK"
+                        },
+                        {
+                            "distanceMeters": 49,
+                            "staticDuration": "34s",
+                            "polyline": {
+                                "encodedPolyline": "_}v[h~icMUh@WGKG"
+                            },
+                            "startLocation": {
+                                "latLng": {
+                                    "latitude": 4.7100751999999995,
+                                    "longitude": -74.11188709999999
+                                }
+                            },
+                            "endLocation": {
+                                "latLng": {
+                                    "latitude": 4.7103693,
+                                    "longitude": -74.112022
+                                }
+                            },
+                            "navigationInstruction": {
+                                "maneuver": "TURN_SLIGHT_RIGHT",
+                                "instructions": "Gira ligeramente a la derecha"
+                            },
+                            "localizedValues": {
+                                "distance": {
+                                    "text": "49 m"
+                                },
+                                "staticDuration": {
+                                    "text": "1 min"
+                                }
+                            },
+                            "travelMode": "WALK"
+                        }
+                    ],
+                    "localizedValues": {
+                        "distance": {
+                            "text": "16,0 km"
+                        },
+                        "duration": {
+                            "text": "1h 11 min"
+                        },
+                        "staticDuration": {
+                            "text": "1h 11 min"
+                        }
+                    },
+                    "stepsOverview": {
+                        "multiModalSegments": [
+                            {
+                                "stepStartIndex": 0,
+                                "stepEndIndex": 5,
+                                "navigationInstruction": {
+                                    "instructions": "Camina hasta Universidades"
+                                },
+                                "travelMode": "WALK"
+                            },
+                            {
+                                "stepStartIndex": 6,
+                                "stepEndIndex": 6,
+                                "navigationInstruction": {
+                                    "instructions": "Autob\u00fas en direcci\u00f3n a Portal 80"
+                                },
+                                "travelMode": "TRANSIT"
+                            },
+                            {
+                                "stepStartIndex": 7,
+                                "stepEndIndex": 12,
+                                "travelMode": "WALK"
+                            }
+                        ]
+                    }
+                }
+            ],
+            "distanceMeters": 16048,
+            "duration": "4264s"
+        },
+        {
+            "legs": [
+                {
+                    "distanceMeters": 16700,
+                    "duration": "3924s",
+                    "staticDuration": "3924s",
+                    "polyline": {
+                        "encodedPolyline": "s|a[h}acMfC{EcE{AwDgAiAWuAc@tAyCcH}CP[t@\\@E@?y@_@oCnEeFdJk@|@cF|JeA~B{@~AuEzJg@|@eKaEeJ_EyPwG_CaAcIiDoDaBsDeAeDq@uDe@sCYwKsAsRmBsGu@gMoAmGq@e[}Cee@wEmI}@aBKkMwAaCQmQuB}AWcE{AoCmAqEmBuCa@uKiAsDW{YuC_Da@sCWe@AYDcBt@gC`ByCxBsGbFcKvHyFjEgCfC}E`Ew@v@s@~@gBxCuBzDaOzWcDdFeAnAkCrBaGjEaErCwJhHgOtKyBdBePpL{DvCgLlI_BrAyA|As@h@{@bA[j@e@`Ai@|@iCrFo@`BmAdDeC~FcAxBq@fBeAvBcCvFoA~BaAzAwDtFkBbCiB~BcEnFu@`Au@jAgBnE{C~IiA~Cm@bBmAzDqDnJqBvDq@`AuAfBkDjDi@g@uBcAaAc@OE{@c@c@IQBKR?VXxCLAGCFd@x@fAPJJAj@g@`@k@@Se@uAJELMPAPH|@l@b@^}FfGGCa@IOR@DBBUh@WGKG"
+                    },
+                    "startLocation": {
+                        "latLng": {
+                            "latitude": 4.6025008,
+                            "longitude": -74.0707706
+                        }
+                    },
+                    "endLocation": {
+                        "latLng": {
+                            "latitude": 4.7103693,
+                            "longitude": -74.112022
+                        }
+                    },
+                    "steps": [
+                        {
+                            "distanceMeters": 148,
+                            "staticDuration": "122s",
+                            "polyline": {
+                                "encodedPolyline": "s|a[h}acMfC{E"
+                            },
+                            "startLocation": {
+                                "latLng": {
+                                    "latitude": 4.6025008,
+                                    "longitude": -74.0707706
+                                }
+                            },
+                            "endLocation": {
+                                "latLng": {
+                                    "latitude": 4.601818,
+                                    "longitude": -74.06966729999999
+                                }
+                            },
+                            "navigationInstruction": {
+                                "maneuver": "DEPART",
+                                "instructions": "Dir\u00edgete al sureste por Cl. 17 hacia Cra. 4"
+                            },
+                            "localizedValues": {
+                                "distance": {
+                                    "text": "0,1 km"
+                                },
+                                "staticDuration": {
+                                    "text": "2 min"
+                                }
+                            },
+                            "travelMode": "WALK"
+                        },
+                        {
+                            "distanceMeters": 325,
+                            "staticDuration": "292s",
+                            "polyline": {
+                                "encodedPolyline": "kxa[lvacMcE{AwDgAiAWuAc@"
+                            },
+                            "startLocation": {
+                                "latLng": {
+                                    "latitude": 4.601818,
+                                    "longitude": -74.06966729999999
+                                }
+                            },
+                            "endLocation": {
+                                "latLng": {
+                                    "latitude": 4.6045155,
+                                    "longitude": -74.06855100000001
+                                }
+                            },
+                            "navigationInstruction": {
+                                "maneuver": "TURN_LEFT",
+                                "instructions": "Gira a la izquierda hacia Cra. 4"
+                            },
+                            "localizedValues": {
+                                "distance": {
+                                    "text": "0,3 km"
+                                },
+                                "staticDuration": {
+                                    "text": "5 min"
+                                }
+                            },
+                            "travelMode": "WALK"
+                        },
+                        {
+                            "distanceMeters": 97,
+                            "staticDuration": "89s",
+                            "polyline": {
+                                "encodedPolyline": "gib[loacMtAyC"
+                            },
+                            "startLocation": {
+                                "latLng": {
+                                    "latitude": 4.6045155,
+                                    "longitude": -74.06855100000001
+                                }
+                            },
+                            "endLocation": {
+                                "latLng": {
+                                    "latitude": 4.6040902,
+                                    "longitude": -74.0677815
+                                }
+                            },
+                            "navigationInstruction": {
+                                "maneuver": "TURN_RIGHT",
+                                "instructions": "Gira a la derecha hacia Cl. 20"
+                            },
+                            "localizedValues": {
+                                "distance": {
+                                    "text": "0,1 km"
+                                },
+                                "staticDuration": {
+                                    "text": "1 min"
+                                }
+                            },
+                            "travelMode": "WALK"
+                        },
+                        {
+                            "distanceMeters": 192,
+                            "staticDuration": "151s",
+                            "polyline": {
+                                "encodedPolyline": "qfb[rjacMcH}C"
+                            },
+                            "startLocation": {
+                                "latLng": {
+                                    "latitude": 4.6040902,
+                                    "longitude": -74.0677815
+                                }
+                            },
+                            "endLocation": {
+                                "latLng": {
+                                    "latitude": 4.6055512,
+                                    "longitude": -74.06698740000002
+                                }
+                            },
+                            "navigationInstruction": {
+                                "maneuver": "TURN_LEFT",
+                                "instructions": "Gira a la izquierda hacia Cra. 3"
+                            },
+                            "localizedValues": {
+                                "distance": {
+                                    "text": "0,2 km"
+                                },
+                                "staticDuration": {
+                                    "text": "3 min"
+                                }
+                            },
+                            "travelMode": "WALK"
+                        },
+                        {
+                            "distanceMeters": 18,
+                            "staticDuration": "27s",
+                            "polyline": {
+                                "encodedPolyline": "uob[teacMP["
+                            },
+                            "startLocation": {
+                                "latLng": {
+                                    "latitude": 4.6055512,
+                                    "longitude": -74.06698740000002
+                                }
+                            },
+                            "endLocation": {
+                                "latLng": {
+                                    "latitude": 4.605455,
+                                    "longitude": -74.0668547
+                                }
+                            },
+                            "navigationInstruction": {
+                                "maneuver": "TURN_RIGHT",
+                                "instructions": "Gira a la derecha hacia Cl 22"
+                            },
+                            "localizedValues": {
+                                "distance": {
+                                    "text": "18 m"
+                                },
+                                "staticDuration": {
+                                    "text": "1 min"
+                                }
+                            },
+                            "travelMode": "WALK"
+                        },
+                        {
+                            "distanceMeters": 37,
+                            "staticDuration": "30s",
+                            "polyline": {
+                                "encodedPolyline": "cob[xdacMt@\\"
+                            },
+                            "startLocation": {
+                                "latLng": {
+                                    "latitude": 4.605455,
+                                    "longitude": -74.0668547
+                                }
+                            },
+                            "endLocation": {
+                                "latLng": {
+                                    "latitude": 4.605191,
+                                    "longitude": -74.0669958
+                                }
+                            },
+                            "navigationInstruction": {
+                                "maneuver": "TURN_RIGHT",
+                                "instructions": "Gira a la derecha hacia Troncal Cl 26"
+                            },
+                            "localizedValues": {
+                                "distance": {
+                                    "text": "37 m"
+                                },
+                                "staticDuration": {
+                                    "text": "1 min"
+                                }
+                            },
+                            "travelMode": "WALK"
+                        },
+                        {
+                            "distanceMeters": 15255,
+                            "staticDuration": "2688s",
+                            "polyline": {
+                                "encodedPolyline": "kmb[peacM@?y@_@oCnEeFdJk@|@cF|JeA~B{@~AuEzJg@|@eKaEeJ_EyPwG_CaAcIiDoDaBsDeAeDq@uDe@sCYwKsAsRmBsGu@gMoAmGq@e[}Cee@wEmI}@aBKkMwAaCQmQuB}AWcE{AoCmAqEmBuCa@uKiAsDW{YuC_Da@sCWe@AYDcBt@gC`ByCxBsGbFcKvHyFjEgCfC}E`Ew@v@s@~@gBxCuBzDaOzWcDdFeAnAkCrBaGjEaErCwJhHgOtKyBdBePpL{DvCgLlI_BrAyA|As@h@{@bA[j@e@`Ai@|@iCrFo@`BmAdDeC~FcAxBq@fBeAvBcCvFoA~BaAzAwDtFkBbCiB~BcEnFu@`Au@jAgBnE{C~IiA~Cm@bBmAzDqDnJqBvDq@`AuAfBkDjDi@g@uBcAaAc@OE{@c@c@IQBKR?VXxCLA"
+                            },
+                            "startLocation": {
+                                "latLng": {
+                                    "latitude": 4.6051763,
+                                    "longitude": -74.0669743
+                                }
+                            },
+                            "endLocation": {
+                                "latLng": {
+                                    "latitude": 4.710000000000001,
+                                    "longitude": -74.11053
+                                }
+                            },
+                            "navigationInstruction": {
+                                "instructions": "Autob\u00fas en direcci\u00f3n a Portal 80"
+                            },
+                            "localizedValues": {
+                                "distance": {
+                                    "text": "15,3 km"
+                                },
+                                "staticDuration": {
+                                    "text": "45 min"
+                                }
+                            },
+                            "transitDetails": {
+                                "stopDetails": {
+                                    "arrivalStop": {
+                                        "name": "Portal 80",
+                                        "location": {
+                                            "latLng": {
+                                                "latitude": 4.710000000000001,
+                                                "longitude": -74.11053
+                                            }
+                                        }
+                                    },
+                                    "arrivalTime": "2025-03-21T15:20:48Z",
+                                    "departureStop": {
+                                        "name": "Universidades",
+                                        "location": {
+                                            "latLng": {
+                                                "latitude": 4.6051763,
+                                                "longitude": -74.0669743
+                                            }
+                                        }
+                                    },
+                                    "departureTime": "2025-03-21T14:36:00Z"
+                                },
+                                "localizedValues": {
+                                    "arrivalTime": {
+                                        "time": {
+                                            "text": "10:20"
+                                        },
+                                        "timeZone": "America/Bogota"
+                                    },
+                                    "departureTime": {
+                                        "time": {
+                                            "text": "9:36"
+                                        },
+                                        "timeZone": "America/Bogota"
+                                    }
+                                },
+                                "headsign": "Portal 80",
+                                "transitLine": {
+                                    "agencies": [
+                                        {
+                                            "name": "Transmilenio-Troncal",
+                                            "phoneNumber": "+57 601 4824304",
+                                            "uri": "https://www.transmilenio.gov.co/"
+                                        }
+                                    ],
+                                    "name": "Portal 80",
+                                    "color": "#7a68ae",
+                                    "nameShort": "D24",
+                                    "textColor": "#ffffff",
+                                    "vehicle": {
+                                        "name": {
+                                            "text": "Autob\u00fas"
+                                        },
+                                        "type": "BUS",
+                                        "iconUri": "//maps.gstatic.com/mapfiles/transit/iw2/6/bus2.png"
+                                    }
+                                },
+                                "stopCount": 12
+                            },
+                            "travelMode": "TRANSIT"
+                        },
+                        {
+                            "distanceMeters": 218,
+                            "staticDuration": "181s",
+                            "polyline": {
+                                "encodedPolyline": "w|v[tuicMFd@x@fAPJJAj@g@`@k@@Se@uA"
+                            },
+                            "startLocation": {
+                                "latLng": {
+                                    "latitude": 4.710038000000001,
+                                    "longitude": -74.1105082
+                                }
+                            },
+                            "endLocation": {
+                                "latLng": {
+                                    "latitude": 4.7093541,
+                                    "longitude": -74.11015619999999
+                                }
+                            },
+                            "navigationInstruction": {
+                                "maneuver": "DEPART",
+                                "instructions": "Dir\u00edgete al oeste por V\u00edas Portal 80"
+                            },
+                            "localizedValues": {
+                                "distance": {
+                                    "text": "0,2 km"
+                                },
+                                "staticDuration": {
+                                    "text": "3 min"
+                                }
+                            },
+                            "travelMode": "WALK"
+                        },
+                        {
+                            "distanceMeters": 111,
+                            "staticDuration": "92s",
+                            "polyline": {
+                                "encodedPolyline": "mxv[nsicMJELMPAPH|@l@b@^"
+                            },
+                            "startLocation": {
+                                "latLng": {
+                                    "latitude": 4.7093541,
+                                    "longitude": -74.11015619999999
+                                }
+                            },
+                            "endLocation": {
+                                "latLng": {
+                                    "latitude": 4.7085473,
+                                    "longitude": -74.1104907
+                                }
+                            },
+                            "navigationInstruction": {
+                                "maneuver": "TURN_RIGHT",
+                                "instructions": "Gira a la derecha para continuar en V\u00edas Portal 80"
+                            },
+                            "localizedValues": {
+                                "distance": {
+                                    "text": "0,1 km"
+                                },
+                                "staticDuration": {
+                                    "text": "2 min"
+                                }
+                            },
+                            "travelMode": "WALK"
+                        },
+                        {
+                            "distanceMeters": 199,
+                            "staticDuration": "160s",
+                            "polyline": {
+                                "encodedPolyline": "msv[puicM}FfG"
+                            },
+                            "startLocation": {
+                                "latLng": {
+                                    "latitude": 4.7085473,
+                                    "longitude": -74.1104907
+                                }
+                            },
+                            "endLocation": {
+                                "latLng": {
+                                    "latitude": 4.709823999999999,
+                                    "longitude": -74.1118114
+                                }
+                            },
+                            "navigationInstruction": {
+                                "maneuver": "TURN_RIGHT",
+                                "instructions": "Gira a la derecha hacia Av Cl 80"
+                            },
+                            "localizedValues": {
+                                "distance": {
+                                    "text": "0,2 km"
+                                },
+                                "staticDuration": {
+                                    "text": "3 min"
+                                }
+                            },
+                            "travelMode": "WALK"
+                        },
+                        {
+                            "distanceMeters": 9,
+                            "staticDuration": "8s",
+                            "polyline": {
+                                "encodedPolyline": "k{v[x}icMGC"
+                            },
+                            "startLocation": {
+                                "latLng": {
+                                    "latitude": 4.709823999999999,
+                                    "longitude": -74.1118114
+                                }
+                            },
+                            "endLocation": {
+                                "latLng": {
+                                    "latitude": 4.7098638,
+                                    "longitude": -74.1117922
+                                }
+                            },
+                            "navigationInstruction": {
+                                "maneuver": "TURN_RIGHT",
+                                "instructions": "Gira a la derecha"
+                            },
+                            "localizedValues": {
+                                "distance": {
+                                    "text": "9 m"
+                                },
+                                "staticDuration": {
+                                    "text": "1 min"
+                                }
+                            },
+                            "travelMode": "WALK"
+                        },
+                        {
+                            "distanceMeters": 42,
+                            "staticDuration": "50s",
+                            "polyline": {
+                                "encodedPolyline": "s{v[t}icMa@IOR@DBB"
+                            },
+                            "startLocation": {
+                                "latLng": {
+                                    "latitude": 4.7098638,
+                                    "longitude": -74.1117922
+                                }
+                            },
+                            "endLocation": {
+                                "latLng": {
+                                    "latitude": 4.7100751999999995,
+                                    "longitude": -74.11188709999999
+                                }
+                            },
+                            "navigationInstruction": {
+                                "maneuver": "TURN_SLIGHT_LEFT",
+                                "instructions": "Gira ligeramente a la izquierda\nToma las escaleras"
+                            },
+                            "localizedValues": {
+                                "distance": {
+                                    "text": "42 m"
+                                },
+                                "staticDuration": {
+                                    "text": "1 min"
+                                }
+                            },
+                            "travelMode": "WALK"
+                        },
+                        {
+                            "distanceMeters": 49,
+                            "staticDuration": "34s",
+                            "polyline": {
+                                "encodedPolyline": "_}v[h~icMUh@WGKG"
+                            },
+                            "startLocation": {
+                                "latLng": {
+                                    "latitude": 4.7100751999999995,
+                                    "longitude": -74.11188709999999
+                                }
+                            },
+                            "endLocation": {
+                                "latLng": {
+                                    "latitude": 4.7103693,
+                                    "longitude": -74.112022
+                                }
+                            },
+                            "navigationInstruction": {
+                                "maneuver": "TURN_SLIGHT_RIGHT",
+                                "instructions": "Gira ligeramente a la derecha"
+                            },
+                            "localizedValues": {
+                                "distance": {
+                                    "text": "49 m"
+                                },
+                                "staticDuration": {
+                                    "text": "1 min"
+                                }
+                            },
+                            "travelMode": "WALK"
+                        }
+                    ],
+                    "localizedValues": {
+                        "distance": {
+                            "text": "16,7 km"
+                        },
+                        "duration": {
+                            "text": "1h 5 min"
+                        },
+                        "staticDuration": {
+                            "text": "1h 5 min"
+                        }
+                    },
+                    "stepsOverview": {
+                        "multiModalSegments": [
+                            {
+                                "stepStartIndex": 0,
+                                "stepEndIndex": 5,
+                                "navigationInstruction": {
+                                    "instructions": "Camina hasta Universidades"
+                                },
+                                "travelMode": "WALK"
+                            },
+                            {
+                                "stepStartIndex": 6,
+                                "stepEndIndex": 6,
+                                "navigationInstruction": {
+                                    "instructions": "Autob\u00fas en direcci\u00f3n a Portal 80"
+                                },
+                                "travelMode": "TRANSIT"
+                            },
+                            {
+                                "stepStartIndex": 7,
+                                "stepEndIndex": 12,
+                                "travelMode": "WALK"
+                            }
+                        ]
+                    }
+                }
+            ],
+            "distanceMeters": 16700,
+            "duration": "3924s"
+        },
+        {
+            "legs": [
+                {
+                    "distanceMeters": 18643,
+                    "duration": "4828s",
+                    "staticDuration": "4828s",
+                    "polyline": {
+                        "encodedPolyline": "s|a[h}acMS`@_@OuImCtBiDIENHyHnMcCrE{@vAiCtDuEpGsB|CsKlPeGvI_VtZW\\ECoAfBf@b@{ApBjCpBqGnIUHMKj@k@@DIH}@bAi@_@D?d@\\B?jFdE~FzEdBtAbAt@Z`@\\X`BtAj@`@c@]cB}A_CiBkBsAo@e@]c@iF{D?@V]mDiCwDsC{DmCGIoCcC{B{A}PcNqB{A]SQQi@u@_@WWMqIaHqA}@qBy@gAa@_Bo@}Ae@wA[qFg@aDWeFSSLcCKeCSmDQ_O]oHW_FImCCkEMcFOmHe@iBIiEMcX}@gI]oHQoNk@uIi@sCa@yDu@qXoEyB_@_Dk@gA_@iCmAkG_FgDkCmTmQqEmDKCm@m@_AmAa@_@OEiBCUAu@c@OWOI]@QF[TGHIRALD\\CLAVOd@QZi@`Bg@dA]`@i@Ta@DMAq@YOK_MtTcDdFeAnAkCrBaGjEaErCwJhHgOtKyBdBePpL{DvCgLlI_BrAyA|As@h@{@bA[j@e@`Ai@|@iCrFo@`BmAdDeC~FcAxBq@fBeAvBcCvFoA~BaAzAwDtFkBbCiB~BcEnFu@`Au@jAgBnE{C~IiA~Cm@bBmAzDqDnJqBvDq@`AuAfBkDjDi@g@uBcAaAc@OEWOU\\A\\?v@DXE?A@SaCBOFIdAh@fDzAb@ZiGrGGCa@IOR@DBBUh@WGKG"
+                    },
+                    "startLocation": {
+                        "latLng": {
+                            "latitude": 4.6025008,
+                            "longitude": -74.0707706
+                        }
+                    },
+                    "endLocation": {
+                        "latLng": {
+                            "latitude": 4.7103693,
+                            "longitude": -74.112022
+                        }
+                    },
+                    "steps": [
+                        {
+                            "distanceMeters": 26,
+                            "staticDuration": "20s",
+                            "polyline": {
+                                "encodedPolyline": "s|a[h}acMS`@"
+                            },
+                            "startLocation": {
+                                "latLng": {
+                                    "latitude": 4.6025008,
+                                    "longitude": -74.0707706
+                                }
+                            },
+                            "endLocation": {
+                                "latLng": {
+                                    "latitude": 4.6026041,
+                                    "longitude": -74.0709411
+                                }
+                            },
+                            "navigationInstruction": {
+                                "maneuver": "DEPART",
+                                "instructions": "Dir\u00edgete al noroeste por Cl. 17 hacia Cra. 5"
+                            },
+                            "localizedValues": {
+                                "distance": {
+                                    "text": "26 m"
+                                },
+                                "staticDuration": {
+                                    "text": "1 min"
+                                }
+                            },
+                            "travelMode": "WALK"
+                        },
+                        {
+                            "distanceMeters": 225,
+                            "staticDuration": "196s",
+                            "polyline": {
+                                "encodedPolyline": "g}a[j~acM_@OuImC"
+                            },
+                            "startLocation": {
+                                "latLng": {
+                                    "latitude": 4.6026041,
+                                    "longitude": -74.0709411
+                                }
+                            },
+                            "endLocation": {
+                                "latLng": {
+                                    "latitude": 4.6044659,
+                                    "longitude": -74.0701532
+                                }
+                            },
+                            "navigationInstruction": {
+                                "maneuver": "TURN_RIGHT",
+                                "instructions": "Gira a la derecha hacia Cra. 5"
+                            },
+                            "localizedValues": {
+                                "distance": {
+                                    "text": "0,2 km"
+                                },
+                                "staticDuration": {
+                                    "text": "3 min"
+                                }
+                            },
+                            "travelMode": "WALK"
+                        },
+                        {
+                            "distanceMeters": 118,
+                            "staticDuration": "112s",
+                            "polyline": {
+                                "encodedPolyline": "}hb[lyacMtBiD"
+                            },
+                            "startLocation": {
+                                "latLng": {
+                                    "latitude": 4.6044659,
+                                    "longitude": -74.0701532
+                                }
+                            },
+                            "endLocation": {
+                                "latLng": {
+                                    "latitude": 4.603881599999999,
+                                    "longitude": -74.0693039
+                                }
+                            },
+                            "navigationInstruction": {
+                                "maneuver": "TURN_RIGHT",
+                                "instructions": "Gira a la derecha hacia Av. Ciudad de Lima"
+                            },
+                            "localizedValues": {
+                                "distance": {
+                                    "text": "0,1 km"
+                                },
+                                "staticDuration": {
+                                    "text": "2 min"
+                                }
+                            },
+                            "travelMode": "WALK"
+                        },
+                        {
+                            "distanceMeters": 2234,
+                            "staticDuration": "486s",
+                            "polyline": {
+                                "encodedPolyline": "qeb[|sacMNHyHnMcCrE{@vAiCtDuEpGsB|CsKlPeGvI_VtZW\\EC"
+                            },
+                            "startLocation": {
+                                "latLng": {
+                                    "latitude": 4.60393,
+                                    "longitude": -74.06927
+                                }
+                            },
+                            "endLocation": {
+                                "latLng": {
+                                    "latitude": 4.61588,
+                                    "longitude": -74.08528
+                                }
+                            },
+                            "navigationInstruction": {
+                                "instructions": "Autob\u00fas en direcci\u00f3n a TV 80I - DG 89B Sur"
+                            },
+                            "localizedValues": {
+                                "distance": {
+                                    "text": "2,2 km"
+                                },
+                                "staticDuration": {
+                                    "text": "8 min"
+                                }
+                            },
+                            "transitDetails": {
+                                "stopDetails": {
+                                    "arrivalStop": {
+                                        "name": "AC 19 - AK 27",
+                                        "location": {
+                                            "latLng": {
+                                                "latitude": 4.61588,
+                                                "longitude": -74.08528
+                                            }
+                                        }
+                                    },
+                                    "arrivalTime": "2025-03-21T14:22:21Z",
+                                    "departureStop": {
+                                        "name": "AC 19 - KR 4 Germania",
+                                        "location": {
+                                            "latLng": {
+                                                "latitude": 4.60393,
+                                                "longitude": -74.06927
+                                            }
+                                        }
+                                    },
+                                    "departureTime": "2025-03-21T14:14:15Z"
+                                },
+                                "localizedValues": {
+                                    "arrivalTime": {
+                                        "time": {
+                                            "text": "9:22"
+                                        },
+                                        "timeZone": "America/Bogota"
+                                    },
+                                    "departureTime": {
+                                        "time": {
+                                            "text": "9:14"
+                                        },
+                                        "timeZone": "America/Bogota"
+                                    }
+                                },
+                                "headsign": "TV 80I - DG 89B Sur",
+                                "transitLine": {
+                                    "agencies": [
+                                        {
+                                            "name": "TRANSMILENIO-URBANA",
+                                            "phoneNumber": "+57 601 4824304",
+                                            "uri": "https://www.transmilenio.gov.co/"
+                                        }
+                                    ],
+                                    "name": "Bosa San Jose",
+                                    "color": "#00618e",
+                                    "nameShort": "99",
+                                    "textColor": "#ffffff",
+                                    "vehicle": {
+                                        "name": {
+                                            "text": "Autob\u00fas"
+                                        },
+                                        "type": "BUS",
+                                        "iconUri": "//maps.gstatic.com/mapfiles/transit/iw2/6/bus2.png"
+                                    }
+                                },
+                                "stopCount": 8
+                            },
+                            "travelMode": "TRANSIT"
+                        },
+                        {
+                            "distanceMeters": 69,
+                            "staticDuration": "54s",
+                            "polyline": {
+                                "encodedPolyline": "gpd[~wdcMoAfB"
+                            },
+                            "startLocation": {
+                                "latLng": {
+                                    "latitude": 4.6158773,
+                                    "longitude": -74.08528199999999
+                                }
+                            },
+                            "endLocation": {
+                                "latLng": {
+                                    "latitude": 4.6162759,
+                                    "longitude": -74.0858049
+                                }
+                            },
+                            "navigationInstruction": {
+                                "maneuver": "DEPART",
+                                "instructions": "Dir\u00edgete al noroeste por Av. Ciudad de Lima hacia Cra 27"
+                            },
+                            "localizedValues": {
+                                "distance": {
+                                    "text": "69 m"
+                                },
+                                "staticDuration": {
+                                    "text": "1 min"
+                                }
+                            },
+                            "travelMode": "WALK"
+                        },
+                        {
+                            "distanceMeters": 21,
+                            "staticDuration": "29s",
+                            "polyline": {
+                                "encodedPolyline": "wrd[f{dcMf@b@"
+                            },
+                            "startLocation": {
+                                "latLng": {
+                                    "latitude": 4.6162759,
+                                    "longitude": -74.0858049
+                                }
+                            },
+                            "endLocation": {
+                                "latLng": {
+                                    "latitude": 4.616075299999999,
+                                    "longitude": -74.0859796
+                                }
+                            },
+                            "navigationInstruction": {
+                                "maneuver": "TURN_LEFT",
+                                "instructions": "Gira a la izquierda hacia Cra 27"
+                            },
+                            "localizedValues": {
+                                "distance": {
+                                    "text": "21 m"
+                                },
+                                "staticDuration": {
+                                    "text": "1 min"
+                                }
+                            },
+                            "travelMode": "WALK"
+                        },
+                        {
+                            "distanceMeters": 89,
+                            "staticDuration": "78s",
+                            "polyline": {
+                                "encodedPolyline": "oqd[j|dcM{ApB"
+                            },
+                            "startLocation": {
+                                "latLng": {
+                                    "latitude": 4.616075299999999,
+                                    "longitude": -74.0859796
+                                }
+                            },
+                            "endLocation": {
+                                "latLng": {
+                                    "latitude": 4.616537999999999,
+                                    "longitude": -74.0865488
+                                }
+                            },
+                            "navigationInstruction": {
+                                "maneuver": "TURN_RIGHT",
+                                "instructions": "Gira a la derecha hacia Av. Ciudad de Lima"
+                            },
+                            "localizedValues": {
+                                "distance": {
+                                    "text": "89 m"
+                                },
+                                "staticDuration": {
+                                    "text": "1 min"
+                                }
+                            },
+                            "travelMode": "WALK"
+                        },
+                        {
+                            "distanceMeters": 108,
+                            "staticDuration": "87s",
+                            "polyline": {
+                                "encodedPolyline": "ktd[|_ecMjCpB"
+                            },
+                            "startLocation": {
+                                "latLng": {
+                                    "latitude": 4.616537999999999,
+                                    "longitude": -74.0865488
+                                }
+                            },
+                            "endLocation": {
+                                "latLng": {
+                                    "latitude": 4.6158433,
+                                    "longitude": -74.08712059999999
+                                }
+                            },
+                            "navigationInstruction": {
+                                "maneuver": "TURN_LEFT",
+                                "instructions": "Gira a la izquierda hacia Cra. 28"
+                            },
+                            "localizedValues": {
+                                "distance": {
+                                    "text": "0,1 km"
+                                },
+                                "staticDuration": {
+                                    "text": "1 min"
+                                }
+                            },
+                            "travelMode": "WALK"
+                        },
+                        {
+                            "distanceMeters": 255,
+                            "staticDuration": "200s",
+                            "polyline": {
+                                "encodedPolyline": "_pd[ncecMqGnIUH"
+                            },
+                            "startLocation": {
+                                "latLng": {
+                                    "latitude": 4.6158433,
+                                    "longitude": -74.08712059999999
+                                }
+                            },
+                            "endLocation": {
+                                "latLng": {
+                                    "latitude": 4.6173223,
+                                    "longitude": -74.088853
+                                }
+                            },
+                            "navigationInstruction": {
+                                "maneuver": "TURN_RIGHT",
+                                "instructions": "Gira a la derecha hacia Cl. 18a"
+                            },
+                            "localizedValues": {
+                                "distance": {
+                                    "text": "0,3 km"
+                                },
+                                "staticDuration": {
+                                    "text": "3 min"
+                                }
+                            },
+                            "travelMode": "WALK"
+                        },
+                        {
+                            "distanceMeters": 13,
+                            "staticDuration": "10s",
+                            "polyline": {
+                                "encodedPolyline": "gyd[hnecMMK"
+                            },
+                            "startLocation": {
+                                "latLng": {
+                                    "latitude": 4.6173223,
+                                    "longitude": -74.088853
+                                }
+                            },
+                            "endLocation": {
+                                "latLng": {
+                                    "latitude": 4.6173872,
+                                    "longitude": -74.0887876
+                                }
+                            },
+                            "navigationInstruction": {
+                                "maneuver": "TURN_RIGHT",
+                                "instructions": "Gira a la derecha hacia Troncal NQS"
+                            },
+                            "localizedValues": {
+                                "distance": {
+                                    "text": "13 m"
+                                },
+                                "staticDuration": {
+                                    "text": "1 min"
+                                }
+                            },
+                            "travelMode": "WALK"
+                        },
+                        {
+                            "distanceMeters": 51,
+                            "staticDuration": "57s",
+                            "polyline": {
+                                "encodedPolyline": "uyd[|mecMj@k@@DIH"
+                            },
+                            "startLocation": {
+                                "latLng": {
+                                    "latitude": 4.6173872,
+                                    "longitude": -74.0887876
+                                }
+                            },
+                            "endLocation": {
+                                "latLng": {
+                                    "latitude": 4.6172127,
+                                    "longitude": -74.0886467
+                                }
+                            },
+                            "navigationInstruction": {
+                                "maneuver": "TURN_RIGHT",
+                                "instructions": "Gira a la derecha hacia Troncal NQS"
+                            },
+                            "localizedValues": {
+                                "distance": {
+                                    "text": "51 m"
+                                },
+                                "staticDuration": {
+                                    "text": "1 min"
+                                }
+                            },
+                            "travelMode": "WALK"
+                        },
+                        {
+                            "distanceMeters": 117,
+                            "staticDuration": "108s",
+                            "polyline": {
+                                "encodedPolyline": "qxd[`mecM}@bAi@_@D?d@\\B?"
+                            },
+                            "startLocation": {
+                                "latLng": {
+                                    "latitude": 4.6172127,
+                                    "longitude": -74.0886467
+                                }
+                            },
+                            "endLocation": {
+                                "latLng": {
+                                    "latitude": 4.617490399999999,
+                                    "longitude": -74.0889792
+                                }
+                            },
+                            "navigationInstruction": {},
+                            "localizedValues": {
+                                "distance": {
+                                    "text": "0,1 km"
+                                },
+                                "staticDuration": {
+                                    "text": "2 min"
+                                }
+                            },
+                            "travelMode": "WALK"
+                        },
+                        {
+                            "distanceMeters": 430,
+                            "staticDuration": "356s",
+                            "polyline": {
+                                "encodedPolyline": "izd[boecMjFdE~FzEdBtA"
+                            },
+                            "startLocation": {
+                                "latLng": {
+                                    "latitude": 4.617490399999999,
+                                    "longitude": -74.0889792
+                                }
+                            },
+                            "endLocation": {
+                                "latLng": {
+                                    "latitude": 4.6145206,
+                                    "longitude": -74.0914973
+                                }
+                            },
+                            "navigationInstruction": {
+                                "maneuver": "TURN_SLIGHT_RIGHT",
+                                "instructions": "Gira ligeramente a la derecha hacia Troncal NQS"
+                            },
+                            "localizedValues": {
+                                "distance": {
+                                    "text": "0,4 km"
+                                },
+                                "staticDuration": {
+                                    "text": "6 min"
+                                }
+                            },
+                            "travelMode": "WALK"
+                        },
+                        {
+                            "distanceMeters": 94,
+                            "staticDuration": "79s",
+                            "polyline": {
+                                "encodedPolyline": "wgd[z~ecMbAt@Z`@\\X"
+                            },
+                            "startLocation": {
+                                "latLng": {
+                                    "latitude": 4.6145206,
+                                    "longitude": -74.0914973
+                                }
+                            },
+                            "endLocation": {
+                                "latLng": {
+                                    "latitude": 4.6138949,
+                                    "longitude": -74.0920651
+                                }
+                            },
+                            "navigationInstruction": {
+                                "maneuver": "NAME_CHANGE",
+                                "instructions": "Contin\u00faa por Puente Avenida Calle 13"
+                            },
+                            "localizedValues": {
+                                "distance": {
+                                    "text": "94 m"
+                                },
+                                "staticDuration": {
+                                    "text": "1 min"
+                                }
+                            },
+                            "travelMode": "WALK"
+                        },
+                        {
+                            "distanceMeters": 104,
+                            "staticDuration": "75s",
+                            "polyline": {
+                                "encodedPolyline": "ycd[lbfcM`BtAj@`@"
+                            },
+                            "startLocation": {
+                                "latLng": {
+                                    "latitude": 4.6138949,
+                                    "longitude": -74.0920651
+                                }
+                            },
+                            "endLocation": {
+                                "latLng": {
+                                    "latitude": 4.6131752,
+                                    "longitude": -74.0926735
+                                }
+                            },
+                            "navigationInstruction": {
+                                "maneuver": "NAME_CHANGE",
+                                "instructions": "Contin\u00faa por Troncal NQS"
+                            },
+                            "localizedValues": {
+                                "distance": {
+                                    "text": "0,1 km"
+                                },
+                                "staticDuration": {
+                                    "text": "1 min"
+                                }
+                            },
+                            "travelMode": "WALK"
+                        },
+                        {
+                            "distanceMeters": 8,
+                            "staticDuration": "6s",
+                            "polyline": {
+                                "encodedPolyline": "k_d[dffcM"
+                            },
+                            "startLocation": {
+                                "latLng": {
+                                    "latitude": 4.6131752,
+                                    "longitude": -74.0926735
+                                }
+                            },
+                            "endLocation": {
+                                "latLng": {
+                                    "latitude": 4.6131752,
+                                    "longitude": -74.0926735
+                                }
+                            },
+                            "navigationInstruction": {
+                                "maneuver": "TURN_RIGHT",
+                                "instructions": "Gira a la derecha hacia Troncal NQS"
+                            },
+                            "localizedValues": {
+                                "distance": {
+                                    "text": "8 m"
+                                },
+                                "staticDuration": {
+                                    "text": "1 min"
+                                }
+                            },
+                            "travelMode": "WALK"
+                        },
+                        {
+                            "distanceMeters": 103,
+                            "staticDuration": "99s",
+                            "polyline": {
+                                "encodedPolyline": "k_d[dffcMc@]cB}A"
+                            },
+                            "startLocation": {
+                                "latLng": {
+                                    "latitude": 4.6131752,
+                                    "longitude": -74.0926735
+                                }
+                            },
+                            "endLocation": {
+                                "latLng": {
+                                    "latitude": 4.6138601999999995,
+                                    "longitude": -74.0920505
+                                }
+                            },
+                            "navigationInstruction": {
+                                "maneuver": "TURN_RIGHT",
+                                "instructions": "Gira a la derecha hacia Troncal NQS"
+                            },
+                            "localizedValues": {
+                                "distance": {
+                                    "text": "0,1 km"
+                                },
+                                "staticDuration": {
+                                    "text": "2 min"
+                                }
+                            },
+                            "travelMode": "WALK"
+                        },
+                        {
+                            "distanceMeters": 168,
+                            "staticDuration": "130s",
+                            "polyline": {
+                                "encodedPolyline": "scd[hbfcM_CiBkBsA"
+                            },
+                            "startLocation": {
+                                "latLng": {
+                                    "latitude": 4.6138601999999995,
+                                    "longitude": -74.0920505
+                                }
+                            },
+                            "endLocation": {
+                                "latLng": {
+                                    "latitude": 4.61504,
+                                    "longitude": -74.0910968
+                                }
+                            },
+                            "navigationInstruction": {
+                                "maneuver": "NAME_CHANGE",
+                                "instructions": "Contin\u00faa por Puente Avenida Calle 13"
+                            },
+                            "localizedValues": {
+                                "distance": {
+                                    "text": "0,2 km"
+                                },
+                                "staticDuration": {
+                                    "text": "2 min"
+                                }
+                            },
+                            "travelMode": "WALK"
+                        },
+                        {
+                            "distanceMeters": 226,
+                            "staticDuration": "183s",
+                            "polyline": {
+                                "encodedPolyline": "_kd[j|ecMo@e@]c@iF{D"
+                            },
+                            "startLocation": {
+                                "latLng": {
+                                    "latitude": 4.61504,
+                                    "longitude": -74.0910968
+                                }
+                            },
+                            "endLocation": {
+                                "latLng": {
+                                    "latitude": 4.6165952,
+                                    "longitude": -74.0897925
+                                }
+                            },
+                            "navigationInstruction": {
+                                "maneuver": "NAME_CHANGE",
+                                "instructions": "Contin\u00faa por Troncal NQS\nEl destino est\u00e1 a la derecha."
+                            },
+                            "localizedValues": {
+                                "distance": {
+                                    "text": "0,2 km"
+                                },
+                                "staticDuration": {
+                                    "text": "3 min"
+                                }
+                            },
+                            "travelMode": "WALK"
+                        },
+                        {
+                            "distanceMeters": 13587,
+                            "staticDuration": "1965s",
+                            "polyline": {
+                                "encodedPolyline": "wtd[ftecMV]mDiCwDsC{DmCGIoCcC{B{A}PcNqB{A]SQQi@u@_@WWMqIaHqA}@qBy@gAa@_Bo@}Ae@wA[qFg@aDWeFSSLcCKeCSmDQ_O]oHW_FImCCkEMcFOmHe@iBIiEMcX}@gI]oHQoNk@uIi@sCa@yDu@qXoEyB_@_Dk@gA_@iCmAkG_FgDkCmTmQqEmDKCm@m@_AmAa@_@OEiBCUAu@c@OWOI]@QF[TGHIRALD\\CLAVOd@QZi@`Bg@dA]`@i@Ta@DMAq@YOK_MtTcDdFeAnAkCrBaGjEaErCwJhHgOtKyBdBePpL{DvCgLlI_BrAyA|As@h@{@bA[j@e@`Ai@|@iCrFo@`BmAdDeC~FcAxBq@fBeAvBcCvFoA~BaAzAwDtFkBbCiB~BcEnFu@`Au@jAgBnE{C~IiA~Cm@bBmAzDqDnJqBvDq@`AuAfBkDjDi@g@uBcAaAc@OEWOU\\A\\?v@DXE?"
+                            },
+                            "startLocation": {
+                                "latLng": {
+                                    "latitude": 4.6166032999999995,
+                                    "longitude": -74.08980249999999
+                                }
+                            },
+                            "endLocation": {
+                                "latLng": {
+                                    "latitude": 4.709808499999999,
+                                    "longitude": -74.11039199999999
+                                }
+                            },
+                            "navigationInstruction": {
+                                "instructions": "Autob\u00fas en direcci\u00f3n a Portal 80"
+                            },
+                            "localizedValues": {
+                                "distance": {
+                                    "text": "13,6 km"
+                                },
+                                "staticDuration": {
+                                    "text": "33 min"
+                                }
+                            },
+                            "transitDetails": {
+                                "stopDetails": {
+                                    "arrivalStop": {
+                                        "name": "Portal 80",
+                                        "location": {
+                                            "latLng": {
+                                                "latitude": 4.709808499999999,
+                                                "longitude": -74.11039199999999
+                                            }
+                                        }
+                                    },
+                                    "arrivalTime": "2025-03-21T15:10:52Z",
+                                    "departureStop": {
+                                        "name": "Paloquemao",
+                                        "location": {
+                                            "latLng": {
+                                                "latitude": 4.6166032999999995,
+                                                "longitude": -74.08980249999999
+                                            }
+                                        }
+                                    },
+                                    "departureTime": "2025-03-21T14:38:07Z"
+                                },
+                                "localizedValues": {
+                                    "arrivalTime": {
+                                        "time": {
+                                            "text": "10:10"
+                                        },
+                                        "timeZone": "America/Bogota"
+                                    },
+                                    "departureTime": {
+                                        "time": {
+                                            "text": "9:38"
+                                        },
+                                        "timeZone": "America/Bogota"
+                                    }
+                                },
+                                "headsign": "Portal 80",
+                                "transitLine": {
+                                    "agencies": [
+                                        {
+                                            "name": "Transmilenio-Troncal",
+                                            "phoneNumber": "+57 601 4824304",
+                                            "uri": "https://www.transmilenio.gov.co/"
+                                        }
+                                    ],
+                                    "name": "Portal 80",
+                                    "color": "#7a68ae",
+                                    "nameShort": "D22",
+                                    "textColor": "#ffffff",
+                                    "vehicle": {
+                                        "name": {
+                                            "text": "Autob\u00fas"
+                                        },
+                                        "type": "BUS",
+                                        "iconUri": "//maps.gstatic.com/mapfiles/transit/iw2/6/bus2.png"
+                                    }
+                                },
+                                "stopCount": 9
+                            },
+                            "travelMode": "TRANSIT"
+                        },
+                        {
+                            "distanceMeters": 95,
+                            "staticDuration": "77s",
+                            "polyline": {
+                                "encodedPolyline": "k{v[~ticMSaCBOFI"
+                            },
+                            "startLocation": {
+                                "latLng": {
+                                    "latitude": 4.7098246999999995,
+                                    "longitude": -74.1103968
+                                }
+                            },
+                            "endLocation": {
+                                "latLng": {
+                                    "latitude": 4.7098632,
+                                    "longitude": -74.109624
+                                }
+                            },
+                            "navigationInstruction": {
+                                "maneuver": "DEPART",
+                                "instructions": "Dir\u00edgete al este por V\u00edas Portal 80"
+                            },
+                            "localizedValues": {
+                                "distance": {
+                                    "text": "0,1 km"
+                                },
+                                "staticDuration": {
+                                    "text": "1 min"
+                                }
+                            },
+                            "travelMode": "WALK"
+                        },
+                        {
+                            "distanceMeters": 187,
+                            "staticDuration": "155s",
+                            "polyline": {
+                                "encodedPolyline": "s{v[bpicMdAh@fDzAb@Z"
+                            },
+                            "startLocation": {
+                                "latLng": {
+                                    "latitude": 4.7098632,
+                                    "longitude": -74.109624
+                                }
+                            },
+                            "endLocation": {
+                                "latLng": {
+                                    "latitude": 4.7084899,
+                                    "longitude": -74.1104319
+                                }
+                            },
+                            "navigationInstruction": {
+                                "maneuver": "TURN_RIGHT",
+                                "instructions": "Gira a la derecha para continuar en V\u00edas Portal 80"
+                            },
+                            "localizedValues": {
+                                "distance": {
+                                    "text": "0,2 km"
+                                },
+                                "staticDuration": {
+                                    "text": "3 min"
+                                }
+                            },
+                            "travelMode": "WALK"
+                        },
+                        {
+                            "distanceMeters": 215,
+                            "staticDuration": "174s",
+                            "polyline": {
+                                "encodedPolyline": "asv[duicMiGrG"
+                            },
+                            "startLocation": {
+                                "latLng": {
+                                    "latitude": 4.7084899,
+                                    "longitude": -74.1104319
+                                }
+                            },
+                            "endLocation": {
+                                "latLng": {
+                                    "latitude": 4.709823999999999,
+                                    "longitude": -74.1118114
+                                }
+                            },
+                            "navigationInstruction": {
+                                "maneuver": "TURN_RIGHT",
+                                "instructions": "Gira a la derecha hacia Av Cl 80"
+                            },
+                            "localizedValues": {
+                                "distance": {
+                                    "text": "0,2 km"
+                                },
+                                "staticDuration": {
+                                    "text": "3 min"
+                                }
+                            },
+                            "travelMode": "WALK"
+                        },
+                        {
+                            "distanceMeters": 9,
+                            "staticDuration": "8s",
+                            "polyline": {
+                                "encodedPolyline": "k{v[x}icMGC"
+                            },
+                            "startLocation": {
+                                "latLng": {
+                                    "latitude": 4.709823999999999,
+                                    "longitude": -74.1118114
+                                }
+                            },
+                            "endLocation": {
+                                "latLng": {
+                                    "latitude": 4.7098638,
+                                    "longitude": -74.1117922
+                                }
+                            },
+                            "navigationInstruction": {
+                                "maneuver": "TURN_RIGHT",
+                                "instructions": "Gira a la derecha"
+                            },
+                            "localizedValues": {
+                                "distance": {
+                                    "text": "9 m"
+                                },
+                                "staticDuration": {
+                                    "text": "1 min"
+                                }
+                            },
+                            "travelMode": "WALK"
+                        },
+                        {
+                            "distanceMeters": 42,
+                            "staticDuration": "50s",
+                            "polyline": {
+                                "encodedPolyline": "s{v[t}icMa@IOR@DBB"
+                            },
+                            "startLocation": {
+                                "latLng": {
+                                    "latitude": 4.7098638,
+                                    "longitude": -74.1117922
+                                }
+                            },
+                            "endLocation": {
+                                "latLng": {
+                                    "latitude": 4.7100751999999995,
+                                    "longitude": -74.11188709999999
+                                }
+                            },
+                            "navigationInstruction": {
+                                "maneuver": "TURN_SLIGHT_LEFT",
+                                "instructions": "Gira ligeramente a la izquierda\nToma las escaleras"
+                            },
+                            "localizedValues": {
+                                "distance": {
+                                    "text": "42 m"
+                                },
+                                "staticDuration": {
+                                    "text": "1 min"
+                                }
+                            },
+                            "travelMode": "WALK"
+                        },
+                        {
+                            "distanceMeters": 49,
+                            "staticDuration": "34s",
+                            "polyline": {
+                                "encodedPolyline": "_}v[h~icMUh@WGKG"
+                            },
+                            "startLocation": {
+                                "latLng": {
+                                    "latitude": 4.7100751999999995,
+                                    "longitude": -74.11188709999999
+                                }
+                            },
+                            "endLocation": {
+                                "latLng": {
+                                    "latitude": 4.7103693,
+                                    "longitude": -74.112022
+                                }
+                            },
+                            "navigationInstruction": {
+                                "maneuver": "TURN_SLIGHT_RIGHT",
+                                "instructions": "Gira ligeramente a la derecha"
+                            },
+                            "localizedValues": {
+                                "distance": {
+                                    "text": "49 m"
+                                },
+                                "staticDuration": {
+                                    "text": "1 min"
+                                }
+                            },
+                            "travelMode": "WALK"
+                        }
+                    ],
+                    "localizedValues": {
+                        "distance": {
+                            "text": "18,6 km"
+                        },
+                        "duration": {
+                            "text": "1h 20 min"
+                        },
+                        "staticDuration": {
+                            "text": "1h 20 min"
+                        }
+                    },
+                    "stepsOverview": {
+                        "multiModalSegments": [
+                            {
+                                "stepStartIndex": 0,
+                                "stepEndIndex": 2,
+                                "navigationInstruction": {
+                                    "instructions": "Camina hasta AC 19 - KR 4 Germania"
+                                },
+                                "travelMode": "WALK"
+                            },
+                            {
+                                "stepStartIndex": 3,
+                                "stepEndIndex": 3,
+                                "navigationInstruction": {
+                                    "instructions": "Autob\u00fas en direcci\u00f3n a TV 80I - DG 89B Sur"
+                                },
+                                "travelMode": "TRANSIT"
+                            },
+                            {
+                                "stepStartIndex": 4,
+                                "stepEndIndex": 18,
+                                "navigationInstruction": {
+                                    "instructions": "Camina hasta Paloquemao"
+                                },
+                                "travelMode": "WALK"
+                            },
+                            {
+                                "stepStartIndex": 19,
+                                "stepEndIndex": 19,
+                                "navigationInstruction": {
+                                    "instructions": "Autob\u00fas en direcci\u00f3n a Portal 80"
+                                },
+                                "travelMode": "TRANSIT"
+                            },
+                            {
+                                "stepStartIndex": 20,
+                                "stepEndIndex": 25,
+                                "travelMode": "WALK"
+                            }
+                        ]
+                    }
+                }
+            ],
+            "distanceMeters": 18643,
+            "duration": "4224s"
+        }
+    ]
+}
