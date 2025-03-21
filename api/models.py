@@ -6,6 +6,11 @@ import asyncio
 import random
 
 
+class Coords(BaseModel):
+    latitude: float
+    longitude: float
+
+
 class Route(BaseModel):
     id: int
     name: str
@@ -18,11 +23,6 @@ class Station(BaseModel):
     latitude: float = 0.0
     longitude: float = 0.0
     arrivingRoutes: list[Route] = []
-
-
-class Coords(BaseModel):
-    latitude: float
-    longitude: float
 
 
 this_dir = os.path.dirname(__file__)

@@ -21,8 +21,8 @@ headers = {
 
 # Define the request payload
 data = {
-    "origin": {"address": "Transmilenio Estacion Universidades - CityU, Bogota"},
-    "destination": {"address": "Portal 80, Bogota"},
+    "origin": {"location": {"latLng": {"latitude": 4.67654191, "longitude": -74.06706598}}},
+    "destination": {"location": {"latLng": {"latitude": 4.75462117, "longitude": -74.0460349500000}}},
     "travelMode": "TRANSIT",
     "computeAlternativeRoutes": True,
 }
