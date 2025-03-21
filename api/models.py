@@ -1,7 +1,7 @@
 import os
 import json
 import unicodedata
-from pydantic import BaseModel, ConfigDict
+from pydantic import BaseModel
 import asyncio
 import random
 
@@ -11,18 +11,18 @@ class Coords(BaseModel):
     longitude: float
 
 
-class Route(BaseModel):
-    id: int
-    name: str
-    destination: str
-
-
 class Station(BaseModel):
     id: int
     name: str
     latitude: float = 0.0
     longitude: float = 0.0
-    arrivingRoutes: list[Route] = []
+    arrivingRoutes: list["Route"] = []
+
+
+class Route(BaseModel):
+    id: int
+    name: str
+    destinationStationId: int
 
 
 this_dir = os.path.dirname(__file__)
@@ -33,6 +33,7 @@ routes_path = os.path.join(data_dir, "Rutas_Troncales_de_TRANSMILENIO.geojson")
 with open(stations_path, encoding="utf-8") as f:
     stations = json.load(f)
 
+stations_dict_by_names = {}
 stations_dict = {}
 for feature in stations["features"]:
     station_properties = feature["properties"]
@@ -45,9 +46,10 @@ for feature in stations["features"]:
         .encode("ascii", "ignore")
         .decode("ascii")
     )
-    stations_dict[station_name.replace(" ", "_").lower()] = Station(
-        id=id, name=station_name, latitude=latitud, longitude=longitud
-    )
+    
+    station = Station(id=id, name=station_name, latitude=latitud, longitude=longitud)
+    stations_dict_by_names[station_name.replace(" ", "_").lower()] = station
+    stations_dict[id] = station
 
 del stations
 
@@ -64,13 +66,25 @@ for feature in routes["features"]:
 
         # obtener nombre de la ruta como lo conoce el usuario
         route_name = route_name.split(" ")[0]
-        route_destination = route_properties["destino_ruta_troncal"]
-        route_destination = (
-            unicodedata.normalize("NFKD", route_destination)
+        route_destination_name = route_properties["destino_ruta_troncal"]
+        route_destination_name = (
+            unicodedata.normalize("NFKD", route_destination_name)
             .encode("ascii", "ignore")
             .decode("ascii")
         )
-        routes_dict[id] = Route(id=id, name=route_name, destination=route_destination)
+        destination_name_key = route_destination_name.replace(" ", "_").lower()
+
+        routeDestinationStation = stations_dict_by_names.get(destination_name_key, None)
+
+        if not routeDestinationStation:
+            print(
+                f"Destination station {route_destination_name} not found for route {route_name}"
+            )
+            continue
+
+        routes_dict[id] = Route(
+            id=id, name=route_name, destinationStationId=routeDestinationStation.id
+        )
 
 del routes
 
@@ -79,7 +93,7 @@ routes_list = sorted(list(routes_dict.values()), key=lambda route: route.name)
 
 async def update_routes_locations():
     while True:
-        for station in stations_dict.values():
+        for station in stations_dict_by_names.values():
             station.arrivingRoutes = station.arrivingRoutes = [
                 Route(id=r.id, name=r.name, destination=r.destination)
                 for r in random.sample(routes_list, k=random.randint(0, 4))

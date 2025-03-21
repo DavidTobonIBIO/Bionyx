@@ -45,11 +45,12 @@ async def read_stations():
     return list(stations_dict.values())
 
 
-@app.get("/stations/{name}", response_model=Station)
-async def read_station(name: str):
-    if name not in stations_dict:
-        raise HTTPException(status_code=404, detail=f"Station {name} not found")
-    return stations_dict[name]
+@app.get("/stations/{id}", response_model=Station)
+async def read_station(id: int):
+    station = stations_dict.get(id)
+    if station:
+        raise HTTPException(status_code=404, detail=f"Station with id={id} not found")
+    return stations_dict[id]
 
 
 @app.post("/stations/nearest_station", response_model=Station)
