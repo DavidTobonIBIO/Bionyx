@@ -3,6 +3,7 @@ from datetime import datetime
 
 
 def get_time_to_departure(departure_time):
+    # departure_time is in the format "HH:MM"
     fmt = "%H:%M"
     current_time = datetime.now().strftime(fmt)
     t1 = datetime.strptime(current_time, fmt)
@@ -16,7 +17,7 @@ with open("response.json", "r") as f:
 
 users_route = "D24"
 
-for i, route in enumerate(response["routes"]):
+for route in response["routes"]:
     leg = route["legs"][0]
     for step in leg["steps"]:
         if step["travelMode"] == "TRANSIT":
