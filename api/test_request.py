@@ -21,8 +21,8 @@ headers = {
 
 # Define the request payload
 data = {
-    "origin": {"location": {"latLng": {"latitude": 4.67654191, "longitude": -74.06706598}}},
-    "destination": {"location": {"latLng": {"latitude": 4.75462117, "longitude": -74.0460349500000}}},
+    "origin": {"location": {"latLng": {"latitude": 4.58598283, "longitude": -74.20546046}}},
+    "destination": {"location": {"latLng": {"latitude": 4.65729068, "longitude": -74.07766289}}},
     "travelMode": "TRANSIT",
     "computeAlternativeRoutes": True,
 }

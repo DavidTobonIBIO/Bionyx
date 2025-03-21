@@ -3,220 +3,92 @@
         {
             "legs": [
                 {
-                    "distanceMeters": 10463,
-                    "duration": "2039s",
-                    "staticDuration": "2039s",
+                    "distanceMeters": 19043,
+                    "duration": "2535s",
+                    "staticDuration": "2535s",
                     "polyline": {
-                        "encodedPolyline": "kkp[bfacMuAs@fDwGVWVQr@_@FMJTgAb@G@?Er@[FMZ{@DCIWBCyCeGBAFEsGiNuA}C}AcD[Y[Qg@GaDSWGOM]g@e@_@]Ke@EWI_Gw@EEwFWkLeA{CWuSuB}Iq@oWiCcD[qEc@gKaA}UuBcJw@}C]qHo@aTuBa[uCoC[eVsBgBQgAUqEa@{Fq@{Cc@k@EqDG{J}@sJaAgDYcLkAgOmAkI{@w_@mDoXeC_Em@sBMgCOwIw@wKSkBMmC]qDo@uAYQA{@QkGw@uGm@QBOLERHTFLL?n@LxC\\?C@AgDa@c@ITChBCvDb@"
+                        "encodedPolyline": "ou~Zlf|cMDAuBsFmC{Go@gB]_AUm@}EoL{@eBqCcH_C_GqDsIwFwNyDaKsCsHuCsHkAmDaDeL?YKe@CU@O_@_BQcASmC?sDMyM@_GJkErAcQvBoYDgCDwOAiPB}BQ}FWoGa@oGm@yNO}EBqAJiAp@wDt@sCPk@VmBz@_On@qI@i@Jw@AoAWwC[yCY}DEgBOoCGeDE_@ByB\\sFTaCd@aE`@sCj@uEv@gF`AaIr@yHZ_C^yDHwEAyFKeCOkLCgCk@sMW{Ck@qF_CcRc@{CmAkGuB}Io@eCWy@wAsDwAsDkAsCqAgDa@oAIc@Dq@h@wBB[G_@cAeBaCoDsFyIuFmIeCaDaEuE}DyDeDsCeBsAwByAiBaAsBoAmBwAcG}EcEaDiAaAeKaIoD_Cm@a@gB{AcCkBuAiAGQsBgB{AsAqGwEwDsC{DmCGIoCcC{B{A}PcNqB{A]SQQi@u@_@WWMqIaHqA}@qBy@gAa@_Bo@}Ae@wA[qFg@aDWeFSSLcCKeCSmDQ_O]oHW_FImCCkEMcFOmHe@_EMw[gAgI]oHQoNk@wHe@?J"
                     },
                     "startLocation": {
                         "latLng": {
-                            "latitude": 4.676536899999999,
-                            "longitude": -74.0670579
+                            "latitude": 4.5859952999999996,
+                            "longitude": -74.2053522
                         }
                     },
                     "endLocation": {
                         "latLng": {
-                            "latitude": 4.7546234,
-                            "longitude": -74.0460452
+                            "latitude": 4.6569942,
+                            "longitude": -74.07771559999999
                         }
                     },
                     "steps": [
                         {
-                            "distanceMeters": 60,
-                            "staticDuration": "45s",
+                            "distanceMeters": 19043,
+                            "staticDuration": "2535s",
                             "polyline": {
-                                "encodedPolyline": "kkp[bfacMuAs@"
+                                "encodedPolyline": "ou~Zlf|cMDAuBsFmC{Go@gB]_AUm@}EoL{@eBqCcH_C_GqDsIwFwNyDaKsCsHuCsHkAmDaDeL?YKe@CU@O_@_BQcASmC?sDMyM@_GJkErAcQvBoYDgCDwOAiPB}BQ}FWoGa@oGm@yNO}EBqAJiAp@wDt@sCPk@VmBz@_On@qI@i@Jw@AoAWwC[yCY}DEgBOoCGeDE_@ByB\\sFTaCd@aE`@sCj@uEv@gF`AaIr@yHZ_C^yDHwEAyFKeCOkLCgCk@sMW{Ck@qF_CcRc@{CmAkGuB}Io@eCWy@wAsDwAsDkAsCqAgDa@oAIc@Dq@h@wBB[G_@cAeBaCoDsFyIuFmIeCaDaEuE}DyDeDsCeBsAwByAiBaAsBoAmBwAcG}EcEaDiAaAeKaIoD_Cm@a@gB{AcCkBuAiAGQsBgB{AsAqGwEwDsC{DmCGIoCcC{B{A}PcNqB{A]SQQi@u@_@WWMqIaHqA}@qBy@gAa@_Bo@}Ae@wA[qFg@aDWeFSSLcCKeCSmDQ_O]oHW_FImCCkEMcFOmHe@_EMw[gAgI]oHQoNk@wHe@?J"
                             },
                             "startLocation": {
                                 "latLng": {
-                                    "latitude": 4.676536899999999,
-                                    "longitude": -74.0670579
+                                    "latitude": 4.5859952999999996,
+                                    "longitude": -74.2053522
                                 }
                             },
                             "endLocation": {
                                 "latLng": {
-                                    "latitude": 4.6769717,
-                                    "longitude": -74.0667998
+                                    "latitude": 4.6569942,
+                                    "longitude": -74.07771559999999
                                 }
                             },
                             "navigationInstruction": {
-                                "maneuver": "DEPART",
-                                "instructions": "Dir\u00edgete al nordeste por Troncal Suba hacia Cl. 86a"
+                                "instructions": "Autob\u00fas en direcci\u00f3n a 7 de Agosto"
                             },
                             "localizedValues": {
                                 "distance": {
-                                    "text": "60 m"
+                                    "text": "19,0 km"
                                 },
                                 "staticDuration": {
-                                    "text": "1 min"
-                                }
-                            },
-                            "travelMode": "WALK"
-                        },
-                        {
-                            "distanceMeters": 265,
-                            "staticDuration": "230s",
-                            "polyline": {
-                                "encodedPolyline": "anp[ndacMfDwGVWVQr@_@FM"
-                            },
-                            "startLocation": {
-                                "latLng": {
-                                    "latitude": 4.6769717,
-                                    "longitude": -74.0667998
-                                }
-                            },
-                            "endLocation": {
-                                "latLng": {
-                                    "latitude": 4.6755857999999995,
-                                    "longitude": -74.0649641
-                                }
-                            },
-                            "navigationInstruction": {
-                                "maneuver": "TURN_RIGHT",
-                                "instructions": "Gira a la derecha hacia Cl. 86a"
-                            },
-                            "localizedValues": {
-                                "distance": {
-                                    "text": "0,3 km"
-                                },
-                                "staticDuration": {
-                                    "text": "4 min"
-                                }
-                            },
-                            "travelMode": "WALK"
-                        },
-                        {
-                            "distanceMeters": 23,
-                            "staticDuration": "19s",
-                            "polyline": {
-                                "encodedPolyline": "mep[~x`cMJT"
-                            },
-                            "startLocation": {
-                                "latLng": {
-                                    "latitude": 4.6755857999999995,
-                                    "longitude": -74.0649641
-                                }
-                            },
-                            "endLocation": {
-                                "latLng": {
-                                    "latitude": 4.6755254,
-                                    "longitude": -74.0650694
-                                }
-                            },
-                            "navigationInstruction": {
-                                "maneuver": "TURN_RIGHT",
-                                "instructions": "Gira a la derecha hacia Av. Cdad. de Quito/Ave Cra 30/Av NQS"
-                            },
-                            "localizedValues": {
-                                "distance": {
-                                    "text": "23 m"
-                                },
-                                "staticDuration": {
-                                    "text": "1 min"
-                                }
-                            },
-                            "travelMode": "WALK"
-                        },
-                        {
-                            "distanceMeters": 329,
-                            "staticDuration": "282s",
-                            "polyline": {
-                                "encodedPolyline": "aep[ty`cMgAb@G@?Er@[FMZ{@DCIWBCyCeG"
-                            },
-                            "startLocation": {
-                                "latLng": {
-                                    "latitude": 4.6755254,
-                                    "longitude": -74.0650694
-                                }
-                            },
-                            "endLocation": {
-                                "latLng": {
-                                    "latitude": 4.6762612,
-                                    "longitude": -74.0632463
-                                }
-                            },
-                            "navigationInstruction": {
-                                "maneuver": "TURN_RIGHT",
-                                "instructions": "Gira a la derecha\nEl destino est\u00e1 a la derecha."
-                            },
-                            "localizedValues": {
-                                "distance": {
-                                    "text": "0,3 km"
-                                },
-                                "staticDuration": {
-                                    "text": "5 min"
-                                }
-                            },
-                            "travelMode": "WALK"
-                        },
-                        {
-                            "distanceMeters": 9497,
-                            "staticDuration": "1225s",
-                            "polyline": {
-                                "encodedPolyline": "oip[fn`cMFEsGiNuA}C}AcD[Y[Qg@GaDSWGOM]g@e@_@]Ke@EWI_Gw@EEwFWkLeA{CWuSuB}Iq@oWiCcD[qEc@gKaA}UuBcJw@}C]qHo@aTuBa[uCoC[eVsBgBQgAUqEa@{Fq@{Cc@k@EqDG{J}@sJaAgDYcLkAgOmAkI{@w_@mDoXeC_Em@sBMgCOwIw@wKSkBMmC]qDo@uAYQA{@QkGw@uGm@QBOLERHTFLL?n@LxC\\?C"
-                            },
-                            "startLocation": {
-                                "latLng": {
-                                    "latitude": 4.6762448,
-                                    "longitude": -74.06323669999999
-                                }
-                            },
-                            "endLocation": {
-                                "latLng": {
-                                    "latitude": 4.7551676,
-                                    "longitude": -74.04613719999999
-                                }
-                            },
-                            "navigationInstruction": {
-                                "instructions": "Autob\u00fas en direcci\u00f3n a Portal Norte"
-                            },
-                            "localizedValues": {
-                                "distance": {
-                                    "text": "9,5 km"
-                                },
-                                "staticDuration": {
-                                    "text": "20 min"
+                                    "text": "42 min"
                                 }
                             },
                             "transitDetails": {
                                 "stopDetails": {
                                     "arrivalStop": {
-                                        "name": "Portal Norte",
+                                        "name": "7 de Agosto",
                                         "location": {
                                             "latLng": {
-                                                "latitude": 4.7551676,
-                                                "longitude": -74.04613719999999
+                                                "latitude": 4.6569942,
+                                                "longitude": -74.07771559999999
                                             }
                                         }
                                     },
-                                    "arrivalTime": "2025-03-21T21:46:15Z",
+                                    "arrivalTime": "2025-03-21T23:28:15Z",
                                     "departureStop": {
-                                        "name": "Castellana",
+                                        "name": "San Mateo C.C Unisur",
                                         "location": {
                                             "latLng": {
-                                                "latitude": 4.6762448,
-                                                "longitude": -74.06323669999999
+                                                "latitude": 4.5859952999999996,
+                                                "longitude": -74.2053522
                                             }
                                         }
                                     },
-                                    "departureTime": "2025-03-21T21:25:50Z"
+                                    "departureTime": "2025-03-21T22:46:00Z"
                                 },
                                 "localizedValues": {
                                     "arrivalTime": {
                                         "time": {
-                                            "text": "16:46"
+                                            "text": "18:28"
                                         },
                                         "timeZone": "America/Bogota"
                                     },
                                     "departureTime": {
                                         "time": {
-                                            "text": "16:25"
+                                            "text": "17:46"
                                         },
                                         "timeZone": "America/Bogota"
                                     }
                                 },
-                                "headsign": "Portal Norte",
+                                "headsign": "7 de Agosto",
                                 "transitLine": {
                                     "agencies": [
                                         {
@@ -225,9 +97,9 @@
                                             "uri": "https://www.transmilenio.gov.co/"
                                         }
                                     ],
-                                    "name": "Portal Norte",
-                                    "color": "#7ac143",
-                                    "nameShort": "B12",
+                                    "name": "7 De Agosto",
+                                    "color": "#ab6b0d",
+                                    "nameShort": "E42",
                                     "textColor": "#ffffff",
                                     "vehicle": {
                                         "name": {
@@ -237,333 +109,128 @@
                                         "iconUri": "//maps.gstatic.com/mapfiles/transit/iw2/6/bus2.png"
                                     }
                                 },
-                                "stopCount": 7
+                                "stopCount": 10
                             },
                             "travelMode": "TRANSIT"
-                        },
-                        {
-                            "distanceMeters": 115,
-                            "staticDuration": "89s",
-                            "polyline": {
-                                "encodedPolyline": "wv_\\hc}bMgDa@c@I"
-                            },
-                            "startLocation": {
-                                "latLng": {
-                                    "latitude": 4.7551634,
-                                    "longitude": -74.04612670000002
-                                }
-                            },
-                            "endLocation": {
-                                "latLng": {
-                                    "latitude": 4.7561822,
-                                    "longitude": -74.0459079
-                                }
-                            },
-                            "navigationInstruction": {
-                                "maneuver": "DEPART",
-                                "instructions": "Dir\u00edgete al norte por Troncal Autopista Nte."
-                            },
-                            "localizedValues": {
-                                "distance": {
-                                    "text": "0,1 km"
-                                },
-                                "staticDuration": {
-                                    "text": "1 min"
-                                }
-                            },
-                            "travelMode": "WALK"
-                        },
-                        {
-                            "distanceMeters": 174,
-                            "staticDuration": "149s",
-                            "polyline": {
-                                "encodedPolyline": "c}_\\|a}bMTChBCvDb@"
-                            },
-                            "startLocation": {
-                                "latLng": {
-                                    "latitude": 4.7561822,
-                                    "longitude": -74.0459079
-                                }
-                            },
-                            "endLocation": {
-                                "latLng": {
-                                    "latitude": 4.7546234,
-                                    "longitude": -74.0460452
-                                }
-                            },
-                            "navigationInstruction": {
-                                "maneuver": "TURN_SHARP_RIGHT",
-                                "instructions": "Gira a la derecha para continuar en Troncal Autopista Nte.\nEl destino est\u00e1 a la izquierda."
-                            },
-                            "localizedValues": {
-                                "distance": {
-                                    "text": "0,2 km"
-                                },
-                                "staticDuration": {
-                                    "text": "2 min"
-                                }
-                            },
-                            "travelMode": "WALK"
                         }
                     ],
                     "localizedValues": {
                         "distance": {
-                            "text": "10,5 km"
+                            "text": "19,0 km"
                         },
                         "duration": {
-                            "text": "34 min"
+                            "text": "42 min"
                         },
                         "staticDuration": {
-                            "text": "34 min"
+                            "text": "42 min"
                         }
                     },
                     "stepsOverview": {
                         "multiModalSegments": [
                             {
                                 "stepStartIndex": 0,
-                                "stepEndIndex": 3,
+                                "stepEndIndex": 0,
                                 "navigationInstruction": {
-                                    "instructions": "Camina hasta Castellana"
-                                },
-                                "travelMode": "WALK"
-                            },
-                            {
-                                "stepStartIndex": 4,
-                                "stepEndIndex": 4,
-                                "navigationInstruction": {
-                                    "instructions": "Autob\u00fas en direcci\u00f3n a Portal Norte"
+                                    "instructions": "Autob\u00fas en direcci\u00f3n a 7 de Agosto"
                                 },
                                 "travelMode": "TRANSIT"
-                            },
-                            {
-                                "stepStartIndex": 5,
-                                "stepEndIndex": 6,
-                                "travelMode": "WALK"
                             }
                         ]
                     }
                 }
             ],
-            "distanceMeters": 10463,
-            "duration": "2039s"
+            "distanceMeters": 19043,
+            "duration": "2535s"
         },
         {
             "legs": [
                 {
-                    "distanceMeters": 10463,
-                    "duration": "2067s",
-                    "staticDuration": "2067s",
+                    "distanceMeters": 19043,
+                    "duration": "2760s",
+                    "staticDuration": "2760s",
                     "polyline": {
-                        "encodedPolyline": "kkp[bfacMuAs@fDwGVWVQr@_@FMJTgAb@G@?Er@[FMZ{@DCIWBCyCeGBAFEsGiNuA}C}AcD[Y[Qg@GaDSWGOM]g@e@_@]Ke@EWI_Gw@EEwFWkLeA{CWuSuB}Iq@oWiCcD[qEc@gKaA}UuBcJw@}C]qHo@aTuBa[uCoC[eVsBgBQgAUqEa@{Fq@{Cc@k@EqDG{J}@sJaAgDYcLkAgOmAkI{@w_@mDoXeC_Em@sBMgCOwIw@wKSkBMmC]qDo@uAYQA{@QkGw@uGm@QBOLERHTFLL?n@LxC\\?C@AgDa@c@ITChBCvDb@"
+                        "encodedPolyline": "ou~Zlf|cMDAuBsFmC{Go@gB]_AUm@}EoL{@eBqCcH_C_GqDsIwFwNyDaKsCsHuCsHkAmDaDeL?YKe@CU@O_@_BQcASmC?sDMyM@_GJkErAcQvBoYDgCDwOAiPB}BQ}FWoGa@oGm@yNO}EBqAJiAp@wDt@sCPk@VmBz@_On@qI@i@Jw@AoAWwC[yCY}DEgBOoCGeDE_@ByB\\sFTaCd@aE`@sCj@uEv@gF`AaIr@yHZ_C^yDHwEAyFKeCOkLCgCk@sMW{Ck@qF_CcRc@{CmAkGuB}Io@eCWy@wAsDwAsDkAsCqAgDa@oAIc@Dq@h@wBB[G_@cAeBaCoDsFyIuFmIeCaDaEuE}DyDeDsCeBsAwByAiBaAsBoAmBwAcG}EcEaDiAaAeKaIoD_Cm@a@gB{AcCkBuAiAGQsBgB{AsAqGwEwDsC{DmCGIoCcC{B{A}PcNqB{A]SQQi@u@_@WWMqIaHqA}@qBy@gAa@_Bo@}Ae@wA[qFg@aDWeFSSLcCKeCSmDQ_O]oHW_FImCCkEMcFOmHe@_EMw[gAgI]oHQoNk@wHe@?J"
                     },
                     "startLocation": {
                         "latLng": {
-                            "latitude": 4.676536899999999,
-                            "longitude": -74.0670579
+                            "latitude": 4.5859952999999996,
+                            "longitude": -74.2053522
                         }
                     },
                     "endLocation": {
                         "latLng": {
-                            "latitude": 4.7546234,
-                            "longitude": -74.0460452
+                            "latitude": 4.6569942,
+                            "longitude": -74.07771559999999
                         }
                     },
                     "steps": [
                         {
-                            "distanceMeters": 60,
-                            "staticDuration": "45s",
+                            "distanceMeters": 19043,
+                            "staticDuration": "2760s",
                             "polyline": {
-                                "encodedPolyline": "kkp[bfacMuAs@"
+                                "encodedPolyline": "ou~Zlf|cMDAuBsFmC{Go@gB]_AUm@}EoL{@eBqCcH_C_GqDsIwFwNyDaKsCsHuCsHkAmDaDeL?YKe@CU@O_@_BQcASmC?sDMyM@_GJkErAcQvBoYDgCDwOAiPB}BQ}FWoGa@oGm@yNO}EBqAJiAp@wDt@sCPk@VmBz@_On@qI@i@Jw@AoAWwC[yCY}DEgBOoCGeDE_@ByB\\sFTaCd@aE`@sCj@uEv@gF`AaIr@yHZ_C^yDHwEAyFKeCOkLCgCk@sMW{Ck@qF_CcRc@{CmAkGuB}Io@eCWy@wAsDwAsDkAsCqAgDa@oAIc@Dq@h@wBB[G_@cAeBaCoDsFyIuFmIeCaDaEuE}DyDeDsCeBsAwByAiBaAsBoAmBwAcG}EcEaDiAaAeKaIoD_Cm@a@gB{AcCkBuAiAGQsBgB{AsAqGwEwDsC{DmCGIoCcC{B{A}PcNqB{A]SQQi@u@_@WWMqIaHqA}@qBy@gAa@_Bo@}Ae@wA[qFg@aDWeFSSLcCKeCSmDQ_O]oHW_FImCCkEMcFOmHe@_EMw[gAgI]oHQoNk@wHe@?J"
                             },
                             "startLocation": {
                                 "latLng": {
-                                    "latitude": 4.676536899999999,
-                                    "longitude": -74.0670579
+                                    "latitude": 4.5859952999999996,
+                                    "longitude": -74.2053522
                                 }
                             },
                             "endLocation": {
                                 "latLng": {
-                                    "latitude": 4.6769717,
-                                    "longitude": -74.0667998
+                                    "latitude": 4.6569942,
+                                    "longitude": -74.07771559999999
                                 }
                             },
                             "navigationInstruction": {
-                                "maneuver": "DEPART",
-                                "instructions": "Dir\u00edgete al nordeste por Troncal Suba hacia Cl. 86a"
+                                "instructions": "Autob\u00fas en direcci\u00f3n a 7 de Agosto"
                             },
                             "localizedValues": {
                                 "distance": {
-                                    "text": "60 m"
+                                    "text": "19,0 km"
                                 },
                                 "staticDuration": {
-                                    "text": "1 min"
-                                }
-                            },
-                            "travelMode": "WALK"
-                        },
-                        {
-                            "distanceMeters": 265,
-                            "staticDuration": "230s",
-                            "polyline": {
-                                "encodedPolyline": "anp[ndacMfDwGVWVQr@_@FM"
-                            },
-                            "startLocation": {
-                                "latLng": {
-                                    "latitude": 4.6769717,
-                                    "longitude": -74.0667998
-                                }
-                            },
-                            "endLocation": {
-                                "latLng": {
-                                    "latitude": 4.6755857999999995,
-                                    "longitude": -74.0649641
-                                }
-                            },
-                            "navigationInstruction": {
-                                "maneuver": "TURN_RIGHT",
-                                "instructions": "Gira a la derecha hacia Cl. 86a"
-                            },
-                            "localizedValues": {
-                                "distance": {
-                                    "text": "0,3 km"
-                                },
-                                "staticDuration": {
-                                    "text": "4 min"
-                                }
-                            },
-                            "travelMode": "WALK"
-                        },
-                        {
-                            "distanceMeters": 23,
-                            "staticDuration": "19s",
-                            "polyline": {
-                                "encodedPolyline": "mep[~x`cMJT"
-                            },
-                            "startLocation": {
-                                "latLng": {
-                                    "latitude": 4.6755857999999995,
-                                    "longitude": -74.0649641
-                                }
-                            },
-                            "endLocation": {
-                                "latLng": {
-                                    "latitude": 4.6755254,
-                                    "longitude": -74.0650694
-                                }
-                            },
-                            "navigationInstruction": {
-                                "maneuver": "TURN_RIGHT",
-                                "instructions": "Gira a la derecha hacia Av. Cdad. de Quito/Ave Cra 30/Av NQS"
-                            },
-                            "localizedValues": {
-                                "distance": {
-                                    "text": "23 m"
-                                },
-                                "staticDuration": {
-                                    "text": "1 min"
-                                }
-                            },
-                            "travelMode": "WALK"
-                        },
-                        {
-                            "distanceMeters": 329,
-                            "staticDuration": "282s",
-                            "polyline": {
-                                "encodedPolyline": "aep[ty`cMgAb@G@?Er@[FMZ{@DCIWBCyCeG"
-                            },
-                            "startLocation": {
-                                "latLng": {
-                                    "latitude": 4.6755254,
-                                    "longitude": -74.0650694
-                                }
-                            },
-                            "endLocation": {
-                                "latLng": {
-                                    "latitude": 4.6762612,
-                                    "longitude": -74.0632463
-                                }
-                            },
-                            "navigationInstruction": {
-                                "maneuver": "TURN_RIGHT",
-                                "instructions": "Gira a la derecha\nEl destino est\u00e1 a la derecha."
-                            },
-                            "localizedValues": {
-                                "distance": {
-                                    "text": "0,3 km"
-                                },
-                                "staticDuration": {
-                                    "text": "5 min"
-                                }
-                            },
-                            "travelMode": "WALK"
-                        },
-                        {
-                            "distanceMeters": 9497,
-                            "staticDuration": "1253s",
-                            "polyline": {
-                                "encodedPolyline": "oip[fn`cMFEsGiNuA}C}AcD[Y[Qg@GaDSWGOM]g@e@_@]Ke@EWI_Gw@EEwFWkLeA{CWuSuB}Iq@oWiCcD[qEc@gKaA}UuBcJw@}C]qHo@aTuBa[uCoC[eVsBgBQgAUqEa@{Fq@{Cc@k@EqDG{J}@sJaAgDYcLkAgOmAkI{@w_@mDoXeC_Em@sBMgCOwIw@wKSkBMmC]qDo@uAYQA{@QkGw@uGm@QBOLERHTFLL?n@LxC\\?C"
-                            },
-                            "startLocation": {
-                                "latLng": {
-                                    "latitude": 4.6762448,
-                                    "longitude": -74.06323669999999
-                                }
-                            },
-                            "endLocation": {
-                                "latLng": {
-                                    "latitude": 4.7551676,
-                                    "longitude": -74.04613719999999
-                                }
-                            },
-                            "navigationInstruction": {
-                                "instructions": "Autob\u00fas en direcci\u00f3n a Portal Norte"
-                            },
-                            "localizedValues": {
-                                "distance": {
-                                    "text": "9,5 km"
-                                },
-                                "staticDuration": {
-                                    "text": "21 min"
+                                    "text": "46 min"
                                 }
                             },
                             "transitDetails": {
                                 "stopDetails": {
                                     "arrivalStop": {
-                                        "name": "Portal Norte",
+                                        "name": "7 de Agosto",
                                         "location": {
                                             "latLng": {
-                                                "latitude": 4.7551676,
-                                                "longitude": -74.04613719999999
+                                                "latitude": 4.6569942,
+                                                "longitude": -74.07771559999999
                                             }
                                         }
                                     },
-                                    "arrivalTime": "2025-03-21T21:48:00Z",
+                                    "arrivalTime": "2025-03-21T23:33:30Z",
                                     "departureStop": {
-                                        "name": "Castellana",
+                                        "name": "San Mateo C.C Unisur",
                                         "location": {
                                             "latLng": {
-                                                "latitude": 4.6762448,
-                                                "longitude": -74.06323669999999
+                                                "latitude": 4.5859952999999996,
+                                                "longitude": -74.2053522
                                             }
                                         }
                                     },
-                                    "departureTime": "2025-03-21T21:27:07Z"
+                                    "departureTime": "2025-03-21T22:47:30Z"
                                 },
                                 "localizedValues": {
                                     "arrivalTime": {
                                         "time": {
-                                            "text": "16:48"
+                                            "text": "18:33"
                                         },
                                         "timeZone": "America/Bogota"
                                     },
                                     "departureTime": {
                                         "time": {
-                                            "text": "16:27"
+                                            "text": "17:47"
                                         },
                                         "timeZone": "America/Bogota"
                                     }
                                 },
-                                "headsign": "Portal Norte",
+                                "headsign": "7 de Agosto",
                                 "transitLine": {
                                     "agencies": [
                                         {
@@ -572,9 +239,9 @@
                                             "uri": "https://www.transmilenio.gov.co/"
                                         }
                                     ],
-                                    "name": "Portal Norte",
-                                    "color": "#7ac143",
-                                    "nameShort": "B12",
+                                    "name": "7 De Agosto",
+                                    "color": "#ab6b0d",
+                                    "nameShort": "E42",
                                     "textColor": "#ffffff",
                                     "vehicle": {
                                         "name": {
@@ -584,333 +251,128 @@
                                         "iconUri": "//maps.gstatic.com/mapfiles/transit/iw2/6/bus2.png"
                                     }
                                 },
-                                "stopCount": 7
+                                "stopCount": 10
                             },
                             "travelMode": "TRANSIT"
-                        },
-                        {
-                            "distanceMeters": 115,
-                            "staticDuration": "89s",
-                            "polyline": {
-                                "encodedPolyline": "wv_\\hc}bMgDa@c@I"
-                            },
-                            "startLocation": {
-                                "latLng": {
-                                    "latitude": 4.7551634,
-                                    "longitude": -74.04612670000002
-                                }
-                            },
-                            "endLocation": {
-                                "latLng": {
-                                    "latitude": 4.7561822,
-                                    "longitude": -74.0459079
-                                }
-                            },
-                            "navigationInstruction": {
-                                "maneuver": "DEPART",
-                                "instructions": "Dir\u00edgete al norte por Troncal Autopista Nte."
-                            },
-                            "localizedValues": {
-                                "distance": {
-                                    "text": "0,1 km"
-                                },
-                                "staticDuration": {
-                                    "text": "1 min"
-                                }
-                            },
-                            "travelMode": "WALK"
-                        },
-                        {
-                            "distanceMeters": 174,
-                            "staticDuration": "149s",
-                            "polyline": {
-                                "encodedPolyline": "c}_\\|a}bMTChBCvDb@"
-                            },
-                            "startLocation": {
-                                "latLng": {
-                                    "latitude": 4.7561822,
-                                    "longitude": -74.0459079
-                                }
-                            },
-                            "endLocation": {
-                                "latLng": {
-                                    "latitude": 4.7546234,
-                                    "longitude": -74.0460452
-                                }
-                            },
-                            "navigationInstruction": {
-                                "maneuver": "TURN_SHARP_RIGHT",
-                                "instructions": "Gira a la derecha para continuar en Troncal Autopista Nte.\nEl destino est\u00e1 a la izquierda."
-                            },
-                            "localizedValues": {
-                                "distance": {
-                                    "text": "0,2 km"
-                                },
-                                "staticDuration": {
-                                    "text": "2 min"
-                                }
-                            },
-                            "travelMode": "WALK"
                         }
                     ],
                     "localizedValues": {
                         "distance": {
-                            "text": "10,5 km"
+                            "text": "19,0 km"
                         },
                         "duration": {
-                            "text": "34 min"
+                            "text": "46 min"
                         },
                         "staticDuration": {
-                            "text": "34 min"
+                            "text": "46 min"
                         }
                     },
                     "stepsOverview": {
                         "multiModalSegments": [
                             {
                                 "stepStartIndex": 0,
-                                "stepEndIndex": 3,
+                                "stepEndIndex": 0,
                                 "navigationInstruction": {
-                                    "instructions": "Camina hasta Castellana"
-                                },
-                                "travelMode": "WALK"
-                            },
-                            {
-                                "stepStartIndex": 4,
-                                "stepEndIndex": 4,
-                                "navigationInstruction": {
-                                    "instructions": "Autob\u00fas en direcci\u00f3n a Portal Norte"
+                                    "instructions": "Autob\u00fas en direcci\u00f3n a 7 de Agosto"
                                 },
                                 "travelMode": "TRANSIT"
-                            },
-                            {
-                                "stepStartIndex": 5,
-                                "stepEndIndex": 6,
-                                "travelMode": "WALK"
                             }
                         ]
                     }
                 }
             ],
-            "distanceMeters": 10463,
-            "duration": "2067s"
+            "distanceMeters": 19043,
+            "duration": "2760s"
         },
         {
             "legs": [
                 {
-                    "distanceMeters": 10463,
-                    "duration": "2051s",
-                    "staticDuration": "2051s",
+                    "distanceMeters": 19043,
+                    "duration": "2535s",
+                    "staticDuration": "2535s",
                     "polyline": {
-                        "encodedPolyline": "kkp[bfacMuAs@fDwGVWVQr@_@FMJTgAb@G@?Er@[FMZ{@DCIWBCyCeGBAFEsGiNuA}C}AcD[Y[Qg@GaDSWGOM]g@e@_@]Ke@EWI_Gw@EEwFWkLeA{CWuSuB}Iq@oWiCcD[qEc@gKaA}UuBcJw@}C]qHo@aTuBa[uCoC[eVsBgBQgAUqEa@{Fq@{Cc@k@EqDG{J}@sJaAgDYcLkAgOmAkI{@w_@mDoXeC_Em@sBMgCOwIw@wKSkBMmC]qDo@uAYQA{@QkGw@uGm@QBOLERHTFLL?n@LxC\\?C@AgDa@c@ITChBCvDb@"
+                        "encodedPolyline": "ou~Zlf|cMDAuBsFmC{Go@gB]_AUm@}EoL{@eBqCcH_C_GqDsIwFwNyDaKsCsHuCsHkAmDaDeL?YKe@CU@O_@_BQcASmC?sDMyM@_GJkErAcQvBoYDgCDwOAiPB}BQ}FWoGa@oGm@yNO}EBqAJiAp@wDt@sCPk@VmBz@_On@qI@i@Jw@AoAWwC[yCY}DEgBOoCGeDE_@ByB\\sFTaCd@aE`@sCj@uEv@gF`AaIr@yHZ_C^yDHwEAyFKeCOkLCgCk@sMW{Ck@qF_CcRc@{CmAkGuB}Io@eCWy@wAsDwAsDkAsCqAgDa@oAIc@Dq@h@wBB[G_@cAeBaCoDsFyIuFmIeCaDaEuE}DyDeDsCeBsAwByAiBaAsBoAmBwAcG}EcEaDiAaAeKaIoD_Cm@a@gB{AcCkBuAiAGQsBgB{AsAqGwEwDsC{DmCGIoCcC{B{A}PcNqB{A]SQQi@u@_@WWMqIaHqA}@qBy@gAa@_Bo@}Ae@wA[qFg@aDWeFSSLcCKeCSmDQ_O]oHW_FImCCkEMcFOmHe@_EMw[gAgI]oHQoNk@wHe@?J"
                     },
                     "startLocation": {
                         "latLng": {
-                            "latitude": 4.676536899999999,
-                            "longitude": -74.0670579
+                            "latitude": 4.5859952999999996,
+                            "longitude": -74.2053522
                         }
                     },
                     "endLocation": {
                         "latLng": {
-                            "latitude": 4.7546234,
-                            "longitude": -74.0460452
+                            "latitude": 4.6569942,
+                            "longitude": -74.07771559999999
                         }
                     },
                     "steps": [
                         {
-                            "distanceMeters": 60,
-                            "staticDuration": "45s",
+                            "distanceMeters": 19043,
+                            "staticDuration": "2535s",
                             "polyline": {
-                                "encodedPolyline": "kkp[bfacMuAs@"
+                                "encodedPolyline": "ou~Zlf|cMDAuBsFmC{Go@gB]_AUm@}EoL{@eBqCcH_C_GqDsIwFwNyDaKsCsHuCsHkAmDaDeL?YKe@CU@O_@_BQcASmC?sDMyM@_GJkErAcQvBoYDgCDwOAiPB}BQ}FWoGa@oGm@yNO}EBqAJiAp@wDt@sCPk@VmBz@_On@qI@i@Jw@AoAWwC[yCY}DEgBOoCGeDE_@ByB\\sFTaCd@aE`@sCj@uEv@gF`AaIr@yHZ_C^yDHwEAyFKeCOkLCgCk@sMW{Ck@qF_CcRc@{CmAkGuB}Io@eCWy@wAsDwAsDkAsCqAgDa@oAIc@Dq@h@wBB[G_@cAeBaCoDsFyIuFmIeCaDaEuE}DyDeDsCeBsAwByAiBaAsBoAmBwAcG}EcEaDiAaAeKaIoD_Cm@a@gB{AcCkBuAiAGQsBgB{AsAqGwEwDsC{DmCGIoCcC{B{A}PcNqB{A]SQQi@u@_@WWMqIaHqA}@qBy@gAa@_Bo@}Ae@wA[qFg@aDWeFSSLcCKeCSmDQ_O]oHW_FImCCkEMcFOmHe@_EMw[gAgI]oHQoNk@wHe@?J"
                             },
                             "startLocation": {
                                 "latLng": {
-                                    "latitude": 4.676536899999999,
-                                    "longitude": -74.0670579
+                                    "latitude": 4.5859952999999996,
+                                    "longitude": -74.2053522
                                 }
                             },
                             "endLocation": {
                                 "latLng": {
-                                    "latitude": 4.6769717,
-                                    "longitude": -74.0667998
+                                    "latitude": 4.6569942,
+                                    "longitude": -74.07771559999999
                                 }
                             },
                             "navigationInstruction": {
-                                "maneuver": "DEPART",
-                                "instructions": "Dir\u00edgete al nordeste por Troncal Suba hacia Cl. 86a"
+                                "instructions": "Autob\u00fas en direcci\u00f3n a 7 de Agosto"
                             },
                             "localizedValues": {
                                 "distance": {
-                                    "text": "60 m"
+                                    "text": "19,0 km"
                                 },
                                 "staticDuration": {
-                                    "text": "1 min"
-                                }
-                            },
-                            "travelMode": "WALK"
-                        },
-                        {
-                            "distanceMeters": 265,
-                            "staticDuration": "230s",
-                            "polyline": {
-                                "encodedPolyline": "anp[ndacMfDwGVWVQr@_@FM"
-                            },
-                            "startLocation": {
-                                "latLng": {
-                                    "latitude": 4.6769717,
-                                    "longitude": -74.0667998
-                                }
-                            },
-                            "endLocation": {
-                                "latLng": {
-                                    "latitude": 4.6755857999999995,
-                                    "longitude": -74.0649641
-                                }
-                            },
-                            "navigationInstruction": {
-                                "maneuver": "TURN_RIGHT",
-                                "instructions": "Gira a la derecha hacia Cl. 86a"
-                            },
-                            "localizedValues": {
-                                "distance": {
-                                    "text": "0,3 km"
-                                },
-                                "staticDuration": {
-                                    "text": "4 min"
-                                }
-                            },
-                            "travelMode": "WALK"
-                        },
-                        {
-                            "distanceMeters": 23,
-                            "staticDuration": "19s",
-                            "polyline": {
-                                "encodedPolyline": "mep[~x`cMJT"
-                            },
-                            "startLocation": {
-                                "latLng": {
-                                    "latitude": 4.6755857999999995,
-                                    "longitude": -74.0649641
-                                }
-                            },
-                            "endLocation": {
-                                "latLng": {
-                                    "latitude": 4.6755254,
-                                    "longitude": -74.0650694
-                                }
-                            },
-                            "navigationInstruction": {
-                                "maneuver": "TURN_RIGHT",
-                                "instructions": "Gira a la derecha hacia Av. Cdad. de Quito/Ave Cra 30/Av NQS"
-                            },
-                            "localizedValues": {
-                                "distance": {
-                                    "text": "23 m"
-                                },
-                                "staticDuration": {
-                                    "text": "1 min"
-                                }
-                            },
-                            "travelMode": "WALK"
-                        },
-                        {
-                            "distanceMeters": 329,
-                            "staticDuration": "282s",
-                            "polyline": {
-                                "encodedPolyline": "aep[ty`cMgAb@G@?Er@[FMZ{@DCIWBCyCeG"
-                            },
-                            "startLocation": {
-                                "latLng": {
-                                    "latitude": 4.6755254,
-                                    "longitude": -74.0650694
-                                }
-                            },
-                            "endLocation": {
-                                "latLng": {
-                                    "latitude": 4.6762612,
-                                    "longitude": -74.0632463
-                                }
-                            },
-                            "navigationInstruction": {
-                                "maneuver": "TURN_RIGHT",
-                                "instructions": "Gira a la derecha\nEl destino est\u00e1 a la derecha."
-                            },
-                            "localizedValues": {
-                                "distance": {
-                                    "text": "0,3 km"
-                                },
-                                "staticDuration": {
-                                    "text": "5 min"
-                                }
-                            },
-                            "travelMode": "WALK"
-                        },
-                        {
-                            "distanceMeters": 9497,
-                            "staticDuration": "1237s",
-                            "polyline": {
-                                "encodedPolyline": "oip[fn`cMFEsGiNuA}C}AcD[Y[Qg@GaDSWGOM]g@e@_@]Ke@EWI_Gw@EEwFWkLeA{CWuSuB}Iq@oWiCcD[qEc@gKaA}UuBcJw@}C]qHo@aTuBa[uCoC[eVsBgBQgAUqEa@{Fq@{Cc@k@EqDG{J}@sJaAgDYcLkAgOmAkI{@w_@mDoXeC_Em@sBMgCOwIw@wKSkBMmC]qDo@uAYQA{@QkGw@uGm@QBOLERHTFLL?n@LxC\\?C"
-                            },
-                            "startLocation": {
-                                "latLng": {
-                                    "latitude": 4.6762448,
-                                    "longitude": -74.06323669999999
-                                }
-                            },
-                            "endLocation": {
-                                "latLng": {
-                                    "latitude": 4.7551676,
-                                    "longitude": -74.04613719999999
-                                }
-                            },
-                            "navigationInstruction": {
-                                "instructions": "Autob\u00fas en direcci\u00f3n a Portal Norte"
-                            },
-                            "localizedValues": {
-                                "distance": {
-                                    "text": "9,5 km"
-                                },
-                                "staticDuration": {
-                                    "text": "21 min"
+                                    "text": "42 min"
                                 }
                             },
                             "transitDetails": {
                                 "stopDetails": {
                                     "arrivalStop": {
-                                        "name": "Portal Norte",
+                                        "name": "7 de Agosto",
                                         "location": {
                                             "latLng": {
-                                                "latitude": 4.7551676,
-                                                "longitude": -74.04613719999999
+                                                "latitude": 4.6569942,
+                                                "longitude": -74.07771559999999
                                             }
                                         }
                                     },
-                                    "arrivalTime": "2025-03-21T21:51:45Z",
+                                    "arrivalTime": "2025-03-21T23:36:15Z",
                                     "departureStop": {
-                                        "name": "Castellana",
+                                        "name": "San Mateo C.C Unisur",
                                         "location": {
                                             "latLng": {
-                                                "latitude": 4.6762448,
-                                                "longitude": -74.06323669999999
+                                                "latitude": 4.5859952999999996,
+                                                "longitude": -74.2053522
                                             }
                                         }
                                     },
-                                    "departureTime": "2025-03-21T21:31:08Z"
+                                    "departureTime": "2025-03-21T22:54:00Z"
                                 },
                                 "localizedValues": {
                                     "arrivalTime": {
                                         "time": {
-                                            "text": "16:51"
+                                            "text": "18:36"
                                         },
                                         "timeZone": "America/Bogota"
                                     },
                                     "departureTime": {
                                         "time": {
-                                            "text": "16:31"
+                                            "text": "17:54"
                                         },
                                         "timeZone": "America/Bogota"
                                     }
                                 },
-                                "headsign": "Portal Norte",
+                                "headsign": "7 de Agosto",
                                 "transitLine": {
                                     "agencies": [
                                         {
@@ -919,9 +381,9 @@
                                             "uri": "https://www.transmilenio.gov.co/"
                                         }
                                     ],
-                                    "name": "Portal Norte",
-                                    "color": "#7ac143",
-                                    "nameShort": "B12",
+                                    "name": "7 De Agosto",
+                                    "color": "#ab6b0d",
+                                    "nameShort": "E42",
                                     "textColor": "#ffffff",
                                     "vehicle": {
                                         "name": {
@@ -931,333 +393,128 @@
                                         "iconUri": "//maps.gstatic.com/mapfiles/transit/iw2/6/bus2.png"
                                     }
                                 },
-                                "stopCount": 7
+                                "stopCount": 10
                             },
                             "travelMode": "TRANSIT"
-                        },
-                        {
-                            "distanceMeters": 115,
-                            "staticDuration": "89s",
-                            "polyline": {
-                                "encodedPolyline": "wv_\\hc}bMgDa@c@I"
-                            },
-                            "startLocation": {
-                                "latLng": {
-                                    "latitude": 4.7551634,
-                                    "longitude": -74.04612670000002
-                                }
-                            },
-                            "endLocation": {
-                                "latLng": {
-                                    "latitude": 4.7561822,
-                                    "longitude": -74.0459079
-                                }
-                            },
-                            "navigationInstruction": {
-                                "maneuver": "DEPART",
-                                "instructions": "Dir\u00edgete al norte por Troncal Autopista Nte."
-                            },
-                            "localizedValues": {
-                                "distance": {
-                                    "text": "0,1 km"
-                                },
-                                "staticDuration": {
-                                    "text": "1 min"
-                                }
-                            },
-                            "travelMode": "WALK"
-                        },
-                        {
-                            "distanceMeters": 174,
-                            "staticDuration": "149s",
-                            "polyline": {
-                                "encodedPolyline": "c}_\\|a}bMTChBCvDb@"
-                            },
-                            "startLocation": {
-                                "latLng": {
-                                    "latitude": 4.7561822,
-                                    "longitude": -74.0459079
-                                }
-                            },
-                            "endLocation": {
-                                "latLng": {
-                                    "latitude": 4.7546234,
-                                    "longitude": -74.0460452
-                                }
-                            },
-                            "navigationInstruction": {
-                                "maneuver": "TURN_SHARP_RIGHT",
-                                "instructions": "Gira a la derecha para continuar en Troncal Autopista Nte.\nEl destino est\u00e1 a la izquierda."
-                            },
-                            "localizedValues": {
-                                "distance": {
-                                    "text": "0,2 km"
-                                },
-                                "staticDuration": {
-                                    "text": "2 min"
-                                }
-                            },
-                            "travelMode": "WALK"
                         }
                     ],
                     "localizedValues": {
                         "distance": {
-                            "text": "10,5 km"
+                            "text": "19,0 km"
                         },
                         "duration": {
-                            "text": "34 min"
+                            "text": "42 min"
                         },
                         "staticDuration": {
-                            "text": "34 min"
+                            "text": "42 min"
                         }
                     },
                     "stepsOverview": {
                         "multiModalSegments": [
                             {
                                 "stepStartIndex": 0,
-                                "stepEndIndex": 3,
+                                "stepEndIndex": 0,
                                 "navigationInstruction": {
-                                    "instructions": "Camina hasta Castellana"
-                                },
-                                "travelMode": "WALK"
-                            },
-                            {
-                                "stepStartIndex": 4,
-                                "stepEndIndex": 4,
-                                "navigationInstruction": {
-                                    "instructions": "Autob\u00fas en direcci\u00f3n a Portal Norte"
+                                    "instructions": "Autob\u00fas en direcci\u00f3n a 7 de Agosto"
                                 },
                                 "travelMode": "TRANSIT"
-                            },
-                            {
-                                "stepStartIndex": 5,
-                                "stepEndIndex": 6,
-                                "travelMode": "WALK"
                             }
                         ]
                     }
                 }
             ],
-            "distanceMeters": 10463,
-            "duration": "2051s"
+            "distanceMeters": 19043,
+            "duration": "2535s"
         },
         {
             "legs": [
                 {
-                    "distanceMeters": 10463,
-                    "duration": "2025s",
-                    "staticDuration": "2025s",
+                    "distanceMeters": 19043,
+                    "duration": "2721s",
+                    "staticDuration": "2721s",
                     "polyline": {
-                        "encodedPolyline": "kkp[bfacMuAs@fDwGVWVQr@_@FMJTgAb@G@?Er@[FMZ{@DCIWBCyCeGBAFEsGiNuA}C}AcD[Y[Qg@GaDSWGOM]g@e@_@]Ke@EWI_Gw@EEwFWkLeA{CWuSuB}Iq@oWiCcD[qEc@gKaA}UuBcJw@}C]qHo@aTuBa[uCoC[eVsBgBQgAUqEa@{Fq@{Cc@k@EqDG{J}@sJaAgDYcLkAgOmAkI{@w_@mDoXeC_Em@sBMgCOwIw@wKSkBMmC]qDo@uAYQA{@QkGw@uGm@QBOLERHTFLL?n@LxC\\?C@AgDa@c@ITChBCvDb@"
+                        "encodedPolyline": "ou~Zlf|cMDAuBsFmC{Go@gB]_AUm@}EoL{@eBqCcH_C_GqDsIwFwNyDaKsCsHuCsHkAmDaDeL?YKe@CU@O_@_BQcASmC?sDMyM@_GJkErAcQvBoYDgCDwOAiPB}BQ}FWoGa@oGm@yNO}EBqAJiAp@wDt@sCPk@VmBz@_On@qI@i@Jw@AoAWwC[yCY}DEgBOoCGeDE_@ByB\\sFTaCd@aE`@sCj@uEv@gF`AaIr@yHZ_C^yDHwEAyFKeCOkLCgCk@sMW{Ck@qF_CcRc@{CmAkGuB}Io@eCWy@wAsDwAsDkAsCqAgDa@oAIc@Dq@h@wBB[G_@cAeBaCoDsFyIuFmIeCaDaEuE}DyDeDsCeBsAwByAiBaAsBoAmBwAcG}EcEaDiAaAeKaIoD_Cm@a@gB{AcCkBuAiAGQsBgB{AsAqGwEwDsC{DmCGIoCcC{B{A}PcNqB{A]SQQi@u@_@WWMqIaHqA}@qBy@gAa@_Bo@}Ae@wA[qFg@aDWeFSSLcCKeCSmDQ_O]oHW_FImCCkEMcFOmHe@_EMw[gAgI]oHQoNk@wHe@?J"
                     },
                     "startLocation": {
                         "latLng": {
-                            "latitude": 4.676536899999999,
-                            "longitude": -74.0670579
+                            "latitude": 4.5859952999999996,
+                            "longitude": -74.2053522
                         }
                     },
                     "endLocation": {
                         "latLng": {
-                            "latitude": 4.7546234,
-                            "longitude": -74.0460452
+                            "latitude": 4.6569942,
+                            "longitude": -74.07771559999999
                         }
                     },
                     "steps": [
                         {
-                            "distanceMeters": 60,
-                            "staticDuration": "45s",
+                            "distanceMeters": 19043,
+                            "staticDuration": "2721s",
                             "polyline": {
-                                "encodedPolyline": "kkp[bfacMuAs@"
+                                "encodedPolyline": "ou~Zlf|cMDAuBsFmC{Go@gB]_AUm@}EoL{@eBqCcH_C_GqDsIwFwNyDaKsCsHuCsHkAmDaDeL?YKe@CU@O_@_BQcASmC?sDMyM@_GJkErAcQvBoYDgCDwOAiPB}BQ}FWoGa@oGm@yNO}EBqAJiAp@wDt@sCPk@VmBz@_On@qI@i@Jw@AoAWwC[yCY}DEgBOoCGeDE_@ByB\\sFTaCd@aE`@sCj@uEv@gF`AaIr@yHZ_C^yDHwEAyFKeCOkLCgCk@sMW{Ck@qF_CcRc@{CmAkGuB}Io@eCWy@wAsDwAsDkAsCqAgDa@oAIc@Dq@h@wBB[G_@cAeBaCoDsFyIuFmIeCaDaEuE}DyDeDsCeBsAwByAiBaAsBoAmBwAcG}EcEaDiAaAeKaIoD_Cm@a@gB{AcCkBuAiAGQsBgB{AsAqGwEwDsC{DmCGIoCcC{B{A}PcNqB{A]SQQi@u@_@WWMqIaHqA}@qBy@gAa@_Bo@}Ae@wA[qFg@aDWeFSSLcCKeCSmDQ_O]oHW_FImCCkEMcFOmHe@_EMw[gAgI]oHQoNk@wHe@?J"
                             },
                             "startLocation": {
                                 "latLng": {
-                                    "latitude": 4.676536899999999,
-                                    "longitude": -74.0670579
+                                    "latitude": 4.5859952999999996,
+                                    "longitude": -74.2053522
                                 }
                             },
                             "endLocation": {
                                 "latLng": {
-                                    "latitude": 4.6769717,
-                                    "longitude": -74.0667998
+                                    "latitude": 4.6569942,
+                                    "longitude": -74.07771559999999
                                 }
                             },
                             "navigationInstruction": {
-                                "maneuver": "DEPART",
-                                "instructions": "Dir\u00edgete al nordeste por Troncal Suba hacia Cl. 86a"
+                                "instructions": "Autob\u00fas en direcci\u00f3n a 7 de Agosto"
                             },
                             "localizedValues": {
                                 "distance": {
-                                    "text": "60 m"
+                                    "text": "19,0 km"
                                 },
                                 "staticDuration": {
-                                    "text": "1 min"
-                                }
-                            },
-                            "travelMode": "WALK"
-                        },
-                        {
-                            "distanceMeters": 265,
-                            "staticDuration": "230s",
-                            "polyline": {
-                                "encodedPolyline": "anp[ndacMfDwGVWVQr@_@FM"
-                            },
-                            "startLocation": {
-                                "latLng": {
-                                    "latitude": 4.6769717,
-                                    "longitude": -74.0667998
-                                }
-                            },
-                            "endLocation": {
-                                "latLng": {
-                                    "latitude": 4.6755857999999995,
-                                    "longitude": -74.0649641
-                                }
-                            },
-                            "navigationInstruction": {
-                                "maneuver": "TURN_RIGHT",
-                                "instructions": "Gira a la derecha hacia Cl. 86a"
-                            },
-                            "localizedValues": {
-                                "distance": {
-                                    "text": "0,3 km"
-                                },
-                                "staticDuration": {
-                                    "text": "4 min"
-                                }
-                            },
-                            "travelMode": "WALK"
-                        },
-                        {
-                            "distanceMeters": 23,
-                            "staticDuration": "19s",
-                            "polyline": {
-                                "encodedPolyline": "mep[~x`cMJT"
-                            },
-                            "startLocation": {
-                                "latLng": {
-                                    "latitude": 4.6755857999999995,
-                                    "longitude": -74.0649641
-                                }
-                            },
-                            "endLocation": {
-                                "latLng": {
-                                    "latitude": 4.6755254,
-                                    "longitude": -74.0650694
-                                }
-                            },
-                            "navigationInstruction": {
-                                "maneuver": "TURN_RIGHT",
-                                "instructions": "Gira a la derecha hacia Av. Cdad. de Quito/Ave Cra 30/Av NQS"
-                            },
-                            "localizedValues": {
-                                "distance": {
-                                    "text": "23 m"
-                                },
-                                "staticDuration": {
-                                    "text": "1 min"
-                                }
-                            },
-                            "travelMode": "WALK"
-                        },
-                        {
-                            "distanceMeters": 329,
-                            "staticDuration": "282s",
-                            "polyline": {
-                                "encodedPolyline": "aep[ty`cMgAb@G@?Er@[FMZ{@DCIWBCyCeG"
-                            },
-                            "startLocation": {
-                                "latLng": {
-                                    "latitude": 4.6755254,
-                                    "longitude": -74.0650694
-                                }
-                            },
-                            "endLocation": {
-                                "latLng": {
-                                    "latitude": 4.6762612,
-                                    "longitude": -74.0632463
-                                }
-                            },
-                            "navigationInstruction": {
-                                "maneuver": "TURN_RIGHT",
-                                "instructions": "Gira a la derecha\nEl destino est\u00e1 a la derecha."
-                            },
-                            "localizedValues": {
-                                "distance": {
-                                    "text": "0,3 km"
-                                },
-                                "staticDuration": {
-                                    "text": "5 min"
-                                }
-                            },
-                            "travelMode": "WALK"
-                        },
-                        {
-                            "distanceMeters": 9497,
-                            "staticDuration": "1211s",
-                            "polyline": {
-                                "encodedPolyline": "oip[fn`cMFEsGiNuA}C}AcD[Y[Qg@GaDSWGOM]g@e@_@]Ke@EWI_Gw@EEwFWkLeA{CWuSuB}Iq@oWiCcD[qEc@gKaA}UuBcJw@}C]qHo@aTuBa[uCoC[eVsBgBQgAUqEa@{Fq@{Cc@k@EqDG{J}@sJaAgDYcLkAgOmAkI{@w_@mDoXeC_Em@sBMgCOwIw@wKSkBMmC]qDo@uAYQA{@QkGw@uGm@QBOLERHTFLL?n@LxC\\?C"
-                            },
-                            "startLocation": {
-                                "latLng": {
-                                    "latitude": 4.6762448,
-                                    "longitude": -74.06323669999999
-                                }
-                            },
-                            "endLocation": {
-                                "latLng": {
-                                    "latitude": 4.7551676,
-                                    "longitude": -74.04613719999999
-                                }
-                            },
-                            "navigationInstruction": {
-                                "instructions": "Autob\u00fas en direcci\u00f3n a Portal Norte"
-                            },
-                            "localizedValues": {
-                                "distance": {
-                                    "text": "9,5 km"
-                                },
-                                "staticDuration": {
-                                    "text": "20 min"
+                                    "text": "45 min"
                                 }
                             },
                             "transitDetails": {
                                 "stopDetails": {
                                     "arrivalStop": {
-                                        "name": "Portal Norte",
+                                        "name": "7 de Agosto",
                                         "location": {
                                             "latLng": {
-                                                "latitude": 4.7551676,
-                                                "longitude": -74.04613719999999
+                                                "latitude": 4.6569942,
+                                                "longitude": -74.07771559999999
                                             }
                                         }
                                     },
-                                    "arrivalTime": "2025-03-21T21:52:00Z",
+                                    "arrivalTime": "2025-03-21T23:39:51Z",
                                     "departureStop": {
-                                        "name": "Castellana",
+                                        "name": "San Mateo C.C Unisur",
                                         "location": {
                                             "latLng": {
-                                                "latitude": 4.6762448,
-                                                "longitude": -74.06323669999999
+                                                "latitude": 4.5859952999999996,
+                                                "longitude": -74.2053522
                                             }
                                         }
                                     },
-                                    "departureTime": "2025-03-21T21:31:49Z"
+                                    "departureTime": "2025-03-21T22:54:30Z"
                                 },
                                 "localizedValues": {
                                     "arrivalTime": {
                                         "time": {
-                                            "text": "16:52"
+                                            "text": "18:39"
                                         },
                                         "timeZone": "America/Bogota"
                                     },
                                     "departureTime": {
                                         "time": {
-                                            "text": "16:31"
+                                            "text": "17:54"
                                         },
                                         "timeZone": "America/Bogota"
                                     }
                                 },
-                                "headsign": "Portal Norte",
+                                "headsign": "7 de Agosto",
                                 "transitLine": {
                                     "agencies": [
                                         {
@@ -1266,9 +523,9 @@
                                             "uri": "https://www.transmilenio.gov.co/"
                                         }
                                     ],
-                                    "name": "Portal Norte",
-                                    "color": "#7ac143",
-                                    "nameShort": "B12",
+                                    "name": "7 De Agosto",
+                                    "color": "#ab6b0d",
+                                    "nameShort": "E42",
                                     "textColor": "#ffffff",
                                     "vehicle": {
                                         "name": {
@@ -1278,333 +535,128 @@
                                         "iconUri": "//maps.gstatic.com/mapfiles/transit/iw2/6/bus2.png"
                                     }
                                 },
-                                "stopCount": 7
+                                "stopCount": 10
                             },
                             "travelMode": "TRANSIT"
-                        },
-                        {
-                            "distanceMeters": 115,
-                            "staticDuration": "89s",
-                            "polyline": {
-                                "encodedPolyline": "wv_\\hc}bMgDa@c@I"
-                            },
-                            "startLocation": {
-                                "latLng": {
-                                    "latitude": 4.7551634,
-                                    "longitude": -74.04612670000002
-                                }
-                            },
-                            "endLocation": {
-                                "latLng": {
-                                    "latitude": 4.7561822,
-                                    "longitude": -74.0459079
-                                }
-                            },
-                            "navigationInstruction": {
-                                "maneuver": "DEPART",
-                                "instructions": "Dir\u00edgete al norte por Troncal Autopista Nte."
-                            },
-                            "localizedValues": {
-                                "distance": {
-                                    "text": "0,1 km"
-                                },
-                                "staticDuration": {
-                                    "text": "1 min"
-                                }
-                            },
-                            "travelMode": "WALK"
-                        },
-                        {
-                            "distanceMeters": 174,
-                            "staticDuration": "149s",
-                            "polyline": {
-                                "encodedPolyline": "c}_\\|a}bMTChBCvDb@"
-                            },
-                            "startLocation": {
-                                "latLng": {
-                                    "latitude": 4.7561822,
-                                    "longitude": -74.0459079
-                                }
-                            },
-                            "endLocation": {
-                                "latLng": {
-                                    "latitude": 4.7546234,
-                                    "longitude": -74.0460452
-                                }
-                            },
-                            "navigationInstruction": {
-                                "maneuver": "TURN_SHARP_RIGHT",
-                                "instructions": "Gira a la derecha para continuar en Troncal Autopista Nte.\nEl destino est\u00e1 a la izquierda."
-                            },
-                            "localizedValues": {
-                                "distance": {
-                                    "text": "0,2 km"
-                                },
-                                "staticDuration": {
-                                    "text": "2 min"
-                                }
-                            },
-                            "travelMode": "WALK"
                         }
                     ],
                     "localizedValues": {
                         "distance": {
-                            "text": "10,5 km"
+                            "text": "19,0 km"
                         },
                         "duration": {
-                            "text": "34 min"
+                            "text": "45 min"
                         },
                         "staticDuration": {
-                            "text": "34 min"
+                            "text": "45 min"
                         }
                     },
                     "stepsOverview": {
                         "multiModalSegments": [
                             {
                                 "stepStartIndex": 0,
-                                "stepEndIndex": 3,
+                                "stepEndIndex": 0,
                                 "navigationInstruction": {
-                                    "instructions": "Camina hasta Castellana"
-                                },
-                                "travelMode": "WALK"
-                            },
-                            {
-                                "stepStartIndex": 4,
-                                "stepEndIndex": 4,
-                                "navigationInstruction": {
-                                    "instructions": "Autob\u00fas en direcci\u00f3n a Portal Norte"
+                                    "instructions": "Autob\u00fas en direcci\u00f3n a 7 de Agosto"
                                 },
                                 "travelMode": "TRANSIT"
-                            },
-                            {
-                                "stepStartIndex": 5,
-                                "stepEndIndex": 6,
-                                "travelMode": "WALK"
                             }
                         ]
                     }
                 }
             ],
-            "distanceMeters": 10463,
-            "duration": "2025s"
+            "distanceMeters": 19043,
+            "duration": "2721s"
         },
         {
             "legs": [
                 {
-                    "distanceMeters": 10463,
-                    "duration": "2091s",
-                    "staticDuration": "2091s",
+                    "distanceMeters": 19043,
+                    "duration": "2595s",
+                    "staticDuration": "2595s",
                     "polyline": {
-                        "encodedPolyline": "kkp[bfacMuAs@fDwGVWVQr@_@FMJTgAb@G@?Er@[FMZ{@DCIWBCyCeGBAFEsGiNuA}C}AcD[Y[Qg@GaDSWGOM]g@e@_@]Ke@EWI_Gw@EEwFWkLeA{CWuSuB}Iq@oWiCcD[qEc@gKaA}UuBcJw@}C]qHo@aTuBa[uCoC[eVsBgBQgAUqEa@{Fq@{Cc@k@EqDG{J}@sJaAgDYcLkAgOmAkI{@w_@mDoXeC_Em@sBMgCOwIw@wKSkBMmC]qDo@uAYQA{@QkGw@uGm@QBOLERHTFLL?n@LxC\\?C@AgDa@c@ITChBCvDb@"
+                        "encodedPolyline": "ou~Zlf|cMDAuBsFmC{Go@gB]_AUm@}EoL{@eBqCcH_C_GqDsIwFwNyDaKsCsHuCsHkAmDaDeL?YKe@CU@O_@_BQcASmC?sDMyM@_GJkErAcQvBoYDgCDwOAiPB}BQ}FWoGa@oGm@yNO}EBqAJiAp@wDt@sCPk@VmBz@_On@qI@i@Jw@AoAWwC[yCY}DEgBOoCGeDE_@ByB\\sFTaCd@aE`@sCj@uEv@gF`AaIr@yHZ_C^yDHwEAyFKeCOkLCgCk@sMW{Ck@qF_CcRc@{CmAkGuB}Io@eCWy@wAsDwAsDkAsCqAgDa@oAIc@Dq@h@wBB[G_@cAeBaCoDsFyIuFmIeCaDaEuE}DyDeDsCeBsAwByAiBaAsBoAmBwAcG}EcEaDiAaAeKaIoD_Cm@a@gB{AcCkBuAiAGQsBgB{AsAqGwEwDsC{DmCGIoCcC{B{A}PcNqB{A]SQQi@u@_@WWMqIaHqA}@qBy@gAa@_Bo@}Ae@wA[qFg@aDWeFSSLcCKeCSmDQ_O]oHW_FImCCkEMcFOmHe@_EMw[gAgI]oHQoNk@wHe@?J"
                     },
                     "startLocation": {
                         "latLng": {
-                            "latitude": 4.676536899999999,
-                            "longitude": -74.0670579
+                            "latitude": 4.5859952999999996,
+                            "longitude": -74.2053522
                         }
                     },
                     "endLocation": {
                         "latLng": {
-                            "latitude": 4.7546234,
-                            "longitude": -74.0460452
+                            "latitude": 4.6569942,
+                            "longitude": -74.07771559999999
                         }
                     },
                     "steps": [
                         {
-                            "distanceMeters": 60,
-                            "staticDuration": "45s",
+                            "distanceMeters": 19043,
+                            "staticDuration": "2595s",
                             "polyline": {
-                                "encodedPolyline": "kkp[bfacMuAs@"
+                                "encodedPolyline": "ou~Zlf|cMDAuBsFmC{Go@gB]_AUm@}EoL{@eBqCcH_C_GqDsIwFwNyDaKsCsHuCsHkAmDaDeL?YKe@CU@O_@_BQcASmC?sDMyM@_GJkErAcQvBoYDgCDwOAiPB}BQ}FWoGa@oGm@yNO}EBqAJiAp@wDt@sCPk@VmBz@_On@qI@i@Jw@AoAWwC[yCY}DEgBOoCGeDE_@ByB\\sFTaCd@aE`@sCj@uEv@gF`AaIr@yHZ_C^yDHwEAyFKeCOkLCgCk@sMW{Ck@qF_CcRc@{CmAkGuB}Io@eCWy@wAsDwAsDkAsCqAgDa@oAIc@Dq@h@wBB[G_@cAeBaCoDsFyIuFmIeCaDaEuE}DyDeDsCeBsAwByAiBaAsBoAmBwAcG}EcEaDiAaAeKaIoD_Cm@a@gB{AcCkBuAiAGQsBgB{AsAqGwEwDsC{DmCGIoCcC{B{A}PcNqB{A]SQQi@u@_@WWMqIaHqA}@qBy@gAa@_Bo@}Ae@wA[qFg@aDWeFSSLcCKeCSmDQ_O]oHW_FImCCkEMcFOmHe@_EMw[gAgI]oHQoNk@wHe@?J"
                             },
                             "startLocation": {
                                 "latLng": {
-                                    "latitude": 4.676536899999999,
-                                    "longitude": -74.0670579
+                                    "latitude": 4.5859952999999996,
+                                    "longitude": -74.2053522
                                 }
                             },
                             "endLocation": {
                                 "latLng": {
-                                    "latitude": 4.6769717,
-                                    "longitude": -74.0667998
+                                    "latitude": 4.6569942,
+                                    "longitude": -74.07771559999999
                                 }
                             },
                             "navigationInstruction": {
-                                "maneuver": "DEPART",
-                                "instructions": "Dir\u00edgete al nordeste por Troncal Suba hacia Cl. 86a"
+                                "instructions": "Autob\u00fas en direcci\u00f3n a 7 de Agosto"
                             },
                             "localizedValues": {
                                 "distance": {
-                                    "text": "60 m"
+                                    "text": "19,0 km"
                                 },
                                 "staticDuration": {
-                                    "text": "1 min"
-                                }
-                            },
-                            "travelMode": "WALK"
-                        },
-                        {
-                            "distanceMeters": 265,
-                            "staticDuration": "230s",
-                            "polyline": {
-                                "encodedPolyline": "anp[ndacMfDwGVWVQr@_@FM"
-                            },
-                            "startLocation": {
-                                "latLng": {
-                                    "latitude": 4.6769717,
-                                    "longitude": -74.0667998
-                                }
-                            },
-                            "endLocation": {
-                                "latLng": {
-                                    "latitude": 4.6755857999999995,
-                                    "longitude": -74.0649641
-                                }
-                            },
-                            "navigationInstruction": {
-                                "maneuver": "TURN_RIGHT",
-                                "instructions": "Gira a la derecha hacia Cl. 86a"
-                            },
-                            "localizedValues": {
-                                "distance": {
-                                    "text": "0,3 km"
-                                },
-                                "staticDuration": {
-                                    "text": "4 min"
-                                }
-                            },
-                            "travelMode": "WALK"
-                        },
-                        {
-                            "distanceMeters": 23,
-                            "staticDuration": "19s",
-                            "polyline": {
-                                "encodedPolyline": "mep[~x`cMJT"
-                            },
-                            "startLocation": {
-                                "latLng": {
-                                    "latitude": 4.6755857999999995,
-                                    "longitude": -74.0649641
-                                }
-                            },
-                            "endLocation": {
-                                "latLng": {
-                                    "latitude": 4.6755254,
-                                    "longitude": -74.0650694
-                                }
-                            },
-                            "navigationInstruction": {
-                                "maneuver": "TURN_RIGHT",
-                                "instructions": "Gira a la derecha hacia Av. Cdad. de Quito/Ave Cra 30/Av NQS"
-                            },
-                            "localizedValues": {
-                                "distance": {
-                                    "text": "23 m"
-                                },
-                                "staticDuration": {
-                                    "text": "1 min"
-                                }
-                            },
-                            "travelMode": "WALK"
-                        },
-                        {
-                            "distanceMeters": 329,
-                            "staticDuration": "282s",
-                            "polyline": {
-                                "encodedPolyline": "aep[ty`cMgAb@G@?Er@[FMZ{@DCIWBCyCeG"
-                            },
-                            "startLocation": {
-                                "latLng": {
-                                    "latitude": 4.6755254,
-                                    "longitude": -74.0650694
-                                }
-                            },
-                            "endLocation": {
-                                "latLng": {
-                                    "latitude": 4.6762612,
-                                    "longitude": -74.0632463
-                                }
-                            },
-                            "navigationInstruction": {
-                                "maneuver": "TURN_RIGHT",
-                                "instructions": "Gira a la derecha\nEl destino est\u00e1 a la derecha."
-                            },
-                            "localizedValues": {
-                                "distance": {
-                                    "text": "0,3 km"
-                                },
-                                "staticDuration": {
-                                    "text": "5 min"
-                                }
-                            },
-                            "travelMode": "WALK"
-                        },
-                        {
-                            "distanceMeters": 9497,
-                            "staticDuration": "1277s",
-                            "polyline": {
-                                "encodedPolyline": "oip[fn`cMFEsGiNuA}C}AcD[Y[Qg@GaDSWGOM]g@e@_@]Ke@EWI_Gw@EEwFWkLeA{CWuSuB}Iq@oWiCcD[qEc@gKaA}UuBcJw@}C]qHo@aTuBa[uCoC[eVsBgBQgAUqEa@{Fq@{Cc@k@EqDG{J}@sJaAgDYcLkAgOmAkI{@w_@mDoXeC_Em@sBMgCOwIw@wKSkBMmC]qDo@uAYQA{@QkGw@uGm@QBOLERHTFLL?n@LxC\\?C"
-                            },
-                            "startLocation": {
-                                "latLng": {
-                                    "latitude": 4.6762448,
-                                    "longitude": -74.06323669999999
-                                }
-                            },
-                            "endLocation": {
-                                "latLng": {
-                                    "latitude": 4.7551676,
-                                    "longitude": -74.04613719999999
-                                }
-                            },
-                            "navigationInstruction": {
-                                "instructions": "Autob\u00fas en direcci\u00f3n a Portal Norte"
-                            },
-                            "localizedValues": {
-                                "distance": {
-                                    "text": "9,5 km"
-                                },
-                                "staticDuration": {
-                                    "text": "21 min"
+                                    "text": "43 min"
                                 }
                             },
                             "transitDetails": {
                                 "stopDetails": {
                                     "arrivalStop": {
-                                        "name": "Portal Norte",
+                                        "name": "7 de Agosto",
                                         "location": {
                                             "latLng": {
-                                                "latitude": 4.7551676,
-                                                "longitude": -74.04613719999999
+                                                "latitude": 4.6569942,
+                                                "longitude": -74.07771559999999
                                             }
                                         }
                                     },
-                                    "arrivalTime": "2025-03-21T21:57:02Z",
+                                    "arrivalTime": "2025-03-21T23:45:15Z",
                                     "departureStop": {
-                                        "name": "Castellana",
+                                        "name": "San Mateo C.C Unisur",
                                         "location": {
                                             "latLng": {
-                                                "latitude": 4.6762448,
-                                                "longitude": -74.06323669999999
+                                                "latitude": 4.5859952999999996,
+                                                "longitude": -74.2053522
                                             }
                                         }
                                     },
-                                    "departureTime": "2025-03-21T21:35:45Z"
+                                    "departureTime": "2025-03-21T23:02:00Z"
                                 },
                                 "localizedValues": {
                                     "arrivalTime": {
                                         "time": {
-                                            "text": "16:57"
+                                            "text": "18:45"
                                         },
                                         "timeZone": "America/Bogota"
                                     },
                                     "departureTime": {
                                         "time": {
-                                            "text": "16:35"
+                                            "text": "18:02"
                                         },
                                         "timeZone": "America/Bogota"
                                     }
                                 },
-                                "headsign": "Portal Norte",
+                                "headsign": "7 de Agosto",
                                 "transitLine": {
                                     "agencies": [
                                         {
@@ -1613,9 +665,9 @@
                                             "uri": "https://www.transmilenio.gov.co/"
                                         }
                                     ],
-                                    "name": "Portal Norte",
-                                    "color": "#7ac143",
-                                    "nameShort": "B12",
+                                    "name": "7 De Agosto",
+                                    "color": "#ab6b0d",
+                                    "nameShort": "E42",
                                     "textColor": "#ffffff",
                                     "vehicle": {
                                         "name": {
@@ -1625,333 +677,128 @@
                                         "iconUri": "//maps.gstatic.com/mapfiles/transit/iw2/6/bus2.png"
                                     }
                                 },
-                                "stopCount": 7
+                                "stopCount": 10
                             },
                             "travelMode": "TRANSIT"
-                        },
-                        {
-                            "distanceMeters": 115,
-                            "staticDuration": "89s",
-                            "polyline": {
-                                "encodedPolyline": "wv_\\hc}bMgDa@c@I"
-                            },
-                            "startLocation": {
-                                "latLng": {
-                                    "latitude": 4.7551634,
-                                    "longitude": -74.04612670000002
-                                }
-                            },
-                            "endLocation": {
-                                "latLng": {
-                                    "latitude": 4.7561822,
-                                    "longitude": -74.0459079
-                                }
-                            },
-                            "navigationInstruction": {
-                                "maneuver": "DEPART",
-                                "instructions": "Dir\u00edgete al norte por Troncal Autopista Nte."
-                            },
-                            "localizedValues": {
-                                "distance": {
-                                    "text": "0,1 km"
-                                },
-                                "staticDuration": {
-                                    "text": "1 min"
-                                }
-                            },
-                            "travelMode": "WALK"
-                        },
-                        {
-                            "distanceMeters": 174,
-                            "staticDuration": "149s",
-                            "polyline": {
-                                "encodedPolyline": "c}_\\|a}bMTChBCvDb@"
-                            },
-                            "startLocation": {
-                                "latLng": {
-                                    "latitude": 4.7561822,
-                                    "longitude": -74.0459079
-                                }
-                            },
-                            "endLocation": {
-                                "latLng": {
-                                    "latitude": 4.7546234,
-                                    "longitude": -74.0460452
-                                }
-                            },
-                            "navigationInstruction": {
-                                "maneuver": "TURN_SHARP_RIGHT",
-                                "instructions": "Gira a la derecha para continuar en Troncal Autopista Nte.\nEl destino est\u00e1 a la izquierda."
-                            },
-                            "localizedValues": {
-                                "distance": {
-                                    "text": "0,2 km"
-                                },
-                                "staticDuration": {
-                                    "text": "2 min"
-                                }
-                            },
-                            "travelMode": "WALK"
                         }
                     ],
                     "localizedValues": {
                         "distance": {
-                            "text": "10,5 km"
+                            "text": "19,0 km"
                         },
                         "duration": {
-                            "text": "35 min"
+                            "text": "43 min"
                         },
                         "staticDuration": {
-                            "text": "35 min"
+                            "text": "43 min"
                         }
                     },
                     "stepsOverview": {
                         "multiModalSegments": [
                             {
                                 "stepStartIndex": 0,
-                                "stepEndIndex": 3,
+                                "stepEndIndex": 0,
                                 "navigationInstruction": {
-                                    "instructions": "Camina hasta Castellana"
-                                },
-                                "travelMode": "WALK"
-                            },
-                            {
-                                "stepStartIndex": 4,
-                                "stepEndIndex": 4,
-                                "navigationInstruction": {
-                                    "instructions": "Autob\u00fas en direcci\u00f3n a Portal Norte"
+                                    "instructions": "Autob\u00fas en direcci\u00f3n a 7 de Agosto"
                                 },
                                 "travelMode": "TRANSIT"
-                            },
-                            {
-                                "stepStartIndex": 5,
-                                "stepEndIndex": 6,
-                                "travelMode": "WALK"
                             }
                         ]
                     }
                 }
             ],
-            "distanceMeters": 10463,
-            "duration": "2091s"
+            "distanceMeters": 19043,
+            "duration": "2595s"
         },
         {
             "legs": [
                 {
-                    "distanceMeters": 10250,
-                    "duration": "2345s",
-                    "staticDuration": "2345s",
+                    "distanceMeters": 19176,
+                    "duration": "3385s",
+                    "staticDuration": "3385s",
                     "polyline": {
-                        "encodedPolyline": "kkp[bfacMuAs@fDwGVWVQr@_@FMJTgAb@G@?Er@[FMZ{@DCIWBCeBmDBAFEgIaQuA}C}AcD[Y[Qg@GaDSWGOM]g@e@_@]Ke@EWI_Gw@EEwFWkLeA{CWuSuB}Iq@oWiCcD[qEc@gKaA}UuBcJw@}C]qHo@aTuBa[uCoC[eVsBgBQgAUqEa@{Fq@{Cc@k@EqDG{J}@sJaAgDYcLkA{BQ?BAFfBN@E?EsNkAkI{@w_@mDoXeCsDk@_COgCOwIw@wKSkBMmC]qDo@uAYQA{@QiC]CL@EfDd@v@RHL?LKHm@?cAc@c@MmD]"
+                        "encodedPolyline": "us~Zlj|cMJEwCmHkA_DkByEc@kA]_AUm@}EoL{@eBqCcH_C_GqDsIwFwNyDaKsCsHuCsHkAmDaDeL?YKe@CU@O_@_BQcASmC?sDMyM@_GJkErAcQvBoYDgCDwOAiPB}BQ}FWoGa@oGm@yNO}EBqAJiAp@wDt@sCPk@VmBz@_On@qI@i@Jw@AoAWwC[yCY}DEgBOoCGeDE_@ByB\\sFTaCd@aE`@sCj@uEv@gF`AaIr@yHZ_C^yDHwEAyFKeCOkLCgCk@sMW{Ck@qF}AaMSBE@UeBF?DAu@sEaA{EiBwHc@cBVKi@sBWy@wAsDwAsDkAsCqAgDa@oAIc@Dq@h@wBB[G_@cAeBaCoDsBgDOR{I_NoCsDJSmEcFmDkDuDaDeBsAwByAiBaAsBoAmBwAcG}EcEaDiAaAeKaIoD_Cm@a@gB{AcCkBuAiAGQsBgB{AsAqGwEwDsC{DmCGIoCcC{B{A}PcNqB{A]SQQi@u@_@WWMqIaHqA}@qBy@gAa@_Bo@}Ae@wA[qFg@aDWeFSSLcCKeCSmDQ_O]oHW_FImCCkEMcFOmHe@iBIwEMuW}@gI]oHQoNk@wHe@?J"
                     },
                     "startLocation": {
                         "latLng": {
-                            "latitude": 4.676536899999999,
-                            "longitude": -74.0670579
+                            "latitude": 4.5857065,
+                            "longitude": -74.2059926
                         }
                     },
                     "endLocation": {
                         "latLng": {
-                            "latitude": 4.7546234,
-                            "longitude": -74.0460452
+                            "latitude": 4.6569942,
+                            "longitude": -74.07771559999999
                         }
                     },
                     "steps": [
                         {
-                            "distanceMeters": 60,
-                            "staticDuration": "45s",
+                            "distanceMeters": 10088,
+                            "staticDuration": "1536s",
                             "polyline": {
-                                "encodedPolyline": "kkp[bfacMuAs@"
+                                "encodedPolyline": "us~Zlj|cMJEwCmHkA_DkByEc@kA]_AUm@}EoL{@eBqCcH_C_GqDsIwFwNyDaKsCsHuCsHkAmDaDeL?YKe@CU@O_@_BQcASmC?sDMyM@_GJkErAcQvBoYDgCDwOAiPB}BQ}FWoGa@oGm@yNO}EBqAJiAp@wDt@sCPk@VmBz@_On@qI@i@Jw@AoAWwC[yCY}DEgBOoCGeDE_@ByB\\sFTaCd@aE`@sCj@uEv@gF`AaIr@yHZ_C^yDHwEAyFKeCOkLCgCk@sMW{Ck@qF}AaMSB"
                             },
                             "startLocation": {
                                 "latLng": {
-                                    "latitude": 4.676536899999999,
-                                    "longitude": -74.0670579
+                                    "latitude": 4.5857065,
+                                    "longitude": -74.2059926
                                 }
                             },
                             "endLocation": {
                                 "latLng": {
-                                    "latitude": 4.6769717,
-                                    "longitude": -74.0667998
+                                    "latitude": 4.5946853999999995,
+                                    "longitude": -74.1182619
                                 }
                             },
                             "navigationInstruction": {
-                                "maneuver": "DEPART",
-                                "instructions": "Dir\u00edgete al nordeste por Troncal Suba hacia Cl. 86a"
+                                "instructions": "Autob\u00fas en direcci\u00f3n a Bicentenario"
                             },
                             "localizedValues": {
                                 "distance": {
-                                    "text": "60 m"
+                                    "text": "10,1 km"
                                 },
                                 "staticDuration": {
-                                    "text": "1 min"
-                                }
-                            },
-                            "travelMode": "WALK"
-                        },
-                        {
-                            "distanceMeters": 265,
-                            "staticDuration": "230s",
-                            "polyline": {
-                                "encodedPolyline": "anp[ndacMfDwGVWVQr@_@FM"
-                            },
-                            "startLocation": {
-                                "latLng": {
-                                    "latitude": 4.6769717,
-                                    "longitude": -74.0667998
-                                }
-                            },
-                            "endLocation": {
-                                "latLng": {
-                                    "latitude": 4.6755857999999995,
-                                    "longitude": -74.0649641
-                                }
-                            },
-                            "navigationInstruction": {
-                                "maneuver": "TURN_RIGHT",
-                                "instructions": "Gira a la derecha hacia Cl. 86a"
-                            },
-                            "localizedValues": {
-                                "distance": {
-                                    "text": "0,3 km"
-                                },
-                                "staticDuration": {
-                                    "text": "4 min"
-                                }
-                            },
-                            "travelMode": "WALK"
-                        },
-                        {
-                            "distanceMeters": 23,
-                            "staticDuration": "19s",
-                            "polyline": {
-                                "encodedPolyline": "mep[~x`cMJT"
-                            },
-                            "startLocation": {
-                                "latLng": {
-                                    "latitude": 4.6755857999999995,
-                                    "longitude": -74.0649641
-                                }
-                            },
-                            "endLocation": {
-                                "latLng": {
-                                    "latitude": 4.6755254,
-                                    "longitude": -74.0650694
-                                }
-                            },
-                            "navigationInstruction": {
-                                "maneuver": "TURN_RIGHT",
-                                "instructions": "Gira a la derecha hacia Av. Cdad. de Quito/Ave Cra 30/Av NQS"
-                            },
-                            "localizedValues": {
-                                "distance": {
-                                    "text": "23 m"
-                                },
-                                "staticDuration": {
-                                    "text": "1 min"
-                                }
-                            },
-                            "travelMode": "WALK"
-                        },
-                        {
-                            "distanceMeters": 272,
-                            "staticDuration": "235s",
-                            "polyline": {
-                                "encodedPolyline": "aep[ty`cMgAb@G@?Er@[FMZ{@DCIWBCeBmD"
-                            },
-                            "startLocation": {
-                                "latLng": {
-                                    "latitude": 4.6755254,
-                                    "longitude": -74.0650694
-                                }
-                            },
-                            "endLocation": {
-                                "latLng": {
-                                    "latitude": 4.676001299999999,
-                                    "longitude": -74.0636932
-                                }
-                            },
-                            "navigationInstruction": {
-                                "maneuver": "TURN_RIGHT",
-                                "instructions": "Gira a la derecha\nEl destino est\u00e1 a la derecha."
-                            },
-                            "localizedValues": {
-                                "distance": {
-                                    "text": "0,3 km"
-                                },
-                                "staticDuration": {
-                                    "text": "4 min"
-                                }
-                            },
-                            "travelMode": "WALK"
-                        },
-                        {
-                            "distanceMeters": 6594,
-                            "staticDuration": "818s",
-                            "polyline": {
-                                "encodedPolyline": "{gp[~p`cMFEgIaQuA}C}AcD[Y[Qg@GaDSWGOM]g@e@_@]Ke@EWI_Gw@EEwFWkLeA{CWuSuB}Iq@oWiCcD[qEc@gKaA}UuBcJw@}C]qHo@aTuBa[uCoC[eVsBgBQgAUqEa@{Fq@{Cc@k@EqDG{J}@sJaAgDYcLkA{BQ?B"
-                            },
-                            "startLocation": {
-                                "latLng": {
-                                    "latitude": 4.6759803,
-                                    "longitude": -74.06368090000001
-                                }
-                            },
-                            "endLocation": {
-                                "latLng": {
-                                    "latitude": 4.7315096,
-                                    "longitude": -74.04969489999999
-                                }
-                            },
-                            "navigationInstruction": {
-                                "instructions": "Autob\u00fas en direcci\u00f3n a Calle 146"
-                            },
-                            "localizedValues": {
-                                "distance": {
-                                    "text": "6,6 km"
-                                },
-                                "staticDuration": {
-                                    "text": "14 min"
+                                    "text": "26 min"
                                 }
                             },
                             "transitDetails": {
                                 "stopDetails": {
                                     "arrivalStop": {
-                                        "name": "Calle 146",
+                                        "name": "NQS Calle 30 Sur",
                                         "location": {
                                             "latLng": {
-                                                "latitude": 4.7315096,
-                                                "longitude": -74.04969489999999
+                                                "latitude": 4.5946853999999995,
+                                                "longitude": -74.1182619
                                             }
                                         }
                                     },
-                                    "arrivalTime": "2025-03-21T21:38:12Z",
+                                    "arrivalTime": "2025-03-21T23:13:36Z",
                                     "departureStop": {
-                                        "name": "Castellana",
+                                        "name": "San Mateo C.C Unisur",
                                         "location": {
                                             "latLng": {
-                                                "latitude": 4.6759803,
-                                                "longitude": -74.06368090000001
+                                                "latitude": 4.5857065,
+                                                "longitude": -74.2059926
                                             }
                                         }
                                     },
-                                    "departureTime": "2025-03-21T21:24:34Z"
+                                    "departureTime": "2025-03-21T22:48:00Z"
                                 },
                                 "localizedValues": {
                                     "arrivalTime": {
                                         "time": {
-                                            "text": "16:38"
+                                            "text": "18:13"
                                         },
                                         "timeZone": "America/Bogota"
                                     },
                                     "departureTime": {
                                         "time": {
-                                            "text": "16:24"
+                                            "text": "17:48"
                                         },
                                         "timeZone": "America/Bogota"
                                     }
                                 },
-                                "headsign": "Calle 146",
+                                "headsign": "Bicentenario",
                                 "transitLine": {
                                     "agencies": [
                                         {
@@ -1960,9 +807,9 @@
                                             "uri": "https://www.transmilenio.gov.co/"
                                         }
                                     ],
-                                    "name": "Portal Norte",
-                                    "color": "#7ac143",
-                                    "nameShort": "B28",
+                                    "name": "Bicentenario",
+                                    "color": "#00aaa6",
+                                    "nameShort": "L41",
                                     "textColor": "#ffffff",
                                     "vehicle": {
                                         "name": {
@@ -1977,27 +824,27 @@
                             "travelMode": "TRANSIT"
                         },
                         {
-                            "distanceMeters": 58,
-                            "staticDuration": "58s",
+                            "distanceMeters": 57,
+                            "staticDuration": "57s",
                             "polyline": {
-                                "encodedPolyline": "_c{[xy}bMfBN"
+                                "encodedPolyline": "_l`[dfkcMUeB"
                             },
                             "startLocation": {
                                 "latLng": {
-                                    "latitude": 4.7315156,
-                                    "longitude": -74.0497341
+                                    "latitude": 4.5947179,
+                                    "longitude": -74.1182683
                                 }
                             },
                             "endLocation": {
                                 "latLng": {
-                                    "latitude": 4.7309985,
-                                    "longitude": -74.04980770000002
+                                    "latitude": 4.5948258,
+                                    "longitude": -74.11776499999999
                                 }
                             },
                             "navigationInstruction": {},
                             "localizedValues": {
                                 "distance": {
-                                    "text": "58 m"
+                                    "text": "57 m"
                                 },
                                 "staticDuration": {
                                     "text": "1 min"
@@ -2006,72 +853,72 @@
                             "travelMode": "WALK"
                         },
                         {
-                            "distanceMeters": 2620,
-                            "staticDuration": "430s",
+                            "distanceMeters": 9031,
+                            "staticDuration": "1496s",
                             "polyline": {
-                                "encodedPolyline": "u_{[bz}bM?EsNkAkI{@w_@mDoXeCsDk@_COgCOwIw@wKSkBMmC]qDo@uAYQA{@QiC]CL"
+                                "encodedPolyline": "ml`[~bkcMDAu@sEaA{EiBwHc@cBVKi@sBWy@wAsDwAsDkAsCqAgDa@oAIc@Dq@h@wBB[G_@cAeBaCoDsBgDOR{I_NoCsDJSmEcFmDkDuDaDeBsAwByAiBaAsBoAmBwAcG}EcEaDiAaAeKaIoD_Cm@a@gB{AcCkBuAiAGQsBgB{AsAqGwEwDsC{DmCGIoCcC{B{A}PcNqB{A]SQQi@u@_@WWMqIaHqA}@qBy@gAa@_Bo@}Ae@wA[qFg@aDWeFSSLcCKeCSmDQ_O]oHW_FImCCkEMcFOmHe@iBIwEMuW}@gI]oHQoNk@wHe@?J"
                             },
                             "startLocation": {
                                 "latLng": {
-                                    "latitude": 4.7309942,
-                                    "longitude": -74.0497768
+                                    "latitude": 4.5947933,
+                                    "longitude": -74.117757
                                 }
                             },
                             "endLocation": {
                                 "latLng": {
-                                    "latitude": 4.7541182,
-                                    "longitude": -74.0460034
+                                    "latitude": 4.6569942,
+                                    "longitude": -74.07771559999999
                                 }
                             },
                             "navigationInstruction": {
-                                "instructions": "Autob\u00fas en direcci\u00f3n a Portal Norte"
+                                "instructions": "Autob\u00fas en direcci\u00f3n a H\u00e9roes - Gelhada"
                             },
                             "localizedValues": {
                                 "distance": {
-                                    "text": "2,6 km"
+                                    "text": "9,0 km"
                                 },
                                 "staticDuration": {
-                                    "text": "7 min"
+                                    "text": "25 min"
                                 }
                             },
                             "transitDetails": {
                                 "stopDetails": {
                                     "arrivalStop": {
-                                        "name": "Portal Norte",
+                                        "name": "7 de Agosto",
                                         "location": {
                                             "latLng": {
-                                                "latitude": 4.7541182,
-                                                "longitude": -74.0460034
+                                                "latitude": 4.6569942,
+                                                "longitude": -74.07771559999999
                                             }
                                         }
                                     },
-                                    "arrivalTime": "2025-03-21T21:50:00Z",
+                                    "arrivalTime": "2025-03-21T23:44:25Z",
                                     "departureStop": {
-                                        "name": "Calle 146",
+                                        "name": "NQS Calle 30 Sur",
                                         "location": {
                                             "latLng": {
-                                                "latitude": 4.7309942,
-                                                "longitude": -74.0497768
+                                                "latitude": 4.5947933,
+                                                "longitude": -74.117757
                                             }
                                         }
                                     },
-                                    "departureTime": "2025-03-21T21:42:50Z"
+                                    "departureTime": "2025-03-21T23:19:29Z"
                                 },
                                 "localizedValues": {
                                     "arrivalTime": {
                                         "time": {
-                                            "text": "16:50"
+                                            "text": "18:44"
                                         },
                                         "timeZone": "America/Bogota"
                                     },
                                     "departureTime": {
                                         "time": {
-                                            "text": "16:42"
+                                            "text": "18:19"
                                         },
                                         "timeZone": "America/Bogota"
                                     }
                                 },
-                                "headsign": "Portal Norte",
+                                "headsign": "H\u00e9roes - Gelhada",
                                 "transitLine": {
                                     "agencies": [
                                         {
@@ -2080,9 +927,9 @@
                                             "uri": "https://www.transmilenio.gov.co/"
                                         }
                                     ],
-                                    "name": "Portal Norte",
-                                    "color": "#7ac143",
-                                    "nameShort": "B74",
+                                    "name": "Heroes Gelhada",
+                                    "color": "#000000",
+                                    "nameShort": "4",
                                     "textColor": "#ffffff",
                                     "vehicle": {
                                         "name": {
@@ -2092,163 +939,54 @@
                                         "iconUri": "//maps.gstatic.com/mapfiles/transit/iw2/6/bus2.png"
                                     }
                                 },
-                                "stopCount": 4
+                                "stopCount": 11
                             },
                             "travelMode": "TRANSIT"
-                        },
-                        {
-                            "distanceMeters": 114,
-                            "staticDuration": "90s",
-                            "polyline": {
-                                "encodedPolyline": "ep_\\hb}bMfDd@"
-                            },
-                            "startLocation": {
-                                "latLng": {
-                                    "latitude": 4.754111,
-                                    "longitude": -74.0459674
-                                }
-                            },
-                            "endLocation": {
-                                "latLng": {
-                                    "latitude": 4.7532697,
-                                    "longitude": -74.0461554
-                                }
-                            },
-                            "navigationInstruction": {
-                                "maneuver": "DEPART",
-                                "instructions": "Dir\u00edgete al sur por Troncal Autopista Nte."
-                            },
-                            "localizedValues": {
-                                "distance": {
-                                    "text": "0,1 km"
-                                },
-                                "staticDuration": {
-                                    "text": "2 min"
-                                }
-                            },
-                            "travelMode": "WALK"
-                        },
-                        {
-                            "distanceMeters": 81,
-                            "staticDuration": "67s",
-                            "polyline": {
-                                "encodedPolyline": "}j_\\nc}bMv@RHL?LKHm@?"
-                            },
-                            "startLocation": {
-                                "latLng": {
-                                    "latitude": 4.7532697,
-                                    "longitude": -74.0461554
-                                }
-                            },
-                            "endLocation": {
-                                "latLng": {
-                                    "latitude": 4.7532293,
-                                    "longitude": -74.0464514
-                                }
-                            },
-                            "navigationInstruction": {
-                                "maneuver": "TURN_SLIGHT_RIGHT",
-                                "instructions": "Gira ligeramente a la derecha para continuar por Troncal Autopista Nte."
-                            },
-                            "localizedValues": {
-                                "distance": {
-                                    "text": "81 m"
-                                },
-                                "staticDuration": {
-                                    "text": "1 min"
-                                }
-                            },
-                            "travelMode": "WALK"
-                        },
-                        {
-                            "distanceMeters": 163,
-                            "staticDuration": "133s",
-                            "polyline": {
-                                "encodedPolyline": "uj_\\he}bMcAc@c@MmD]"
-                            },
-                            "startLocation": {
-                                "latLng": {
-                                    "latitude": 4.7532293,
-                                    "longitude": -74.0464514
-                                }
-                            },
-                            "endLocation": {
-                                "latLng": {
-                                    "latitude": 4.7546234,
-                                    "longitude": -74.0460452
-                                }
-                            },
-                            "navigationInstruction": {
-                                "maneuver": "TURN_SLIGHT_RIGHT",
-                                "instructions": "Gira ligeramente a la derecha para continuar por Troncal Autopista Nte.\nEl destino est\u00e1 a la derecha."
-                            },
-                            "localizedValues": {
-                                "distance": {
-                                    "text": "0,2 km"
-                                },
-                                "staticDuration": {
-                                    "text": "2 min"
-                                }
-                            },
-                            "travelMode": "WALK"
                         }
                     ],
                     "localizedValues": {
                         "distance": {
-                            "text": "10,2 km"
+                            "text": "19,2 km"
                         },
                         "duration": {
-                            "text": "39 min"
+                            "text": "56 min"
                         },
                         "staticDuration": {
-                            "text": "39 min"
+                            "text": "56 min"
                         }
                     },
                     "stepsOverview": {
                         "multiModalSegments": [
                             {
                                 "stepStartIndex": 0,
-                                "stepEndIndex": 3,
+                                "stepEndIndex": 0,
                                 "navigationInstruction": {
-                                    "instructions": "Camina hasta Castellana"
-                                },
-                                "travelMode": "WALK"
-                            },
-                            {
-                                "stepStartIndex": 4,
-                                "stepEndIndex": 4,
-                                "navigationInstruction": {
-                                    "instructions": "Autob\u00fas en direcci\u00f3n a Calle 146"
+                                    "instructions": "Autob\u00fas en direcci\u00f3n a Bicentenario"
                                 },
                                 "travelMode": "TRANSIT"
                             },
                             {
-                                "stepStartIndex": 5,
-                                "stepEndIndex": 5,
+                                "stepStartIndex": 1,
+                                "stepEndIndex": 1,
                                 "navigationInstruction": {
-                                    "instructions": "Camina hasta Calle 146"
+                                    "instructions": "Camina hasta NQS Calle 30 Sur"
                                 },
                                 "travelMode": "WALK"
                             },
                             {
-                                "stepStartIndex": 6,
-                                "stepEndIndex": 6,
+                                "stepStartIndex": 2,
+                                "stepEndIndex": 2,
                                 "navigationInstruction": {
-                                    "instructions": "Autob\u00fas en direcci\u00f3n a Portal Norte"
+                                    "instructions": "Autob\u00fas en direcci\u00f3n a H\u00e9roes - Gelhada"
                                 },
                                 "travelMode": "TRANSIT"
-                            },
-                            {
-                                "stepStartIndex": 7,
-                                "stepEndIndex": 9,
-                                "travelMode": "WALK"
                             }
                         ]
                     }
                 }
             ],
-            "distanceMeters": 10250,
-            "duration": "2394s"
+            "distanceMeters": 19176,
+            "duration": "3385s"
         }
     ]
 }

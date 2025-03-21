@@ -15,7 +15,7 @@ def get_time_to_departure(departure_time):
 with open("response.json", "r") as f:
     response = json.load(f)
 
-users_route = "B12"
+users_route = "E42"
 
 for route in response["routes"]:
     leg = route["legs"][0]
