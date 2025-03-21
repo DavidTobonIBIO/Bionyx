@@ -7,7 +7,7 @@ import os
 url = "https://routes.googleapis.com/directions/v2:computeRoutes"
 
 # Load environment variables from .env.local file
-load_dotenv(dotenv_path='.env.local')
+load_dotenv(dotenv_path='.env')
 
 # Get the API key from the environment variable
 API_KEY = os.getenv('GOOGLE_MAPS_API_KEY')
