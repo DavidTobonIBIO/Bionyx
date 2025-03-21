@@ -55,10 +55,11 @@ async def read_stations():
 
 @app.get("/stations/{id}", response_model=Station)
 async def read_station(id: int):
-    station = stations_dict.get(id)
-    if station:
+    print(f"Searching for station with id={id}")
+    station = stations_dict.get(id, None)
+    if not station:
         raise HTTPException(status_code=404, detail=f"Station with id={id} not found")
-    return stations_dict[id]
+    return station
 
 
 @app.post("/stations/nearest_station", response_model=Station)

@@ -38,7 +38,7 @@ stations_dict = {}
 for feature in stations["features"]:
     station_properties = feature["properties"]
     id = station_properties["objectid"]
-    station_name = station_properties["nombre_estacion"]
+    station_name = station_properties["nombre_estacion"].upper()
     latitud = station_properties["latitud_estacion"]
     longitud = station_properties["longitud_estacion"]
     station_name = (
