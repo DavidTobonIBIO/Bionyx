@@ -1,5 +1,13 @@
 from fastapi import FastAPI, HTTPException
-from models import Coords, Route, Station, update_routes_locations, stations_dict, routes_dict, routes_list
+from models import (
+    Coords,
+    Route,
+    Station,
+    update_routes_locations,
+    stations_dict,
+    routes_dict,
+    routes_list,
+)
 import asyncio
 from contextlib import asynccontextmanager
 import uvicorn

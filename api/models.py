@@ -46,7 +46,7 @@ for feature in stations["features"]:
         .encode("ascii", "ignore")
         .decode("ascii")
     )
-    
+
     station = Station(id=id, name=station_name, latitude=latitud, longitude=longitud)
     stations_dict_by_names[station_name.replace(" ", "_").lower()] = station
     stations_dict[id] = station
