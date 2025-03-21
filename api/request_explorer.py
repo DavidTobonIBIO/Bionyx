@@ -10,20 +10,19 @@ def get_time_to_departure(departure_time):
     diff = t2 - t1
     return diff.total_seconds() / 60
 
-with open('response.json', 'rb') as f:
+
+with open("response.json", "r") as f:
     response = json.load(f)
 
-users_route = 'D24'
+users_route = "D24"
 
-
-
-for i, route in enumerate(response['routes']):
-    leg = route['legs'][0]
-    for step in leg['steps']:
-        if step['travelMode'] == 'TRANSIT':
-            if users_route == step['transitDetails']['transitLine']['nameShort']:
-                departure_time = step['transitDetails']['localizedValues']['departureTime']['time']['text']
+for i, route in enumerate(response["routes"]):
+    leg = route["legs"][0]
+    for step in leg["steps"]:
+        if step["travelMode"] == "TRANSIT":
+            if users_route == step["transitDetails"]["transitLine"]["nameShort"]:
+                departure_time = step["transitDetails"]["localizedValues"][
+                    "departureTime"
+                ]["time"]["text"]
                 time_to_departure = get_time_to_departure(departure_time)
-                print(f'Your bus will depart in {time_to_departure:.2f} minutes')
-                
-                
+                print(f"Your bus will depart in {time_to_departure:.2f} minutes")
