@@ -11,18 +11,18 @@ class Coords(BaseModel):
     longitude: float
 
 
+class Route(BaseModel):
+    id: int
+    name: str
+    destinationStationId: int
+    
+
 class Station(BaseModel):
     id: int
     name: str
     latitude: float = 0.0
     longitude: float = 0.0
-    arrivingRoutes: list["Route"] = []
-
-
-class Route(BaseModel):
-    id: int
-    name: str
-    destinationStationId: int
+    arrivingRoutes: list[Route] = []
 
 
 this_dir = os.path.dirname(__file__)
@@ -95,7 +95,7 @@ async def update_routes_locations():
     while True:
         for station in stations_dict_by_names.values():
             station.arrivingRoutes = station.arrivingRoutes = [
-                Route(id=r.id, name=r.name, destination=r.destination)
+                Route(id=r.id, name=r.name, destinationStationId=r.destinationStationId)
                 for r in random.sample(routes_list, k=random.randint(0, 4))
             ]
         await asyncio.sleep(5)  # update every 5 secs
