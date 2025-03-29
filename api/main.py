@@ -7,6 +7,7 @@ from models import (
     stations_dict,
     routes_dict,
     routes_list,
+    stations_dict_by_names,
 )
 import asyncio
 from contextlib import asynccontextmanager
@@ -15,7 +16,9 @@ import math
 import os
 import shutil
 import atexit
-
+from shapely.geometry import Point, shape, MultiLineString
+import json
+import unicodedata
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
@@ -25,19 +28,15 @@ async def lifespan(app: FastAPI):
     task.cancel()
     print("Shutting down.")
 
-
 app = FastAPI(root_path="/api", lifespan=lifespan)
-
 
 @app.get("/")
 async def read_root():
     return {"message": "OrientApp Backend"}
 
-
 @app.get("/routes/", response_model=list[Route])
 async def read_routes_names():
     return routes_list
-
 
 @app.get("/routes/{id}", response_model=Route)
 async def read_route(id: int):
@@ -47,11 +46,9 @@ async def read_route(id: int):
     else:
         raise HTTPException(status_code=404, detail=f"Route with id={id} not found")
 
-
 @app.get("/stations/", response_model=list[Station])
 async def read_stations():
     return list(stations_dict.values())
-
 
 @app.get("/stations/{id}", response_model=Station)
 async def read_station(id: int):
@@ -61,28 +58,23 @@ async def read_station(id: int):
         raise HTTPException(status_code=404, detail=f"Station with id={id} not found")
     return station
 
-
 @app.post("/stations/nearest_station", response_model=Station)
 async def read_nearest_station(coords: Coords):
     nearest_station = None
-    R = 6371000  # Radius of Earth in m
-    nearest_distance = math.inf  # Nearest distance in m
+    R = 6371000
+    nearest_distance = math.inf
 
     lat1, lon1 = coords.latitude, coords.longitude
 
     for station in stations_dict.values():
-
         lat2, lon2 = station.latitude, station.longitude
         phi1, phi2 = math.radians(lat1), math.radians(lat2)
         dphi = math.radians(lat2 - lat1)
         dlambda = math.radians(lon2 - lon1)
 
-        a = math.sin(dphi / 2) * math.sin(dphi / 2) + math.cos(phi1) * math.cos(
-            phi2
-        ) * math.sin(dlambda / 2) * math.sin(dlambda / 2)
+        a = math.sin(dphi / 2)**2 + math.cos(phi1) * math.cos(phi2) * math.sin(dlambda / 2)**2
         c = 2 * math.atan2(math.sqrt(a), math.sqrt(1 - a))
-
-        distance = R * c  # Distance in m
+        distance = R * c
 
         if distance < nearest_distance:
             nearest_station = station
@@ -91,8 +83,48 @@ async def read_nearest_station(coords: Coords):
     if nearest_station is None:
         raise HTTPException(status_code=404, detail=f"No stations found")
 
-    return nearest_station
+    try:
+        with open("api\\data\\Rutas_Troncales_de_TRANSMILENIO.geojson", encoding="utf-8") as f:
+            routes_geojson = json.load(f)
 
+        station_point = Point(nearest_station.longitude, nearest_station.latitude)
+        arriving_routes = []
+
+        for feature in routes_geojson["features"]:
+            geometry = feature.get("geometry")
+            if geometry["type"] != "MultiLineString":
+                continue
+            geom = shape(geometry)
+            route_distance = geom.distance(station_point)
+
+            properties = feature.get("properties")
+            nombre_ruta = properties.get("nombre_ruta_troncal")
+            destino = properties.get("destino_ruta_troncal")
+
+            # print(f"Route: {nombre_ruta} → Distance to station: {route_distance}")
+
+            if route_distance < 0.0015:
+                route_id = properties.get("objectid") or hash(json.dumps(feature["geometry"]))
+                raw_route_name = nombre_ruta or "SIN_NOMBRE"
+                route_name = raw_route_name.split()[0] if raw_route_name.strip() else "SIN_NOMBRE"
+
+                destino_normalized = unicodedata.normalize("NFKD", destino or "").encode("ascii", "ignore").decode("ascii")
+                destino_key = destino_normalized.replace(" ", "_").lower()
+                destination_station = stations_dict_by_names.get(destino_key)
+                destination_id = destination_station.id if destination_station else -1
+
+                arriving_routes.append(
+                    Route(id=route_id, name=route_name, destinationStationId=destination_id)
+                )
+
+        print(f"Station '{nearest_station.name}' matched {len(arriving_routes)} routes.")
+        nearest_station.arrivingRoutes = arriving_routes
+
+    except Exception as e:
+        print("Failed to compute arriving routes:", e)
+        nearest_station.arrivingRoutes = []
+
+    return nearest_station
 
 def remove_pycache():
     pycache_path = os.path.join(this_script_dir, "__pycache__")
@@ -103,11 +135,8 @@ def remove_pycache():
         except Exception as e:
             print(f"Error deleting __pycache__: {e}")
 
-
 this_script_dir = os.path.dirname(os.path.abspath(__file__))
-# Register the cleanup function to run at script exit
 atexit.register(remove_pycache)
 
 if __name__ == "__main__":
-    # uvicorn main:app --host 0.0.0.0 --port 8000 --reload
     uvicorn.run("main:app", host="0.0.0.0", port=8000, reload=True)
