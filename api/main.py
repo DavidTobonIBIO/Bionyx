@@ -1,4 +1,4 @@
-from fastapi import FastAPI, HTTPException
+from fastapi import FastAPI, HTTPException, UploadFile, File
 from models import (
     Coords,
     Route,
@@ -19,6 +19,12 @@ import atexit
 from shapely.geometry import Point, shape, MultiLineString
 import json
 import unicodedata
+import tempfile
+import openai
+from openai import OpenAI
+
+OPENAI_API_KEY='' #FIXME Pongan mi API Key the OpenAI, la mande por WhatsApp :) Att: Sergio
+client = OpenAI(api_key=OPENAI_API_KEY)
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
@@ -101,8 +107,6 @@ async def read_nearest_station(coords: Coords):
             nombre_ruta = properties.get("nombre_ruta_troncal")
             destino = properties.get("destino_ruta_troncal")
 
-            # print(f"Route: {nombre_ruta} → Distance to station: {route_distance}")
-
             if route_distance < 0.0015:
                 route_id = properties.get("objectid") or hash(json.dumps(feature["geometry"]))
                 raw_route_name = nombre_ruta or "SIN_NOMBRE"
@@ -126,6 +130,26 @@ async def read_nearest_station(coords: Coords):
 
     return nearest_station
 
+@app.post("/voice/route")
+async def transcribe_and_extract_route(audio: UploadFile = File(...)):
+    try:
+        with tempfile.NamedTemporaryFile(delete=False, suffix=".wav") as tmp:
+            tmp.write(await audio.read())
+            tmp_path = tmp.name
+
+        with open(tmp_path, "rb") as file_obj:
+            transcript = client.audio.transcriptions.create(
+                model="whisper-1",
+                file=file_obj,
+                prompt="Transcribe only the name of the TransMilenio route. Focus on names like B10, J24, 6, etc. The message is in Spanish. In the response please show only 'J24', '6', and so on "
+            )
+
+        os.remove(tmp_path)
+        return {"route": transcript.text}
+
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
+
 def remove_pycache():
     pycache_path = os.path.join(this_script_dir, "__pycache__")
     if os.path.exists(pycache_path) and os.path.isdir(pycache_path):
@@ -133,7 +157,7 @@ def remove_pycache():
             shutil.rmtree(pycache_path)
             print("Deleted __pycache__ folder.")
         except Exception as e:
-            print(f"Error deleting __pycache__: {e}")
+            print(f"Error deleting __pycache__:", e)
 
 this_script_dir = os.path.dirname(os.path.abspath(__file__))
 atexit.register(remove_pycache)
