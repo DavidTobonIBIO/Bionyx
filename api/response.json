@@ -4,8 +4,8 @@
             "legs": [
                 {
                     "distanceMeters": 19043,
-                    "duration": "2535s",
-                    "staticDuration": "2535s",
+                    "duration": "2310s",
+                    "staticDuration": "2310s",
                     "polyline": {
                         "encodedPolyline": "ou~Zlf|cMDAuBsFmC{Go@gB]_AUm@}EoL{@eBqCcH_C_GqDsIwFwNyDaKsCsHuCsHkAmDaDeL?YKe@CU@O_@_BQcASmC?sDMyM@_GJkErAcQvBoYDgCDwOAiPB}BQ}FWoGa@oGm@yNO}EBqAJiAp@wDt@sCPk@VmBz@_On@qI@i@Jw@AoAWwC[yCY}DEgBOoCGeDE_@ByB\\sFTaCd@aE`@sCj@uEv@gF`AaIr@yHZ_C^yDHwEAyFKeCOkLCgCk@sMW{Ck@qF_CcRc@{CmAkGuB}Io@eCWy@wAsDwAsDkAsCqAgDa@oAIc@Dq@h@wBB[G_@cAeBaCoDsFyIuFmIeCaDaEuE}DyDeDsCeBsAwByAiBaAsBoAmBwAcG}EcEaDiAaAeKaIoD_Cm@a@gB{AcCkBuAiAGQsBgB{AsAqGwEwDsC{DmCGIoCcC{B{A}PcNqB{A]SQQi@u@_@WWMqIaHqA}@qBy@gAa@_Bo@}Ae@wA[qFg@aDWeFSSLcCKeCSmDQ_O]oHW_FImCCkEMcFOmHe@_EMw[gAgI]oHQoNk@wHe@?J"
                     },
@@ -24,7 +24,7 @@
                     "steps": [
                         {
                             "distanceMeters": 19043,
-                            "staticDuration": "2535s",
+                            "staticDuration": "2310s",
                             "polyline": {
                                 "encodedPolyline": "ou~Zlf|cMDAuBsFmC{Go@gB]_AUm@}EoL{@eBqCcH_C_GqDsIwFwNyDaKsCsHuCsHkAmDaDeL?YKe@CU@O_@_BQcASmC?sDMyM@_GJkErAcQvBoYDgCDwOAiPB}BQ}FWoGa@oGm@yNO}EBqAJiAp@wDt@sCPk@VmBz@_On@qI@i@Jw@AoAWwC[yCY}DEgBOoCGeDE_@ByB\\sFTaCd@aE`@sCj@uEv@gF`AaIr@yHZ_C^yDHwEAyFKeCOkLCgCk@sMW{Ck@qF_CcRc@{CmAkGuB}Io@eCWy@wAsDwAsDkAsCqAgDa@oAIc@Dq@h@wBB[G_@cAeBaCoDsFyIuFmIeCaDaEuE}DyDeDsCeBsAwByAiBaAsBoAmBwAcG}EcEaDiAaAeKaIoD_Cm@a@gB{AcCkBuAiAGQsBgB{AsAqGwEwDsC{DmCGIoCcC{B{A}PcNqB{A]SQQi@u@_@WWMqIaHqA}@qBy@gAa@_Bo@}Ae@wA[qFg@aDWeFSSLcCKeCSmDQ_O]oHW_FImCCkEMcFOmHe@_EMw[gAgI]oHQoNk@wHe@?J"
                             },
@@ -48,7 +48,7 @@
                                     "text": "19,0 km"
                                 },
                                 "staticDuration": {
-                                    "text": "42 min"
+                                    "text": "39 min"
                                 }
                             },
                             "transitDetails": {
@@ -62,7 +62,7 @@
                                             }
                                         }
                                     },
-                                    "arrivalTime": "2025-03-21T23:28:15Z",
+                                    "arrivalTime": "2025-03-30T20:54:15Z",
                                     "departureStop": {
                                         "name": "San Mateo C.C Unisur",
                                         "location": {
@@ -72,18 +72,18 @@
                                             }
                                         }
                                     },
-                                    "departureTime": "2025-03-21T22:46:00Z"
+                                    "departureTime": "2025-03-30T20:15:45Z"
                                 },
                                 "localizedValues": {
                                     "arrivalTime": {
                                         "time": {
-                                            "text": "18:28"
+                                            "text": "15:54"
                                         },
                                         "timeZone": "America/Bogota"
                                     },
                                     "departureTime": {
                                         "time": {
-                                            "text": "17:46"
+                                            "text": "15:15"
                                         },
                                         "timeZone": "America/Bogota"
                                     }
@@ -119,10 +119,10 @@
                             "text": "19,0 km"
                         },
                         "duration": {
-                            "text": "42 min"
+                            "text": "39 min"
                         },
                         "staticDuration": {
-                            "text": "42 min"
+                            "text": "39 min"
                         }
                     },
                     "stepsOverview": {
@@ -140,14 +140,14 @@
                 }
             ],
             "distanceMeters": 19043,
-            "duration": "2535s"
+            "duration": "2310s"
         },
         {
             "legs": [
                 {
                     "distanceMeters": 19043,
-                    "duration": "2760s",
-                    "staticDuration": "2760s",
+                    "duration": "2460s",
+                    "staticDuration": "2460s",
                     "polyline": {
                         "encodedPolyline": "ou~Zlf|cMDAuBsFmC{Go@gB]_AUm@}EoL{@eBqCcH_C_GqDsIwFwNyDaKsCsHuCsHkAmDaDeL?YKe@CU@O_@_BQcASmC?sDMyM@_GJkErAcQvBoYDgCDwOAiPB}BQ}FWoGa@oGm@yNO}EBqAJiAp@wDt@sCPk@VmBz@_On@qI@i@Jw@AoAWwC[yCY}DEgBOoCGeDE_@ByB\\sFTaCd@aE`@sCj@uEv@gF`AaIr@yHZ_C^yDHwEAyFKeCOkLCgCk@sMW{Ck@qF_CcRc@{CmAkGuB}Io@eCWy@wAsDwAsDkAsCqAgDa@oAIc@Dq@h@wBB[G_@cAeBaCoDsFyIuFmIeCaDaEuE}DyDeDsCeBsAwByAiBaAsBoAmBwAcG}EcEaDiAaAeKaIoD_Cm@a@gB{AcCkBuAiAGQsBgB{AsAqGwEwDsC{DmCGIoCcC{B{A}PcNqB{A]SQQi@u@_@WWMqIaHqA}@qBy@gAa@_Bo@}Ae@wA[qFg@aDWeFSSLcCKeCSmDQ_O]oHW_FImCCkEMcFOmHe@_EMw[gAgI]oHQoNk@wHe@?J"
                     },
@@ -166,7 +166,7 @@
                     "steps": [
                         {
                             "distanceMeters": 19043,
-                            "staticDuration": "2760s",
+                            "staticDuration": "2460s",
                             "polyline": {
                                 "encodedPolyline": "ou~Zlf|cMDAuBsFmC{Go@gB]_AUm@}EoL{@eBqCcH_C_GqDsIwFwNyDaKsCsHuCsHkAmDaDeL?YKe@CU@O_@_BQcASmC?sDMyM@_GJkErAcQvBoYDgCDwOAiPB}BQ}FWoGa@oGm@yNO}EBqAJiAp@wDt@sCPk@VmBz@_On@qI@i@Jw@AoAWwC[yCY}DEgBOoCGeDE_@ByB\\sFTaCd@aE`@sCj@uEv@gF`AaIr@yHZ_C^yDHwEAyFKeCOkLCgCk@sMW{Ck@qF_CcRc@{CmAkGuB}Io@eCWy@wAsDwAsDkAsCqAgDa@oAIc@Dq@h@wBB[G_@cAeBaCoDsFyIuFmIeCaDaEuE}DyDeDsCeBsAwByAiBaAsBoAmBwAcG}EcEaDiAaAeKaIoD_Cm@a@gB{AcCkBuAiAGQsBgB{AsAqGwEwDsC{DmCGIoCcC{B{A}PcNqB{A]SQQi@u@_@WWMqIaHqA}@qBy@gAa@_Bo@}Ae@wA[qFg@aDWeFSSLcCKeCSmDQ_O]oHW_FImCCkEMcFOmHe@_EMw[gAgI]oHQoNk@wHe@?J"
                             },
@@ -190,7 +190,7 @@
                                     "text": "19,0 km"
                                 },
                                 "staticDuration": {
-                                    "text": "46 min"
+                                    "text": "41 min"
                                 }
                             },
                             "transitDetails": {
@@ -204,7 +204,7 @@
                                             }
                                         }
                                     },
-                                    "arrivalTime": "2025-03-21T23:33:30Z",
+                                    "arrivalTime": "2025-03-30T21:01:45Z",
                                     "departureStop": {
                                         "name": "San Mateo C.C Unisur",
                                         "location": {
@@ -214,18 +214,18 @@
                                             }
                                         }
                                     },
-                                    "departureTime": "2025-03-21T22:47:30Z"
+                                    "departureTime": "2025-03-30T20:20:45Z"
                                 },
                                 "localizedValues": {
                                     "arrivalTime": {
                                         "time": {
-                                            "text": "18:33"
+                                            "text": "16:01"
                                         },
                                         "timeZone": "America/Bogota"
                                     },
                                     "departureTime": {
                                         "time": {
-                                            "text": "17:47"
+                                            "text": "15:20"
                                         },
                                         "timeZone": "America/Bogota"
                                     }
@@ -261,10 +261,10 @@
                             "text": "19,0 km"
                         },
                         "duration": {
-                            "text": "46 min"
+                            "text": "41 min"
                         },
                         "staticDuration": {
-                            "text": "46 min"
+                            "text": "41 min"
                         }
                     },
                     "stepsOverview": {
@@ -282,14 +282,14 @@
                 }
             ],
             "distanceMeters": 19043,
-            "duration": "2760s"
+            "duration": "2460s"
         },
         {
             "legs": [
                 {
                     "distanceMeters": 19043,
-                    "duration": "2535s",
-                    "staticDuration": "2535s",
+                    "duration": "2385s",
+                    "staticDuration": "2385s",
                     "polyline": {
                         "encodedPolyline": "ou~Zlf|cMDAuBsFmC{Go@gB]_AUm@}EoL{@eBqCcH_C_GqDsIwFwNyDaKsCsHuCsHkAmDaDeL?YKe@CU@O_@_BQcASmC?sDMyM@_GJkErAcQvBoYDgCDwOAiPB}BQ}FWoGa@oGm@yNO}EBqAJiAp@wDt@sCPk@VmBz@_On@qI@i@Jw@AoAWwC[yCY}DEgBOoCGeDE_@ByB\\sFTaCd@aE`@sCj@uEv@gF`AaIr@yHZ_C^yDHwEAyFKeCOkLCgCk@sMW{Ck@qF_CcRc@{CmAkGuB}Io@eCWy@wAsDwAsDkAsCqAgDa@oAIc@Dq@h@wBB[G_@cAeBaCoDsFyIuFmIeCaDaEuE}DyDeDsCeBsAwByAiBaAsBoAmBwAcG}EcEaDiAaAeKaIoD_Cm@a@gB{AcCkBuAiAGQsBgB{AsAqGwEwDsC{DmCGIoCcC{B{A}PcNqB{A]SQQi@u@_@WWMqIaHqA}@qBy@gAa@_Bo@}Ae@wA[qFg@aDWeFSSLcCKeCSmDQ_O]oHW_FImCCkEMcFOmHe@_EMw[gAgI]oHQoNk@wHe@?J"
                     },
@@ -308,7 +308,7 @@
                     "steps": [
                         {
                             "distanceMeters": 19043,
-                            "staticDuration": "2535s",
+                            "staticDuration": "2385s",
                             "polyline": {
                                 "encodedPolyline": "ou~Zlf|cMDAuBsFmC{Go@gB]_AUm@}EoL{@eBqCcH_C_GqDsIwFwNyDaKsCsHuCsHkAmDaDeL?YKe@CU@O_@_BQcASmC?sDMyM@_GJkErAcQvBoYDgCDwOAiPB}BQ}FWoGa@oGm@yNO}EBqAJiAp@wDt@sCPk@VmBz@_On@qI@i@Jw@AoAWwC[yCY}DEgBOoCGeDE_@ByB\\sFTaCd@aE`@sCj@uEv@gF`AaIr@yHZ_C^yDHwEAyFKeCOkLCgCk@sMW{Ck@qF_CcRc@{CmAkGuB}Io@eCWy@wAsDwAsDkAsCqAgDa@oAIc@Dq@h@wBB[G_@cAeBaCoDsFyIuFmIeCaDaEuE}DyDeDsCeBsAwByAiBaAsBoAmBwAcG}EcEaDiAaAeKaIoD_Cm@a@gB{AcCkBuAiAGQsBgB{AsAqGwEwDsC{DmCGIoCcC{B{A}PcNqB{A]SQQi@u@_@WWMqIaHqA}@qBy@gAa@_Bo@}Ae@wA[qFg@aDWeFSSLcCKeCSmDQ_O]oHW_FImCCkEMcFOmHe@_EMw[gAgI]oHQoNk@wHe@?J"
                             },
@@ -332,7 +332,7 @@
                                     "text": "19,0 km"
                                 },
                                 "staticDuration": {
-                                    "text": "42 min"
+                                    "text": "40 min"
                                 }
                             },
                             "transitDetails": {
@@ -346,7 +346,7 @@
                                             }
                                         }
                                     },
-                                    "arrivalTime": "2025-03-21T23:36:15Z",
+                                    "arrivalTime": "2025-03-30T21:05:30Z",
                                     "departureStop": {
                                         "name": "San Mateo C.C Unisur",
                                         "location": {
@@ -356,18 +356,18 @@
                                             }
                                         }
                                     },
-                                    "departureTime": "2025-03-21T22:54:00Z"
+                                    "departureTime": "2025-03-30T20:25:45Z"
                                 },
                                 "localizedValues": {
                                     "arrivalTime": {
                                         "time": {
-                                            "text": "18:36"
+                                            "text": "16:05"
                                         },
                                         "timeZone": "America/Bogota"
                                     },
                                     "departureTime": {
                                         "time": {
-                                            "text": "17:54"
+                                            "text": "15:25"
                                         },
                                         "timeZone": "America/Bogota"
                                     }
@@ -403,10 +403,10 @@
                             "text": "19,0 km"
                         },
                         "duration": {
-                            "text": "42 min"
+                            "text": "40 min"
                         },
                         "staticDuration": {
-                            "text": "42 min"
+                            "text": "40 min"
                         }
                     },
                     "stepsOverview": {
@@ -424,14 +424,14 @@
                 }
             ],
             "distanceMeters": 19043,
-            "duration": "2535s"
+            "duration": "2385s"
         },
         {
             "legs": [
                 {
                     "distanceMeters": 19043,
-                    "duration": "2721s",
-                    "staticDuration": "2721s",
+                    "duration": "2280s",
+                    "staticDuration": "2280s",
                     "polyline": {
                         "encodedPolyline": "ou~Zlf|cMDAuBsFmC{Go@gB]_AUm@}EoL{@eBqCcH_C_GqDsIwFwNyDaKsCsHuCsHkAmDaDeL?YKe@CU@O_@_BQcASmC?sDMyM@_GJkErAcQvBoYDgCDwOAiPB}BQ}FWoGa@oGm@yNO}EBqAJiAp@wDt@sCPk@VmBz@_On@qI@i@Jw@AoAWwC[yCY}DEgBOoCGeDE_@ByB\\sFTaCd@aE`@sCj@uEv@gF`AaIr@yHZ_C^yDHwEAyFKeCOkLCgCk@sMW{Ck@qF_CcRc@{CmAkGuB}Io@eCWy@wAsDwAsDkAsCqAgDa@oAIc@Dq@h@wBB[G_@cAeBaCoDsFyIuFmIeCaDaEuE}DyDeDsCeBsAwByAiBaAsBoAmBwAcG}EcEaDiAaAeKaIoD_Cm@a@gB{AcCkBuAiAGQsBgB{AsAqGwEwDsC{DmCGIoCcC{B{A}PcNqB{A]SQQi@u@_@WWMqIaHqA}@qBy@gAa@_Bo@}Ae@wA[qFg@aDWeFSSLcCKeCSmDQ_O]oHW_FImCCkEMcFOmHe@_EMw[gAgI]oHQoNk@wHe@?J"
                     },
@@ -450,7 +450,7 @@
                     "steps": [
                         {
                             "distanceMeters": 19043,
-                            "staticDuration": "2721s",
+                            "staticDuration": "2280s",
                             "polyline": {
                                 "encodedPolyline": "ou~Zlf|cMDAuBsFmC{Go@gB]_AUm@}EoL{@eBqCcH_C_GqDsIwFwNyDaKsCsHuCsHkAmDaDeL?YKe@CU@O_@_BQcASmC?sDMyM@_GJkErAcQvBoYDgCDwOAiPB}BQ}FWoGa@oGm@yNO}EBqAJiAp@wDt@sCPk@VmBz@_On@qI@i@Jw@AoAWwC[yCY}DEgBOoCGeDE_@ByB\\sFTaCd@aE`@sCj@uEv@gF`AaIr@yHZ_C^yDHwEAyFKeCOkLCgCk@sMW{Ck@qF_CcRc@{CmAkGuB}Io@eCWy@wAsDwAsDkAsCqAgDa@oAIc@Dq@h@wBB[G_@cAeBaCoDsFyIuFmIeCaDaEuE}DyDeDsCeBsAwByAiBaAsBoAmBwAcG}EcEaDiAaAeKaIoD_Cm@a@gB{AcCkBuAiAGQsBgB{AsAqGwEwDsC{DmCGIoCcC{B{A}PcNqB{A]SQQi@u@_@WWMqIaHqA}@qBy@gAa@_Bo@}Ae@wA[qFg@aDWeFSSLcCKeCSmDQ_O]oHW_FImCCkEMcFOmHe@_EMw[gAgI]oHQoNk@wHe@?J"
                             },
@@ -474,7 +474,7 @@
                                     "text": "19,0 km"
                                 },
                                 "staticDuration": {
-                                    "text": "45 min"
+                                    "text": "38 min"
                                 }
                             },
                             "transitDetails": {
@@ -488,7 +488,7 @@
                                             }
                                         }
                                     },
-                                    "arrivalTime": "2025-03-21T23:39:51Z",
+                                    "arrivalTime": "2025-03-30T21:08:45Z",
                                     "departureStop": {
                                         "name": "San Mateo C.C Unisur",
                                         "location": {
@@ -498,18 +498,18 @@
                                             }
                                         }
                                     },
-                                    "departureTime": "2025-03-21T22:54:30Z"
+                                    "departureTime": "2025-03-30T20:30:45Z"
                                 },
                                 "localizedValues": {
                                     "arrivalTime": {
                                         "time": {
-                                            "text": "18:39"
+                                            "text": "16:08"
                                         },
                                         "timeZone": "America/Bogota"
                                     },
                                     "departureTime": {
                                         "time": {
-                                            "text": "17:54"
+                                            "text": "15:30"
                                         },
                                         "timeZone": "America/Bogota"
                                     }
@@ -545,10 +545,10 @@
                             "text": "19,0 km"
                         },
                         "duration": {
-                            "text": "45 min"
+                            "text": "38 min"
                         },
                         "staticDuration": {
-                            "text": "45 min"
+                            "text": "38 min"
                         }
                     },
                     "stepsOverview": {
@@ -566,14 +566,14 @@
                 }
             ],
             "distanceMeters": 19043,
-            "duration": "2721s"
+            "duration": "2280s"
         },
         {
             "legs": [
                 {
                     "distanceMeters": 19043,
-                    "duration": "2595s",
-                    "staticDuration": "2595s",
+                    "duration": "2370s",
+                    "staticDuration": "2370s",
                     "polyline": {
                         "encodedPolyline": "ou~Zlf|cMDAuBsFmC{Go@gB]_AUm@}EoL{@eBqCcH_C_GqDsIwFwNyDaKsCsHuCsHkAmDaDeL?YKe@CU@O_@_BQcASmC?sDMyM@_GJkErAcQvBoYDgCDwOAiPB}BQ}FWoGa@oGm@yNO}EBqAJiAp@wDt@sCPk@VmBz@_On@qI@i@Jw@AoAWwC[yCY}DEgBOoCGeDE_@ByB\\sFTaCd@aE`@sCj@uEv@gF`AaIr@yHZ_C^yDHwEAyFKeCOkLCgCk@sMW{Ck@qF_CcRc@{CmAkGuB}Io@eCWy@wAsDwAsDkAsCqAgDa@oAIc@Dq@h@wBB[G_@cAeBaCoDsFyIuFmIeCaDaEuE}DyDeDsCeBsAwByAiBaAsBoAmBwAcG}EcEaDiAaAeKaIoD_Cm@a@gB{AcCkBuAiAGQsBgB{AsAqGwEwDsC{DmCGIoCcC{B{A}PcNqB{A]SQQi@u@_@WWMqIaHqA}@qBy@gAa@_Bo@}Ae@wA[qFg@aDWeFSSLcCKeCSmDQ_O]oHW_FImCCkEMcFOmHe@_EMw[gAgI]oHQoNk@wHe@?J"
                     },
@@ -592,7 +592,7 @@
                     "steps": [
                         {
                             "distanceMeters": 19043,
-                            "staticDuration": "2595s",
+                            "staticDuration": "2370s",
                             "polyline": {
                                 "encodedPolyline": "ou~Zlf|cMDAuBsFmC{Go@gB]_AUm@}EoL{@eBqCcH_C_GqDsIwFwNyDaKsCsHuCsHkAmDaDeL?YKe@CU@O_@_BQcASmC?sDMyM@_GJkErAcQvBoYDgCDwOAiPB}BQ}FWoGa@oGm@yNO}EBqAJiAp@wDt@sCPk@VmBz@_On@qI@i@Jw@AoAWwC[yCY}DEgBOoCGeDE_@ByB\\sFTaCd@aE`@sCj@uEv@gF`AaIr@yHZ_C^yDHwEAyFKeCOkLCgCk@sMW{Ck@qF_CcRc@{CmAkGuB}Io@eCWy@wAsDwAsDkAsCqAgDa@oAIc@Dq@h@wBB[G_@cAeBaCoDsFyIuFmIeCaDaEuE}DyDeDsCeBsAwByAiBaAsBoAmBwAcG}EcEaDiAaAeKaIoD_Cm@a@gB{AcCkBuAiAGQsBgB{AsAqGwEwDsC{DmCGIoCcC{B{A}PcNqB{A]SQQi@u@_@WWMqIaHqA}@qBy@gAa@_Bo@}Ae@wA[qFg@aDWeFSSLcCKeCSmDQ_O]oHW_FImCCkEMcFOmHe@_EMw[gAgI]oHQoNk@wHe@?J"
                             },
@@ -616,7 +616,7 @@
                                     "text": "19,0 km"
                                 },
                                 "staticDuration": {
-                                    "text": "43 min"
+                                    "text": "40 min"
                                 }
                             },
                             "transitDetails": {
@@ -630,7 +630,7 @@
                                             }
                                         }
                                     },
-                                    "arrivalTime": "2025-03-21T23:45:15Z",
+                                    "arrivalTime": "2025-03-30T21:15:15Z",
                                     "departureStop": {
                                         "name": "San Mateo C.C Unisur",
                                         "location": {
@@ -640,18 +640,18 @@
                                             }
                                         }
                                     },
-                                    "departureTime": "2025-03-21T23:02:00Z"
+                                    "departureTime": "2025-03-30T20:35:45Z"
                                 },
                                 "localizedValues": {
                                     "arrivalTime": {
                                         "time": {
-                                            "text": "18:45"
+                                            "text": "16:15"
                                         },
                                         "timeZone": "America/Bogota"
                                     },
                                     "departureTime": {
                                         "time": {
-                                            "text": "18:02"
+                                            "text": "15:35"
                                         },
                                         "timeZone": "America/Bogota"
                                     }
@@ -687,10 +687,10 @@
                             "text": "19,0 km"
                         },
                         "duration": {
-                            "text": "43 min"
+                            "text": "40 min"
                         },
                         "staticDuration": {
-                            "text": "43 min"
+                            "text": "40 min"
                         }
                     },
                     "stepsOverview": {
@@ -708,21 +708,21 @@
                 }
             ],
             "distanceMeters": 19043,
-            "duration": "2595s"
+            "duration": "2370s"
         },
         {
             "legs": [
                 {
-                    "distanceMeters": 19176,
-                    "duration": "3385s",
-                    "staticDuration": "3385s",
+                    "distanceMeters": 19043,
+                    "duration": "2460s",
+                    "staticDuration": "2460s",
                     "polyline": {
-                        "encodedPolyline": "us~Zlj|cMJEwCmHkA_DkByEc@kA]_AUm@}EoL{@eBqCcH_C_GqDsIwFwNyDaKsCsHuCsHkAmDaDeL?YKe@CU@O_@_BQcASmC?sDMyM@_GJkErAcQvBoYDgCDwOAiPB}BQ}FWoGa@oGm@yNO}EBqAJiAp@wDt@sCPk@VmBz@_On@qI@i@Jw@AoAWwC[yCY}DEgBOoCGeDE_@ByB\\sFTaCd@aE`@sCj@uEv@gF`AaIr@yHZ_C^yDHwEAyFKeCOkLCgCk@sMW{Ck@qF}AaMSBE@UeBF?DAu@sEaA{EiBwHc@cBVKi@sBWy@wAsDwAsDkAsCqAgDa@oAIc@Dq@h@wBB[G_@cAeBaCoDsBgDOR{I_NoCsDJSmEcFmDkDuDaDeBsAwByAiBaAsBoAmBwAcG}EcEaDiAaAeKaIoD_Cm@a@gB{AcCkBuAiAGQsBgB{AsAqGwEwDsC{DmCGIoCcC{B{A}PcNqB{A]SQQi@u@_@WWMqIaHqA}@qBy@gAa@_Bo@}Ae@wA[qFg@aDWeFSSLcCKeCSmDQ_O]oHW_FImCCkEMcFOmHe@iBIwEMuW}@gI]oHQoNk@wHe@?J"
+                        "encodedPolyline": "ou~Zlf|cMDAuBsFmC{Go@gB]_AUm@}EoL{@eBqCcH_C_GqDsIwFwNyDaKsCsHuCsHkAmDaDeL?YKe@CU@O_@_BQcASmC?sDMyM@_GJkErAcQvBoYDgCDwOAiPB}BQ}FWoGa@oGm@yNO}EBqAJiAp@wDt@sCPk@VmBz@_On@qI@i@Jw@AoAWwC[yCY}DEgBOoCGeDE_@ByB\\sFTaCd@aE`@sCj@uEv@gF`AaIr@yHZ_C^yDHwEAyFKeCOkLCgCk@sMW{Ck@qF_CcRc@{CmAkGuB}Io@eCWy@wAsDwAsDkAsCqAgDa@oAIc@Dq@h@wBB[G_@cAeBaCoDsFyIuFmIeCaDaEuE}DyDeDsCeBsAwByAiBaAsBoAmBwAcG}EcEaDiAaAeKaIoD_Cm@a@gB{AcCkBuAiAGQsBgB{AsAqGwEwDsC{DmCGIoCcC{B{A}PcNqB{A]SQQi@u@_@WWMqIaHqA}@qBy@gAa@_Bo@}Ae@wA[qFg@aDWeFSSLcCKeCSmDQ_O]oHW_FImCCkEMcFOmHe@_EMw[gAgI]oHQoNk@wHe@?J"
                     },
                     "startLocation": {
                         "latLng": {
-                            "latitude": 4.5857065,
-                            "longitude": -74.2059926
+                            "latitude": 4.5859952999999996,
+                            "longitude": -74.2053522
                         }
                     },
                     "endLocation": {
@@ -733,135 +733,15 @@
                     },
                     "steps": [
                         {
-                            "distanceMeters": 10088,
-                            "staticDuration": "1536s",
+                            "distanceMeters": 19043,
+                            "staticDuration": "2460s",
                             "polyline": {
-                                "encodedPolyline": "us~Zlj|cMJEwCmHkA_DkByEc@kA]_AUm@}EoL{@eBqCcH_C_GqDsIwFwNyDaKsCsHuCsHkAmDaDeL?YKe@CU@O_@_BQcASmC?sDMyM@_GJkErAcQvBoYDgCDwOAiPB}BQ}FWoGa@oGm@yNO}EBqAJiAp@wDt@sCPk@VmBz@_On@qI@i@Jw@AoAWwC[yCY}DEgBOoCGeDE_@ByB\\sFTaCd@aE`@sCj@uEv@gF`AaIr@yHZ_C^yDHwEAyFKeCOkLCgCk@sMW{Ck@qF}AaMSB"
+                                "encodedPolyline": "ou~Zlf|cMDAuBsFmC{Go@gB]_AUm@}EoL{@eBqCcH_C_GqDsIwFwNyDaKsCsHuCsHkAmDaDeL?YKe@CU@O_@_BQcASmC?sDMyM@_GJkErAcQvBoYDgCDwOAiPB}BQ}FWoGa@oGm@yNO}EBqAJiAp@wDt@sCPk@VmBz@_On@qI@i@Jw@AoAWwC[yCY}DEgBOoCGeDE_@ByB\\sFTaCd@aE`@sCj@uEv@gF`AaIr@yHZ_C^yDHwEAyFKeCOkLCgCk@sMW{Ck@qF_CcRc@{CmAkGuB}Io@eCWy@wAsDwAsDkAsCqAgDa@oAIc@Dq@h@wBB[G_@cAeBaCoDsFyIuFmIeCaDaEuE}DyDeDsCeBsAwByAiBaAsBoAmBwAcG}EcEaDiAaAeKaIoD_Cm@a@gB{AcCkBuAiAGQsBgB{AsAqGwEwDsC{DmCGIoCcC{B{A}PcNqB{A]SQQi@u@_@WWMqIaHqA}@qBy@gAa@_Bo@}Ae@wA[qFg@aDWeFSSLcCKeCSmDQ_O]oHW_FImCCkEMcFOmHe@_EMw[gAgI]oHQoNk@wHe@?J"
                             },
                             "startLocation": {
                                 "latLng": {
-                                    "latitude": 4.5857065,
-                                    "longitude": -74.2059926
-                                }
-                            },
-                            "endLocation": {
-                                "latLng": {
-                                    "latitude": 4.5946853999999995,
-                                    "longitude": -74.1182619
-                                }
-                            },
-                            "navigationInstruction": {
-                                "instructions": "Autob\u00fas en direcci\u00f3n a Bicentenario"
-                            },
-                            "localizedValues": {
-                                "distance": {
-                                    "text": "10,1 km"
-                                },
-                                "staticDuration": {
-                                    "text": "26 min"
-                                }
-                            },
-                            "transitDetails": {
-                                "stopDetails": {
-                                    "arrivalStop": {
-                                        "name": "NQS Calle 30 Sur",
-                                        "location": {
-                                            "latLng": {
-                                                "latitude": 4.5946853999999995,
-                                                "longitude": -74.1182619
-                                            }
-                                        }
-                                    },
-                                    "arrivalTime": "2025-03-21T23:13:36Z",
-                                    "departureStop": {
-                                        "name": "San Mateo C.C Unisur",
-                                        "location": {
-                                            "latLng": {
-                                                "latitude": 4.5857065,
-                                                "longitude": -74.2059926
-                                            }
-                                        }
-                                    },
-                                    "departureTime": "2025-03-21T22:48:00Z"
-                                },
-                                "localizedValues": {
-                                    "arrivalTime": {
-                                        "time": {
-                                            "text": "18:13"
-                                        },
-                                        "timeZone": "America/Bogota"
-                                    },
-                                    "departureTime": {
-                                        "time": {
-                                            "text": "17:48"
-                                        },
-                                        "timeZone": "America/Bogota"
-                                    }
-                                },
-                                "headsign": "Bicentenario",
-                                "transitLine": {
-                                    "agencies": [
-                                        {
-                                            "name": "Transmilenio-Troncal",
-                                            "phoneNumber": "+57 601 4824304",
-                                            "uri": "https://www.transmilenio.gov.co/"
-                                        }
-                                    ],
-                                    "name": "Bicentenario",
-                                    "color": "#00aaa6",
-                                    "nameShort": "L41",
-                                    "textColor": "#ffffff",
-                                    "vehicle": {
-                                        "name": {
-                                            "text": "Autob\u00fas"
-                                        },
-                                        "type": "BUS",
-                                        "iconUri": "//maps.gstatic.com/mapfiles/transit/iw2/6/bus2.png"
-                                    }
-                                },
-                                "stopCount": 5
-                            },
-                            "travelMode": "TRANSIT"
-                        },
-                        {
-                            "distanceMeters": 57,
-                            "staticDuration": "57s",
-                            "polyline": {
-                                "encodedPolyline": "_l`[dfkcMUeB"
-                            },
-                            "startLocation": {
-                                "latLng": {
-                                    "latitude": 4.5947179,
-                                    "longitude": -74.1182683
-                                }
-                            },
-                            "endLocation": {
-                                "latLng": {
-                                    "latitude": 4.5948258,
-                                    "longitude": -74.11776499999999
-                                }
-                            },
-                            "navigationInstruction": {},
-                            "localizedValues": {
-                                "distance": {
-                                    "text": "57 m"
-                                },
-                                "staticDuration": {
-                                    "text": "1 min"
-                                }
-                            },
-                            "travelMode": "WALK"
-                        },
-                        {
-                            "distanceMeters": 9031,
-                            "staticDuration": "1496s",
-                            "polyline": {
-                                "encodedPolyline": "ml`[~bkcMDAu@sEaA{EiBwHc@cBVKi@sBWy@wAsDwAsDkAsCqAgDa@oAIc@Dq@h@wBB[G_@cAeBaCoDsBgDOR{I_NoCsDJSmEcFmDkDuDaDeBsAwByAiBaAsBoAmBwAcG}EcEaDiAaAeKaIoD_Cm@a@gB{AcCkBuAiAGQsBgB{AsAqGwEwDsC{DmCGIoCcC{B{A}PcNqB{A]SQQi@u@_@WWMqIaHqA}@qBy@gAa@_Bo@}Ae@wA[qFg@aDWeFSSLcCKeCSmDQ_O]oHW_FImCCkEMcFOmHe@iBIwEMuW}@gI]oHQoNk@wHe@?J"
-                            },
-                            "startLocation": {
-                                "latLng": {
-                                    "latitude": 4.5947933,
-                                    "longitude": -74.117757
+                                    "latitude": 4.5859952999999996,
+                                    "longitude": -74.2053522
                                 }
                             },
                             "endLocation": {
@@ -871,14 +751,14 @@
                                 }
                             },
                             "navigationInstruction": {
-                                "instructions": "Autob\u00fas en direcci\u00f3n a H\u00e9roes - Gelhada"
+                                "instructions": "Autob\u00fas en direcci\u00f3n a 7 de Agosto"
                             },
                             "localizedValues": {
                                 "distance": {
-                                    "text": "9,0 km"
+                                    "text": "19,0 km"
                                 },
                                 "staticDuration": {
-                                    "text": "25 min"
+                                    "text": "41 min"
                                 }
                             },
                             "transitDetails": {
@@ -892,33 +772,33 @@
                                             }
                                         }
                                     },
-                                    "arrivalTime": "2025-03-21T23:44:25Z",
+                                    "arrivalTime": "2025-03-30T21:21:45Z",
                                     "departureStop": {
-                                        "name": "NQS Calle 30 Sur",
+                                        "name": "San Mateo C.C Unisur",
                                         "location": {
                                             "latLng": {
-                                                "latitude": 4.5947933,
-                                                "longitude": -74.117757
+                                                "latitude": 4.5859952999999996,
+                                                "longitude": -74.2053522
                                             }
                                         }
                                     },
-                                    "departureTime": "2025-03-21T23:19:29Z"
+                                    "departureTime": "2025-03-30T20:40:45Z"
                                 },
                                 "localizedValues": {
                                     "arrivalTime": {
                                         "time": {
-                                            "text": "18:44"
+                                            "text": "16:21"
                                         },
                                         "timeZone": "America/Bogota"
                                     },
                                     "departureTime": {
                                         "time": {
-                                            "text": "18:19"
+                                            "text": "15:40"
                                         },
                                         "timeZone": "America/Bogota"
                                     }
                                 },
-                                "headsign": "H\u00e9roes - Gelhada",
+                                "headsign": "7 de Agosto",
                                 "transitLine": {
                                     "agencies": [
                                         {
@@ -927,9 +807,9 @@
                                             "uri": "https://www.transmilenio.gov.co/"
                                         }
                                     ],
-                                    "name": "Heroes Gelhada",
-                                    "color": "#000000",
-                                    "nameShort": "4",
+                                    "name": "7 De Agosto",
+                                    "color": "#ab6b0d",
+                                    "nameShort": "E42",
                                     "textColor": "#ffffff",
                                     "vehicle": {
                                         "name": {
@@ -939,20 +819,20 @@
                                         "iconUri": "//maps.gstatic.com/mapfiles/transit/iw2/6/bus2.png"
                                     }
                                 },
-                                "stopCount": 11
+                                "stopCount": 10
                             },
                             "travelMode": "TRANSIT"
                         }
                     ],
                     "localizedValues": {
                         "distance": {
-                            "text": "19,2 km"
+                            "text": "19,0 km"
                         },
                         "duration": {
-                            "text": "56 min"
+                            "text": "41 min"
                         },
                         "staticDuration": {
-                            "text": "56 min"
+                            "text": "41 min"
                         }
                     },
                     "stepsOverview": {
@@ -961,23 +841,7 @@
                                 "stepStartIndex": 0,
                                 "stepEndIndex": 0,
                                 "navigationInstruction": {
-                                    "instructions": "Autob\u00fas en direcci\u00f3n a Bicentenario"
-                                },
-                                "travelMode": "TRANSIT"
-                            },
-                            {
-                                "stepStartIndex": 1,
-                                "stepEndIndex": 1,
-                                "navigationInstruction": {
-                                    "instructions": "Camina hasta NQS Calle 30 Sur"
-                                },
-                                "travelMode": "WALK"
-                            },
-                            {
-                                "stepStartIndex": 2,
-                                "stepEndIndex": 2,
-                                "navigationInstruction": {
-                                    "instructions": "Autob\u00fas en direcci\u00f3n a H\u00e9roes - Gelhada"
+                                    "instructions": "Autob\u00fas en direcci\u00f3n a 7 de Agosto"
                                 },
                                 "travelMode": "TRANSIT"
                             }
@@ -985,8 +849,8 @@
                     }
                 }
             ],
-            "distanceMeters": 19176,
-            "duration": "3385s"
+            "distanceMeters": 19043,
+            "duration": "2460s"
         }
     ]
 }

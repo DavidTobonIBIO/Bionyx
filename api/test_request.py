@@ -12,6 +12,7 @@ load_dotenv(dotenv_path='.env')
 # Get the API key from the environment variable
 API_KEY = os.getenv('GOOGLE_MAPS_API_KEY')
 
+
 # Define headers
 headers = {
     "Content-Type": "application/json",
