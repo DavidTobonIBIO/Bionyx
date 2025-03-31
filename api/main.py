@@ -20,11 +20,14 @@ from shapely.geometry import Point, shape, MultiLineString
 import json
 import unicodedata
 import tempfile
-import openai
+from dotenv import load_dotenv
 from openai import OpenAI
 
-OPENAI_API_KEY='' #FIXME Pongan mi API Key the OpenAI, la mande por WhatsApp :) Att: Sergio
+
+load_dotenv(dotenv_path='.env')
+OPENAI_API_KEY=os.getenv('OPENAI_API_KEY')
 client = OpenAI(api_key=OPENAI_API_KEY)
+
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
