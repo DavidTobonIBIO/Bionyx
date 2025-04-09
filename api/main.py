@@ -1,4 +1,5 @@
 from fastapi import FastAPI, HTTPException, UploadFile, File
+import re
 from models import (
     Coords,
     Route,
@@ -25,7 +26,7 @@ from openai import OpenAI
 
 
 load_dotenv(dotenv_path='.env')
-OPENAI_API_KEY=os.getenv('OPENAI_API_KEY')
+OPENAI_API_KEY=''
 client = OpenAI(api_key=OPENAI_API_KEY)
 
 
@@ -144,14 +145,42 @@ async def transcribe_and_extract_route(audio: UploadFile = File(...)):
             transcript = client.audio.transcriptions.create(
                 model="whisper-1",
                 file=file_obj,
-                prompt="Transcribe only the name of the TransMilenio route. Focus on names like B10, J24, 6, etc. The message is in Spanish. In the response please show only 'J24', '6', and so on "
+                prompt="Transcribe only the name of the TransMilenio route. Focus on names like B10, J24, 6, etc. The message is in Spanish."
             )
 
         os.remove(tmp_path)
-        return {"route": transcript.text}
+
+        # Clean the transcription result
+        raw_text = transcript.text.strip().upper()
+        match = re.search(r"\b([A-Z]?\d{1,2})\b", raw_text)
+        if not match:
+            raise HTTPException(status_code=404, detail="No valid route name detected.")
+
+        detected_route_name = match.group(1)
+        print("Detected route name:", detected_route_name)
+
+        # Try to find the route ID
+        matching_route = next(
+            (route for route in routes_list if route.name.upper() == detected_route_name),
+            None
+        )
+
+        if not matching_route:
+            raise HTTPException(status_code=404, detail="Route not found.")
+
+        final_dict = {
+            "routeName": matching_route.name,
+            "routeId": matching_route.id,
+            "destinationStationId": matching_route.destinationStationId
+        }
+
+        print("Final dictionary:", final_dict)
+
+        return final_dict
 
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
+
 
 def remove_pycache():
     pycache_path = os.path.join(this_script_dir, "__pycache__")
