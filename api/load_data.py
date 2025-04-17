@@ -135,7 +135,7 @@ def set_arriving_routes(
                 )
                 origin_station: Station = stations_dict.get(route.originStationId, None)
 
-                if destination_station:
+                if destination_station and origin_station:
                     if destination_station.id == origin_station.id:
                         arriving_routes.append(route)
                     elif destination_station.id != station.id:
