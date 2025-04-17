@@ -13,6 +13,8 @@ from datetime import datetime
 from dotenv import load_dotenv
 from openai import OpenAI
 
+from utils import normalize_station_name
+
 
 # Set up logging
 log_dir = os.path.join(os.path.dirname(__file__), "logs")
@@ -33,7 +35,7 @@ if not OPENAI_API_KEY:
     raise ValueError(error_msg)
 client: OpenAI = OpenAI(api_key=OPENAI_API_KEY)
 
-stations_dict, stations_dict_by_names, routes_dict, routes_list = load_data()
+stations_dict, stations_dict_by_names, routes_dict, routes_list, route_station_mapping  = load_data()
 route_names = [route.name for route in routes_list] # used for the prompt to whisper
 
 app = FastAPI(root_path="/api")
@@ -89,12 +91,11 @@ async def read_station(id: int) -> Station:
         )
     return station
 
-
 @app.post("/stations/nearest_station", response_model=Station)
 async def read_nearest_station(coords: Coordinates) -> Station:
     nearest_station: Station | None = None
     R: float = 6371000
-    nearest_distance: float = 400
+    nearest_distance: float = 400  # in meters
 
     lat1, lon1 = coords.latitude, coords.longitude
 
@@ -117,9 +118,27 @@ async def read_nearest_station(coords: Coordinates) -> Station:
 
     if nearest_station is None:
         error_msg = "No near station found"
-        logger.error(f"HTTP 404: {error_msg} for coordinates: lat={coords.latitude}, lon={coords.longitude}")
+        logger.error(
+            f"HTTP 404: {error_msg} for coordinates: lat={coords.latitude}, lon={coords.longitude}"
+        )
         raise HTTPException(status_code=404, detail=error_msg)
+    
 
+    # Filter arrivingRoutes based on route_stop_mapping
+    filtered_routes = []
+    for route in nearest_station.arrivingRoutes:
+        route_name = route.name.upper()
+        if route_name in route_station_mapping:
+            stops = route_station_mapping[route_name]
+            normalized_api_name = normalize_station_name(nearest_station.name)
+            normalized_gtfs_stops = set(normalize_station_name(stop) for stop in stops)
+            print(f"Normalized GTFS stops: {normalized_gtfs_stops}")
+            print(f"Normalized API name: {normalized_api_name}")
+            
+            if normalized_api_name in normalized_gtfs_stops:
+                filtered_routes.append(route)
+
+    nearest_station.arrivingRoutes = filtered_routes
     return nearest_station
 
 
@@ -166,7 +185,6 @@ async def transcribe_and_extract_route(audio: UploadFile = File(...)) -> dict[st
         error_msg = str(e)
         logger.error(f"HTTP 500: {error_msg}")
         raise HTTPException(status_code=500, detail=error_msg)
-
 
 def remove_pycache() -> None:
     pycache_path: str = os.path.join(this_script_dir, "__pycache__")

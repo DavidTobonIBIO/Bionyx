@@ -1,4 +1,15 @@
 import pandas as pd
+import unicodedata
+import re
+
+def normalize_station_name(name: str) -> str:
+    name = name.upper()
+    name = unicodedata.normalize("NFKD", name)
+    name = name.encode("ascii", "ignore").decode("ascii")
+    name = name.replace("AV.", "AVENIDA").replace("CR.", "CARRERA").replace("CL.", "CALLE")
+    name = re.sub(r'\s+', ' ', name)  # replace multiple spaces
+    name = name.strip()
+    return name
 
 def load_text_file(file_path: str) -> pd.DataFrame:
     

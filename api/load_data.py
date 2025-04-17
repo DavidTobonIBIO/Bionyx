@@ -1,8 +1,11 @@
 import os
 import json
+import pandas as pd
 import unicodedata
 from models import Coordinates, Route, Station
 from shapely.geometry import Point, shape
+
+from utils import load_text_file
 
 this_dir: str = os.path.dirname(__file__)
 data_dir: str = os.path.join(this_dir, "data")
@@ -10,6 +13,18 @@ stations_path: str = os.path.join(
     data_dir, "Estaciones_Troncales_de_TRANSMILENIO.geojson"
 )
 routes_path: str = os.path.join(data_dir, "Rutas_Troncales_de_TRANSMILENIO.geojson")
+
+def load_route_station_mapping_csv() -> dict[str, list[str]]:
+
+    csv_path = os.path.join(data_dir, "route_stop_mapping.csv")
+    df = pd.read_csv(csv_path)
+
+    route_station_map: dict[str, list[str]] = {}
+    for route_name, group in df.groupby("route_short_name"):
+        stop_names = group["stop_name"].dropna().unique().tolist()
+        route_station_map[route_name.upper()] = sorted(stop_names)
+
+    return route_station_map
 
 
 def load_stations() -> tuple[dict[int, Station], dict[str, Station]]:
@@ -153,6 +168,8 @@ def load_data() -> (
 
     print("Setting arriving routes...")
     set_arriving_routes(stations_dict, routes_dict)
+    
+    route_station_mapping = load_route_station_mapping_csv()
 
     print("Loaded data.")
-    return stations_dict, stations_dict_by_names, routes_dict, routes_list
+    return stations_dict, stations_dict_by_names, routes_dict, routes_list, route_station_mapping
