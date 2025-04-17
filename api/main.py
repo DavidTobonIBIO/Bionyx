@@ -26,7 +26,11 @@ logging.basicConfig(
 logger = logging.getLogger(__name__)
 
 load_dotenv(dotenv_path=".env")
-OPENAI_API_KEY = ""
+OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
+if not OPENAI_API_KEY:
+    error_msg = "OPENAI_API_KEY not found in .env file"
+    logger.error(f"HTTP 500: {error_msg}")
+    raise ValueError(error_msg)
 client: OpenAI = OpenAI(api_key=OPENAI_API_KEY)
 
 stations_dict, stations_dict_by_names, routes_dict, routes_list = load_data()
