@@ -3,3 +3,4 @@ __pycache__/
 *.env.local
 *node_modules
 *.txt
+*logs
