@@ -8,9 +8,22 @@ import os
 import shutil
 import atexit
 import tempfile
+import logging
+from datetime import datetime
 from dotenv import load_dotenv
 from openai import OpenAI
 
+
+# Set up logging
+log_dir = os.path.join(os.path.dirname(__file__), "logs")
+os.makedirs(log_dir, exist_ok=True)
+log_file = os.path.join(log_dir, f"api_{datetime.now().strftime('%Y%m%d')}.log")
+logging.basicConfig(
+    filename=log_file,
+    level=logging.ERROR,
+    format="%(asctime)s - %(levelname)s - %(message)s",
+)
+logger = logging.getLogger(__name__)
 
 load_dotenv(dotenv_path=".env")
 OPENAI_API_KEY = ""
@@ -32,7 +45,9 @@ async def read_routes_names() -> list[Route]:
     if routes_list:
         return routes_list
     else:
-        raise HTTPException(status_code=404, detail="No routes found")
+        error_msg = "No routes found"
+        logger.error(f"HTTP 404: {error_msg}")
+        raise HTTPException(status_code=404, detail=error_msg)
 
 
 @app.get("/routes/{id}", response_model=Route)
@@ -41,8 +56,10 @@ async def read_route(id: int) -> Route:
     if route:
         return route
     else:
+        error_msg = f"Route with id={id} does not exist"
+        logger.error(f"HTTP 404: {error_msg}")
         raise HTTPException(
-            status_code=404, detail=f"Route with id={id} does not exist"
+            status_code=404, detail=error_msg
         )
 
 
@@ -51,7 +68,9 @@ async def read_stations() -> list[Station]:
     if stations_dict:
         return list(stations_dict.values())
     else:
-        raise HTTPException(status_code=404, detail="No stations found")
+        error_msg = "No stations found"
+        logger.error(f"HTTP 404: {error_msg}")
+        raise HTTPException(status_code=404, detail=error_msg)
 
 
 @app.get("/stations/{id}", response_model=Station)
@@ -59,8 +78,10 @@ async def read_station(id: int) -> Station:
     print(f"Searching for station with id={id}")
     station = stations_dict.get(id, None)
     if not station:
+        error_msg = f"Station with id={id} does not exist"
+        logger.error(f"HTTP 404: {error_msg}")
         raise HTTPException(
-            status_code=404, detail=f"Station with id={id} does not exist"
+            status_code=404, detail=error_msg
         )
     return station
 
@@ -69,12 +90,12 @@ async def read_station(id: int) -> Station:
 async def read_nearest_station(coords: Coordinates) -> Station:
     nearest_station: Station | None = None
     R: float = 6371000
-    nearest_distance: float = math.inf
+    nearest_distance: float = 400
 
     lat1, lon1 = coords.latitude, coords.longitude
 
     for station in stations_dict.values():
-        lat2, lon2 = station.latitude, station.longitude
+        lat2, lon2 = station.coordinates.latitude, station.coordinates.longitude
         phi1, phi2 = math.radians(lat1), math.radians(lat2)
         dphi = math.radians(lat2 - lat1)
         dlambda = math.radians(lon2 - lon1)
@@ -91,7 +112,9 @@ async def read_nearest_station(coords: Coordinates) -> Station:
             nearest_distance = distance
 
     if nearest_station is None:
-        raise HTTPException(status_code=404, detail=f"No near station found")
+        error_msg = "No near station found"
+        logger.error(f"HTTP 404: {error_msg} for coordinates: lat={coords.latitude}, lon={coords.longitude}")
+        raise HTTPException(status_code=404, detail=error_msg)
 
     return nearest_station
 
@@ -116,7 +139,9 @@ async def transcribe_and_extract_route(audio: UploadFile = File(...)) -> dict[st
         raw_text: str = transcript.text.strip().upper()
         match = re.search(r"\b([A-Z]?\d{1,2})\b", raw_text) # optional letter followed by 1 or 2 digits
         if not match:
-            raise HTTPException(status_code=404, detail="No valid route substring detected.")
+            error_msg = "No valid route substring detected"
+            logger.error(f"HTTP 404: {error_msg} for transcription: '{raw_text}'")
+            raise HTTPException(status_code=404, detail=error_msg)
 
         detected_route_name: str = match.group(1).upper()
         print("Detected route name:", detected_route_name)
@@ -127,12 +152,16 @@ async def transcribe_and_extract_route(audio: UploadFile = File(...)) -> dict[st
                 matching_routes.append(route)
 
         if len(matching_routes) == 0:
+            error_msg = f"No matching route found for '{detected_route_name}'"
+            logger.error(f"HTTP 404: {error_msg}")
             raise HTTPException(status_code=404, detail="No matching route found.")
 
         return matching_routes
 
     except Exception as e:
-        raise HTTPException(status_code=500, detail=str(e))
+        error_msg = str(e)
+        logger.error(f"HTTP 500: {error_msg}")
+        raise HTTPException(status_code=500, detail=error_msg)
 
 
 def remove_pycache() -> None:
