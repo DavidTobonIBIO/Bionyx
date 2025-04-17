@@ -4,8 +4,17 @@ import pandas as pd
 import unicodedata
 from models import Coordinates, Route, Station
 from shapely.geometry import Point, shape
+import torch
+from typing import Dict 
 
 from utils import load_text_file
+
+from sentence_transformers import SentenceTransformer
+
+from sentence_transformers import SentenceTransformer
+from typing import Dict
+
+sentence_model = SentenceTransformer("all-MiniLM-L6-v2")  
 
 this_dir: str = os.path.dirname(__file__)
 data_dir: str = os.path.join(this_dir, "data")
@@ -26,6 +35,18 @@ def load_route_station_mapping_csv() -> dict[str, list[str]]:
 
     return route_station_map
 
+def create_stop_embedding_cache(route_station_mapping: Dict[str, list[str]]):
+    """
+    Precompute embeddings for all stop names per route.
+    """
+    cache = {}
+    for route_name, stops in route_station_mapping.items():
+        stop_embeddings = sentence_model.encode(stops, convert_to_tensor=True)
+        cache[route_name] = {
+            "stops": stops,
+            "embeddings": stop_embeddings,
+        }
+    return cache
 
 def load_stations() -> tuple[dict[int, Station], dict[str, Station]]:
     with open(stations_path, encoding="utf-8") as f:

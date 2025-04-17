@@ -5,6 +5,7 @@ import pandas as pd
 
 from utils import load_text_file
 
+
 # Paths
 this_dir = os.path.dirname(os.path.abspath(__file__))
 data_dir = path_join(this_dir, 'data')
@@ -44,7 +45,7 @@ for route_gtfs in routes_gtfs_data.iterrows():
         servicio_troncal = route_properties['servicio_unico_ruta_troncal']
         
         
-        if (route_name_gtfs == route_name_geojson) or (route_name_gtfs == servicio_troncal): #FIXME 
+        if (route_name_gtfs == route_name_geojson) or (route_name_gtfs == servicio_troncal): 
             
             matched_routes_lt.append(route_name_gtfs)
 
