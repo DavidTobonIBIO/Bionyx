@@ -94,7 +94,8 @@ async def read_nearest_station(coords: Coords):
         raise HTTPException(status_code=404, detail=f"No stations found")
 
     try:
-        with open("api\\data\\Rutas_Troncales_de_TRANSMILENIO.geojson", encoding="utf-8") as f:
+        current_dir = os.path.dirname(__file__)
+        with open(os.path.join(current_dir, "data", "Rutas_Troncales_de_TRANSMILENIO.geojson"), encoding="utf-8") as f:
             routes_geojson = json.load(f)
 
         station_point = Point(nearest_station.longitude, nearest_station.latitude)
