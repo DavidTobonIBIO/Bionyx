@@ -103,7 +103,7 @@ def set_arriving_routes(
             distance = geometry.distance(station_point)
 
             if (
-                distance < 0.0015
+                distance < 0.001
                 and feature["properties"]["estado_ruta_troncal"] == "OPERATIVA"
             ):
                 route_id = feature["properties"]["objectid"]
