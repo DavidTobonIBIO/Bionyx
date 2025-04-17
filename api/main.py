@@ -1,78 +1,75 @@
 from fastapi import FastAPI, HTTPException, UploadFile, File
 import re
-from models import (
-    Coords,
-    Route,
-    Station,
-    update_routes_locations,
-    stations_dict,
-    routes_dict,
-    routes_list,
-    stations_dict_by_names,
-)
-import asyncio
-from contextlib import asynccontextmanager
+from models import Coordinates, Route, Station
+from load_data import load_data
 import uvicorn
 import math
 import os
 import shutil
 import atexit
-from shapely.geometry import Point, shape, MultiLineString
-import json
-import unicodedata
 import tempfile
 from dotenv import load_dotenv
 from openai import OpenAI
 
 
-load_dotenv(dotenv_path='.env')
-OPENAI_API_KEY=''
-client = OpenAI(api_key=OPENAI_API_KEY)
+load_dotenv(dotenv_path=".env")
+OPENAI_API_KEY = ""
+client: OpenAI = OpenAI(api_key=OPENAI_API_KEY)
 
+stations_dict, stations_dict_by_names, routes_dict, routes_list = load_data()
+route_names = [route.name for route in routes_list] # used for the prompt to whisper
 
-@asynccontextmanager
-async def lifespan(app: FastAPI):
-    print("Starting up and launching background tasks...")
-    task = asyncio.create_task(update_routes_locations())
-    yield
-    task.cancel()
-    print("Shutting down.")
+app = FastAPI(root_path="/api")
 
-app = FastAPI(root_path="/api", lifespan=lifespan)
 
 @app.get("/")
-async def read_root():
+async def read_root() -> dict[str, str]:
     return {"message": "OrientApp Backend"}
 
+
 @app.get("/routes/", response_model=list[Route])
-async def read_routes_names():
-    return routes_list
+async def read_routes_names() -> list[Route]:
+    if routes_list:
+        return routes_list
+    else:
+        raise HTTPException(status_code=404, detail="No routes found")
+
 
 @app.get("/routes/{id}", response_model=Route)
-async def read_route(id: int):
+async def read_route(id: int) -> Route:
     route = routes_dict.get(id)
     if route:
         return route
     else:
-        raise HTTPException(status_code=404, detail=f"Route with id={id} not found")
+        raise HTTPException(
+            status_code=404, detail=f"Route with id={id} does not exist"
+        )
+
 
 @app.get("/stations/", response_model=list[Station])
-async def read_stations():
-    return list(stations_dict.values())
+async def read_stations() -> list[Station]:
+    if stations_dict:
+        return list(stations_dict.values())
+    else:
+        raise HTTPException(status_code=404, detail="No stations found")
+
 
 @app.get("/stations/{id}", response_model=Station)
-async def read_station(id: int):
+async def read_station(id: int) -> Station:
     print(f"Searching for station with id={id}")
     station = stations_dict.get(id, None)
     if not station:
-        raise HTTPException(status_code=404, detail=f"Station with id={id} not found")
+        raise HTTPException(
+            status_code=404, detail=f"Station with id={id} does not exist"
+        )
     return station
 
+
 @app.post("/stations/nearest_station", response_model=Station)
-async def read_nearest_station(coords: Coords):
-    nearest_station = None
-    R = 6371000
-    nearest_distance = math.inf
+async def read_nearest_station(coords: Coordinates) -> Station:
+    nearest_station: Station | None = None
+    R: float = 6371000
+    nearest_distance: float = math.inf
 
     lat1, lon1 = coords.latitude, coords.longitude
 
@@ -82,7 +79,10 @@ async def read_nearest_station(coords: Coords):
         dphi = math.radians(lat2 - lat1)
         dlambda = math.radians(lon2 - lon1)
 
-        a = math.sin(dphi / 2)**2 + math.cos(phi1) * math.cos(phi2) * math.sin(dlambda / 2)**2
+        a = (
+            math.sin(dphi / 2) ** 2
+            + math.cos(phi1) * math.cos(phi2) * math.sin(dlambda / 2) ** 2
+        )
         c = 2 * math.atan2(math.sqrt(a), math.sqrt(1 - a))
         distance = R * c
 
@@ -91,100 +91,52 @@ async def read_nearest_station(coords: Coords):
             nearest_distance = distance
 
     if nearest_station is None:
-        raise HTTPException(status_code=404, detail=f"No stations found")
-
-    try:
-        current_dir = os.path.dirname(__file__)
-        with open(os.path.join(current_dir, "data", "Rutas_Troncales_de_TRANSMILENIO.geojson"), encoding="utf-8") as f:
-            routes_geojson = json.load(f)
-
-        station_point = Point(nearest_station.longitude, nearest_station.latitude)
-        arriving_routes = []
-
-        for feature in routes_geojson["features"]:
-            geometry = feature.get("geometry")
-            if geometry["type"] != "MultiLineString":
-                continue
-            geom = shape(geometry)
-            route_distance = geom.distance(station_point)
-
-            properties = feature.get("properties")
-            nombre_ruta = properties.get("nombre_ruta_troncal")
-            destino = properties.get("destino_ruta_troncal")
-
-            if route_distance < 0.0015:
-                route_id = properties.get("objectid") or hash(json.dumps(feature["geometry"]))
-                raw_route_name = nombre_ruta or "SIN_NOMBRE"
-                route_name = raw_route_name.split()[0] if raw_route_name.strip() else "SIN_NOMBRE"
-
-                destino_normalized = unicodedata.normalize("NFKD", destino or "").encode("ascii", "ignore").decode("ascii")
-                destino_key = destino_normalized.replace(" ", "_").lower()
-                destination_station = stations_dict_by_names.get(destino_key)
-                destination_id = destination_station.id if destination_station else -1
-
-                arriving_routes.append(
-                    Route(id=route_id, name=route_name, destinationStationId=destination_id)
-                )
-
-        print(f"Station '{nearest_station.name}' matched {len(arriving_routes)} routes.")
-        nearest_station.arrivingRoutes = arriving_routes
-
-    except Exception as e:
-        print("Failed to compute arriving routes:", e)
-        nearest_station.arrivingRoutes = []
+        raise HTTPException(status_code=404, detail=f"No near station found")
 
     return nearest_station
 
-@app.post("/voice/route")
-async def transcribe_and_extract_route(audio: UploadFile = File(...)):
+
+@app.post("/voice/route", response_model=list[Route])
+async def transcribe_and_extract_route(audio: UploadFile = File(...)) -> dict[str, any]:
     try:
         with tempfile.NamedTemporaryFile(delete=False, suffix=".wav") as tmp:
             tmp.write(await audio.read())
-            tmp_path = tmp.name
+            tmp_path: str = tmp.name
 
         with open(tmp_path, "rb") as file_obj:
             transcript = client.audio.transcriptions.create(
                 model="whisper-1",
                 file=file_obj,
-                prompt="Transcribe only the name of the TransMilenio route. Focus on names like B10, J24, 6, etc. The message is in Spanish."
+                prompt=", ".join(route_names),
             )
 
         os.remove(tmp_path)
 
         # Clean the transcription result
-        raw_text = transcript.text.strip().upper()
-        match = re.search(r"\b([A-Z]?\d{1,2})\b", raw_text)
+        raw_text: str = transcript.text.strip().upper()
+        match = re.search(r"\b([A-Z]?\d{1,2})\b", raw_text) # optional letter followed by 1 or 2 digits
         if not match:
-            raise HTTPException(status_code=404, detail="No valid route name detected.")
+            raise HTTPException(status_code=404, detail="No valid route substring detected.")
 
-        detected_route_name = match.group(1)
+        detected_route_name: str = match.group(1).upper()
         print("Detected route name:", detected_route_name)
+        
+        matching_routes: list[Route] = []
+        for route in routes_list:
+            if route.name == detected_route_name:
+                matching_routes.append(route)
 
-        # Try to find the route ID
-        matching_route = next(
-            (route for route in routes_list if route.name.upper() == detected_route_name),
-            None
-        )
+        if len(matching_routes) == 0:
+            raise HTTPException(status_code=404, detail="No matching route found.")
 
-        if not matching_route:
-            raise HTTPException(status_code=404, detail="Route not found.")
-
-        final_dict = {
-            "routeName": matching_route.name,
-            "routeId": matching_route.id,
-            "destinationStationId": matching_route.destinationStationId
-        }
-
-        print("Final dictionary:", final_dict)
-
-        return final_dict
+        return matching_routes
 
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
 
 
-def remove_pycache():
-    pycache_path = os.path.join(this_script_dir, "__pycache__")
+def remove_pycache() -> None:
+    pycache_path: str = os.path.join(this_script_dir, "__pycache__")
     if os.path.exists(pycache_path) and os.path.isdir(pycache_path):
         try:
             shutil.rmtree(pycache_path)
@@ -192,7 +144,8 @@ def remove_pycache():
         except Exception as e:
             print(f"Error deleting __pycache__:", e)
 
-this_script_dir = os.path.dirname(os.path.abspath(__file__))
+
+this_script_dir: str = os.path.dirname(os.path.abspath(__file__))
 atexit.register(remove_pycache)
 
 if __name__ == "__main__":
