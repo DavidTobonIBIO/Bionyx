@@ -73,8 +73,28 @@ def load_routes(
                 )
                 continue
 
+            route_origin_name: str = route_properties["origen_ruta_troncal"]
+            route_origin_name = (
+                unicodedata.normalize("NFKD", route_origin_name)
+                .encode("ascii", "ignore")
+                .decode("ascii")
+            )
+            origin_name_key: str = route_origin_name.replace(" ", "_").lower()
+
+            routeOriginStation: Station = stations_dict_by_names.get(
+                origin_name_key, None
+            )
+            if not routeOriginStation:
+                print(
+                    f"Origin station {route_origin_name} not found for route {route_name}"
+                )
+                continue
+
             routes_dict[id] = Route(
-                id=id, name=route_name, destinationStationId=routeDestinationStation.id
+                id=id,
+                name=route_name,
+                destinationStationId=routeDestinationStation.id,
+                originStationId=routeOriginStation.id,
             )
 
     del routes_geojson
@@ -113,10 +133,13 @@ def set_arriving_routes(
                 destination_station: Station = stations_dict.get(
                     route.destinationStationId, None
                 )
+                origin_station: Station = stations_dict.get(route.originStationId, None)
 
-                if destination_station and destination_station.id != station.id:
-                    # only add the route if its destination is not the same as the current station
-                    arriving_routes.append(route)
+                if destination_station:
+                    if destination_station.id == origin_station.id:
+                        arriving_routes.append(route)
+                    elif destination_station.id != station.id:
+                        arriving_routes.append(route)
 
         station.arrivingRoutes = arriving_routes
 

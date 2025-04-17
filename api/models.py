@@ -10,6 +10,7 @@ class Route(BaseModel):
     id: int
     name: str
     destinationStationId: int
+    originStationId: int
 
 
 class Station(BaseModel):
