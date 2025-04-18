@@ -1,7 +1,7 @@
 from fastapi import FastAPI, HTTPException, UploadFile, File
 import re
 from models import Coordinates, Route, Station
-from load_data import load_data
+from load_data import load_data, sentence_model, create_stop_embedding_cache
 import uvicorn
 import math
 import os
@@ -12,7 +12,9 @@ import logging
 from datetime import datetime
 from dotenv import load_dotenv
 from openai import OpenAI
+import torch
 
+from sentence_transformers import util
 
 # Set up logging
 log_dir = os.path.join(os.path.dirname(__file__), "logs")
@@ -33,7 +35,9 @@ if not OPENAI_API_KEY:
     raise ValueError(error_msg)
 client: OpenAI = OpenAI(api_key=OPENAI_API_KEY)
 
-stations_dict, stations_dict_by_names, routes_dict, routes_list = load_data()
+stations_dict, stations_dict_by_names, routes_dict, routes_list, route_station_mapping  = load_data()
+embedding_cache = create_stop_embedding_cache(route_station_mapping)
+
 route_names = [route.name for route in routes_list] # used for the prompt to whisper
 
 app = FastAPI(root_path="/api")
@@ -91,12 +95,11 @@ async def read_station(id: int) -> Station:
         )
     return station
 
-
 @app.post("/stations/nearest_station", response_model=Station)
 async def read_nearest_station(coords: Coordinates) -> Station:
     nearest_station: Station | None = None
     R: float = 6371000
-    nearest_distance: float = 400
+    nearest_distance: float = 400  # in meters
 
     lat1, lon1 = coords.latitude, coords.longitude
 
@@ -119,9 +122,41 @@ async def read_nearest_station(coords: Coordinates) -> Station:
 
     if nearest_station is None:
         error_msg = "No near station found"
-        logger.error(f"HTTP 404: {error_msg} for coordinates: lat={coords.latitude}, lon={coords.longitude}")
+        logger.error(
+            f"HTTP 404: {error_msg} for coordinates: lat={coords.latitude}, lon={coords.longitude}"
+        )
         raise HTTPException(status_code=404, detail=error_msg)
+    
+    threshold = 0.65
+    station_embedding = sentence_model.encode(
+        nearest_station.name, convert_to_tensor=True
+    )
 
+    filtered_routes = []
+    print(nearest_station.arrivingRoutes)
+    for route in nearest_station.arrivingRoutes:
+        route_name = route.name.upper()
+
+        if route_name not in embedding_cache:
+            continue
+
+        stop_data = embedding_cache[route_name]
+        stop_names = stop_data["stops"]
+        stop_embeddings = stop_data["embeddings"]
+
+        scores = util.cos_sim(station_embedding, stop_embeddings)
+        max_score = scores.max().item()
+        best_stop = stop_names[scores.argmax().item()]
+
+        # print(f"[{route_name}] Match: {best_stop} (score={max_score:.2f})")
+
+        if max_score >= threshold:
+            print(f"Added to routes!")
+            print(f"[{route_name}] Match: {best_stop} (score={max_score:.2f})")
+            filtered_routes.append(route)
+        
+        nearest_station.arrivingRoutes = filtered_routes
+                    
     return nearest_station
 
 
@@ -168,7 +203,6 @@ async def transcribe_and_extract_route(audio: UploadFile = File(...)) -> dict[st
         error_msg = str(e)
         logger.error(f"HTTP 500: {error_msg}")
         raise HTTPException(status_code=500, detail=error_msg)
-
 
 def remove_pycache() -> None:
     pycache_path: str = os.path.join(this_script_dir, "__pycache__")

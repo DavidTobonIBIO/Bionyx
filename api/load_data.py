@@ -1,8 +1,20 @@
 import os
 import json
+import pandas as pd
 import unicodedata
 from models import Coordinates, Route, Station
 from shapely.geometry import Point, shape
+import torch
+from typing import Dict 
+
+from utils import load_text_file
+
+from sentence_transformers import SentenceTransformer
+
+from sentence_transformers import SentenceTransformer
+from typing import Dict
+
+sentence_model = SentenceTransformer("all-MiniLM-L6-v2")  
 
 this_dir: str = os.path.dirname(__file__)
 data_dir: str = os.path.join(this_dir, "data")
@@ -11,6 +23,30 @@ stations_path: str = os.path.join(
 )
 routes_path: str = os.path.join(data_dir, "Rutas_Troncales_de_TRANSMILENIO.geojson")
 
+def load_route_station_mapping_csv() -> dict[str, list[str]]:
+
+    csv_path = os.path.join(data_dir, "route_stop_mapping.csv")
+    df = pd.read_csv(csv_path)
+
+    route_station_map: dict[str, list[str]] = {}
+    for route_name, group in df.groupby("route_short_name"):
+        stop_names = group["stop_name"].dropna().unique().tolist()
+        route_station_map[route_name.upper()] = sorted(stop_names)
+
+    return route_station_map
+
+def create_stop_embedding_cache(route_station_mapping: Dict[str, list[str]]):
+    """
+    Precompute embeddings for all stop names per route.
+    """
+    cache = {}
+    for route_name, stops in route_station_mapping.items():
+        stop_embeddings = sentence_model.encode(stops, convert_to_tensor=True)
+        cache[route_name] = {
+            "stops": stops,
+            "embeddings": stop_embeddings,
+        }
+    return cache
 
 def load_stations() -> tuple[dict[int, Station], dict[str, Station]]:
     with open(stations_path, encoding="utf-8") as f:
@@ -153,6 +189,8 @@ def load_data() -> (
 
     print("Setting arriving routes...")
     set_arriving_routes(stations_dict, routes_dict)
+    
+    route_station_mapping = load_route_station_mapping_csv()
 
     print("Loaded data.")
-    return stations_dict, stations_dict_by_names, routes_dict, routes_list
+    return stations_dict, stations_dict_by_names, routes_dict, routes_list, route_station_mapping
