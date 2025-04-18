@@ -4,16 +4,6 @@ import pandas as pd
 import unicodedata
 from models import Coordinates, Route, Station
 from shapely.geometry import Point, shape
-import torch
-from typing import Dict 
-
-from utils import load_text_file
-
-from sentence_transformers import SentenceTransformer
-
-from sentence_transformers import SentenceTransformer
-from typing import Dict
-
 
 this_dir: str = os.path.dirname(__file__)
 data_dir: str = os.path.join(this_dir, "data")
