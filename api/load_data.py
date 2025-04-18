@@ -14,7 +14,6 @@ from sentence_transformers import SentenceTransformer
 from sentence_transformers import SentenceTransformer
 from typing import Dict
 
-sentence_model = SentenceTransformer("all-MiniLM-L6-v2")  
 
 this_dir: str = os.path.dirname(__file__)
 data_dir: str = os.path.join(this_dir, "data")
@@ -23,30 +22,39 @@ stations_path: str = os.path.join(
 )
 routes_path: str = os.path.join(data_dir, "Rutas_Troncales_de_TRANSMILENIO.geojson")
 
-def load_route_station_mapping_csv() -> dict[str, list[str]]:
-
+def load_route_station_mapping_csv() -> dict[str, list[dict]]:
+    """
+    Loads the full route-stop mapping from CSV with coordinates.
+    Returns: route_name → list of stop dicts (name, lat, lon)
+    """
     csv_path = os.path.join(data_dir, "route_stop_mapping.csv")
     df = pd.read_csv(csv_path)
 
-    route_station_map: dict[str, list[str]] = {}
-    for route_name, group in df.groupby("route_short_name"):
-        stop_names = group["stop_name"].dropna().unique().tolist()
-        route_station_map[route_name.upper()] = sorted(stop_names)
+    route_stop_coords_map: dict[str, list[dict]] = {}
 
-    return route_station_map
+    for _, row in df.iterrows():
+        try:
+            route_name = str(row["route_short_name"]).strip().upper()
+            stop_name = str(row["stop_name"]).strip()
+            stop_lat = float(row["stop_lat"])
+            stop_lon = float(row["stop_lon"])
 
-def create_stop_embedding_cache(route_station_mapping: Dict[str, list[str]]):
-    """
-    Precompute embeddings for all stop names per route.
-    """
-    cache = {}
-    for route_name, stops in route_station_mapping.items():
-        stop_embeddings = sentence_model.encode(stops, convert_to_tensor=True)
-        cache[route_name] = {
-            "stops": stops,
-            "embeddings": stop_embeddings,
-        }
-    return cache
+            stop = {
+                "name": stop_name,
+                "lat": stop_lat,
+                "lon": stop_lon
+            }
+
+            if route_name not in route_stop_coords_map:
+                route_stop_coords_map[route_name] = []
+
+            route_stop_coords_map[route_name].append(stop)
+
+        except Exception as e:
+            print(f"Error processing row: {row.to_dict()}")
+            print(f"Reason: {e}")
+
+    return route_stop_coords_map
 
 def load_stations() -> tuple[dict[int, Station], dict[str, Station]]:
     with open(stations_path, encoding="utf-8") as f:

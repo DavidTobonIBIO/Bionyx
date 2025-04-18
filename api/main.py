@@ -1,7 +1,7 @@
 from fastapi import FastAPI, HTTPException, UploadFile, File
 import re
 from models import Coordinates, Route, Station
-from load_data import load_data, sentence_model, create_stop_embedding_cache
+from load_data import load_data
 import uvicorn
 import math
 import os
@@ -12,9 +12,8 @@ import logging
 from datetime import datetime
 from dotenv import load_dotenv
 from openai import OpenAI
-import torch
+from utils import haversine
 
-from sentence_transformers import util
 
 # Set up logging
 log_dir = os.path.join(os.path.dirname(__file__), "logs")
@@ -35,8 +34,7 @@ if not OPENAI_API_KEY:
     raise ValueError(error_msg)
 client: OpenAI = OpenAI(api_key=OPENAI_API_KEY)
 
-stations_dict, stations_dict_by_names, routes_dict, routes_list, route_station_mapping  = load_data()
-embedding_cache = create_stop_embedding_cache(route_station_mapping)
+stations_dict, stations_dict_by_names, routes_dict, routes_list, route_stop_coords_map  = load_data()
 
 route_names = [route.name for route in routes_list] # used for the prompt to whisper
 
@@ -125,36 +123,24 @@ async def read_nearest_station(coords: Coordinates) -> Station:
         )
         raise HTTPException(status_code=404, detail=error_msg)
     
-    threshold = 0.65
-    station_embedding = sentence_model.encode(
-        nearest_station.name, convert_to_tensor=True
-    )
-
     filtered_routes = []
-    print(nearest_station.arrivingRoutes)
-    for route in nearest_station.arrivingRoutes:
+
+    station_lat = nearest_station.coordinates.latitude
+    station_lon = nearest_station.coordinates.longitude
+    DISTANCE_THRESHOLD = 15  # meters
+
+    for route in routes_list:
         route_name = route.name.upper()
+        stops = route_stop_coords_map.get(route_name, [])
 
-        if route_name not in embedding_cache:
-            continue
+        for stop in stops:
+            distance = haversine(station_lat, station_lon, stop["lat"], stop["lon"])
+            if distance <= DISTANCE_THRESHOLD:
+                filtered_routes.append(route)
+                break  # Done checking this route's stops
+    
+    nearest_station.arrivingRoutes = filtered_routes
 
-        stop_data = embedding_cache[route_name]
-        stop_names = stop_data["stops"]
-        stop_embeddings = stop_data["embeddings"]
-
-        scores = util.cos_sim(station_embedding, stop_embeddings)
-        max_score = scores.max().item()
-        best_stop = stop_names[scores.argmax().item()]
-
-        # print(f"[{route_name}] Match: {best_stop} (score={max_score:.2f})")
-
-        if max_score >= threshold:
-            print(f"Added to routes!")
-            print(f"[{route_name}] Match: {best_stop} (score={max_score:.2f})")
-            filtered_routes.append(route)
-        
-        nearest_station.arrivingRoutes = filtered_routes
-                    
     return nearest_station
 
 
