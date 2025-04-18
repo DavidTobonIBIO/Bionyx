@@ -39,6 +39,8 @@ route_names = [route.name for route in routes_list] # used for the prompt to whi
 app = FastAPI(root_path="/api")
 
 
+# /redoc and /docs to access documentation
+
 @app.get("/")
 async def read_root() -> dict[str, str]:
     return {"message": "OrientApp Backend"}
